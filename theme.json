@@ -1,0 +1,64 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 2,
+    "settings": {
+        "typography": {
+            "fontFamilies": [
+				{
+					"fontFamily": "Montserrat, sans-serif",
+					"slug": "montserrat",
+					"name": "Montserrat"
+				},
+				{
+					"fontFamily": "Open Sans, sans-serif",
+					"slug": "opensans",
+					"name": "Open Sans"
+				}
+			],
+            "fontWeight": true
+        },
+        "color": {
+            "palette": [
+                {
+                    "slug": "white",
+                    "color": "#fff",
+                    "name": "White"
+                },
+                {
+                    "slug": "black",
+                    "color": "#000",
+                    "name": "Black"
+                },
+                {
+                    "slug": "sigmagreen",
+                    "color": "#babf10",
+                    "name": "SIGMA Green"
+                },
+                {
+                    "slug": "sigmablue",
+                    "color": "#12355a",
+                    "name": "SIGMA Blue"
+                },
+                {
+                    "slug": "darkgrey",
+                    "color": "#797979",
+                    "name": "Dark Grey"
+                },
+                {
+                    "slug": "grey",
+                    "color": "#353535",
+                    "name": "Grey"
+                },
+                {
+                    "slug": "lightgrey",
+                    "color": "#C8C9C9",
+                    "name": "Light Grey"
+                }
+            ]
+        },
+        "layout": {
+            "contentSize": "1380px",
+            "wideSize": "1800px"
+        }
+    }
+}

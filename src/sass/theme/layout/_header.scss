@@ -1,0 +1,10 @@
+#main-nav {
+    .nav-link {
+        font-size: .9rem;
+        color: $type;
+
+        &:hover {
+            color: $secondary;
+        }
+    }
+}
