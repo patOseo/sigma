@@ -1,0 +1,16 @@
+{
+    "name": "acf/multipartsection",
+    "title": "Section",
+    "description": "A custom block to display a section inside a Multiple Section block.",
+    "category": "sigma-blocks",
+    "icon": "text",
+    "keywords": ["section", "template"],
+    "supports": {
+        "jsx": true
+    },
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "block-multipart-section.php"
+    },
+    "parent": ["multipart"]
+}

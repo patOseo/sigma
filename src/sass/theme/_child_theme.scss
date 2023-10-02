@@ -1,8 +1,42 @@
 @import "fonts";
+@import "third-party/swiper";
 
 // Layout
 @import "layout/body";
 @import "layout/header";
+@import "layout/footer";
 
 // Components
 @import "components/typography";
+@import "components/backgrounds";
+@import "components/colors";
+@import "components/buttons";
+@import "components/gforms";
+@import "components/tables";
+@import "components/lists";
+@import "components/breadcrumbs";
+@import "components/pagination";
+@import "components/extras";
+@import "components/swiper";
+@import "components/to-top-button";
+@import "components/fade";
+
+// Templates
+@import "templates/single-assessments";
+@import "templates/single-team";
+
+// Blocks 
+@import "blocks/gutenberg";
+@import "blocks/block-page-header";
+@import "blocks/block-blog-feed";
+@import "blocks/block-assessments-feed";
+@import "blocks/block-accordion";
+@import "blocks/block-timeline";
+@import "blocks/block-shadowbox";
+@import "blocks/block-testimonials";
+@import "blocks/block-image-slider";
+@import "blocks/block-multipart";
+
+// Patterns
+@import "patterns/blue-section";
+@import "patterns/home-boxes";

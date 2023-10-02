@@ -1,0 +1,17 @@
+.blue-section-with-heading {
+    margin-bottom: 2rem;
+    border-color: $darkergreen;
+
+    .blue-section-title {
+        background-color: $darkergreen;
+
+        > a:not(.button) {
+            color: inherit !important;
+            text-decoration: none;
+
+            &:hover {
+                color: inherit !important;
+            }
+        }
+    }
+}

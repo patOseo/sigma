@@ -12,7 +12,7 @@ defined( 'ABSPATH' ) || exit;
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<nav id="main-nav" class="navbar navbar-expand-lg navbar-light" aria-labelledby="main-nav-label">
+<nav id="main-nav" class="navbar navbar-expand-xl navbar-light" aria-labelledby="main-nav-label">
 
 	<p id="main-nav-label" class="screen-reader-text">
 		<?php esc_html_e( 'Main Navigation', 'understrap' ); ?>
@@ -36,6 +36,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 			>
 				<span class="navbar-toggler-icon"></span>
 			</button>
+			<div class="icons d-none d-xl-block mt-n3 mb-3 me-2 px-2 py-2 text-end">
+			<?php if(have_rows('social_media_links', 'option')): ?>
+				<div class="social-links d-inline me-3 px-2 border-end">
+					<?php while(have_rows('social_media_links', 'option')): the_row(); ?>
+						<a class="social-link text-decoration-none mx-1" href="<?php the_sub_field('link'); ?>" target="_blank" rel="noopener noreferrer">
+							<?php include(get_stylesheet_directory() . '/images/icons/icon-' . strtolower(get_sub_field('name')) . '.svg'); ?>
+						</a>
+					<?php endwhile; ?>
+				</div>
+			<?php endif; ?>
+			<?php include(get_stylesheet_directory() . '/images/icons/icon-search.svg'); ?>
+			</div>
 			<div class="offcanvas offcanvas-end bg-primary" tabindex="-1" id="navbarNavOffcanvas">
 				<div class="offcanvas-header justify-content-end">
 					<button
@@ -52,10 +64,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 						'theme_location'  => 'primary',
 						'container_class' => 'offcanvas-body',
 						'container_id'    => '',
-						'menu_class'      => 'navbar-nav justify-content-end flex-grow-1 pe-3',
+						'menu_class'      => 'navbar-nav justify-content-end flex-grow-1',
 						'fallback_cb'     => '',
 						'menu_id'         => 'main-menu',
-						'depth'           => 2,
+						'depth'           => 3,
 						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
 					)
 				);

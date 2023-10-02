@@ -1,0 +1,12 @@
+{
+    "name": "acf/team-members",
+    "title": "Team Members",
+    "description": "A custom block to display team members.",
+    "category": "sigma-blocks",
+    "icon": "groups",
+    "keywords": ["team", "members", "author"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "block-team-members.php"
+    }
+}

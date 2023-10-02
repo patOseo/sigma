@@ -1,0 +1,223 @@
+/* The actual timeline (the vertical ruler) */
+.main-timeline {
+  position: relative;
+}
+
+/* The actual timeline (the vertical ruler) */
+.main-timeline::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background-color: $white;
+  top: 0;
+  bottom: 84px;
+  left: 50%;
+  margin-left: -1px;
+
+  @media(max-width: 372px) {
+    display: none;
+  }
+
+  @include media-breakpoint-up(md) {
+    bottom: 30px;
+  }
+}
+
+/* Container around content */
+.timeline {
+  background-color: inherit;
+  width: 50%;
+  z-index: 1;
+
+  .card {
+    max-width: 100%;
+    @media(min-width: 372px) {
+      max-width: 250px;
+    }
+
+    @media(min-width: 440px) {
+      max-width: 300px;
+    }
+
+    @include media-breakpoint-up(sm) {
+      max-width: 390px;
+    }
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Place the container to the left */
+  &.left {
+    padding: 0px 60px 40px 0px;
+    left: 0;
+
+    .timeline-icon {
+      @include media-breakpoint-up(md) {
+        right: -42px;
+      }
+      
+
+      @include media-breakpoint-up(xl) {
+        right: -58px;
+        left: initial;
+      }
+    }
+  }
+
+  /* Place the container to the right */
+  &.right {
+    padding: 0px 0px 40px 60px;
+    left: 50%;
+
+    .timeline-icon {
+      @include media-breakpoint-up(md) {
+        left: -42px;
+      }
+
+      @include media-breakpoint-up(xl) {
+        left: -58px;
+      }
+    }
+  }
+
+  /* Fix the circle for containers on the right side */
+  &.right::after {
+    left: -12px;
+  }
+
+  .card-body {
+    font-size: 1rem;
+  }
+
+  &:last-child {
+    &:after {
+      content: "";
+      width: 8px;
+      background-color: #12355a;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: -36px;
+      z-index: 0;
+
+      @include media-breakpoint-up(md) {
+        right: -4px;
+        left: initial;
+      }
+    }
+  }
+
+  &.timeline-has-link {
+    &:hover {
+      .timeline-icon img {
+        transform: scale(1.15);
+      }
+    }
+  }
+}
+
+/* The icons on the timeline */
+.timeline-icon {
+  position: absolute;
+  border: 2px solid $white;
+  background-color: $primary;
+  top: 0;
+  border-radius: 50%;
+  z-index: 1;
+
+  @media(max-width: 372px) {
+    display: none;
+  }
+
+  img {
+    max-width: 48px;
+    transition: transform .2s;
+  }
+
+  @include media-breakpoint-up(xl) {
+    img {
+      max-width: 62px;
+    }
+  }
+}
+
+
+
+/* Media queries - Responsive timeline on screens less than md */
+@include media-breakpoint-down(md) {
+
+  /* Place the timelime to the left */
+  .main-timeline::after {
+    left: 42px;
+  }
+
+  /* Full-width containers */
+  .timeline {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+
+
+    &.left,
+    &.right {
+      padding: 0;
+    }
+
+    /* Make sure all circles are at the same spot */
+    &.left::after,
+    &.right::after {
+      top: -12px;
+      left: -16px;
+    }
+
+    &.left::before {
+      right: auto;
+    }
+
+    /* Make all right containers behave like the left ones */
+    &.right {
+      left: 0%;
+    }
+
+    .card-heading {
+      font-size: 1.125rem;
+    }
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .timeline::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+}
+
+// Style for Timeline inside an ACF innerblock
+// .acf-innerblocks-container {
+//   @include media-breakpoint-down(md) {
+//     .main-timeline:after {
+//       left: 12px;
+//     }
+//     .timeline {
+//       .card {
+//         margin-right: 1rem!important;
+//         margin-left: 1rem!important;
+//         .card-body {
+//           padding-left: 1rem !important;
+//           padding-right: 1rem !important;
+//         }
+//       }
+//       &.left::before,
+//       &.right::before {
+//         display: none;
+//       }
+//       &.left::after,
+//       &.right::after {
+//         left: 0; 
+//       }
+//     }
+//   }
+// }

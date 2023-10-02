@@ -1,0 +1,12 @@
+{
+    "name": "acf/timeline",
+    "title": "Timeline",
+    "description": "A custom block to display a timeline.",
+    "category": "sigma-blocks",
+    "icon": "list-view",
+    "keywords": ["timeline"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "block-timeline.php"
+    }
+}

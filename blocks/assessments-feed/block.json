@@ -1,0 +1,12 @@
+{
+    "name": "acf/assessments-feed",
+    "title": "Assessments Feed",
+    "description": "A custom block to show the assessments feed.",
+    "category": "sigma-blocks",
+    "icon": "welcome-write-blog",
+    "keywords": ["assessments", "feed", "posts"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "block-assessments-feed.php"
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "name": "acf/accordion",
+    "title": "Accordion",
+    "description": "A custom block to display an accordion.",
+    "category": "sigma-blocks",
+    "icon": "list-view",
+    "keywords": ["accordion", "faq", "toggles"],
+    "supports": {
+        "jsx": true
+    },
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "block-accordion.php"
+    }
+}

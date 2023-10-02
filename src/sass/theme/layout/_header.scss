@@ -1,10 +1,63 @@
 #main-nav {
-    .nav-link {
-        font-size: .9rem;
-        color: $type;
+    #main-menu {
+        -webkit-font-smoothing: initial; 
+        
+        .menu-item {
+            &.dropdown:hover {
+                .dropdown-menu {
+                    display: block;
+                }
+            }
+        }
+        .nav-link {
+            font-size: .9rem;
+            color: $type;
+    
+            &:hover {
+                color: $secondary;
+            }
+
+            &.dropdown-toggle {
+                @include media-breakpoint-up(xl) {
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .active {
+            .nav-link {
+                color: $secondary;
+            }
+        }
+
+        .dropdown-menu {
+            border: 0;
+            border-radius: 0;
+            box-shadow: 0 6px 10px rgba(0,0,0,.2);
+
+            .dropdown-item {
+                font-size: .9rem;
+                font-weight: 300;
+                color: $type;
+        
+                &:hover {
+                    color: $secondary;
+                    background-color: initial;
+                }
+            }
+        }
+    }
+    
+
+    svg {
+        max-height: 16px;
+        fill: $primary;
+        transition: fill .2s;
 
         &:hover {
-            color: $secondary;
+            fill: $secondary;
         }
     }
 }

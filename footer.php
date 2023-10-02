@@ -11,38 +11,116 @@
 defined( 'ABSPATH' ) || exit;
 
 $container = get_theme_mod( 'understrap_container_type' );
+
+$phone1 = get_field('phone_1', 'option');
+$phone2 = get_field('phone_2', 'option');
 ?>
 
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
-<div class="wrapper" id="wrapper-footer">
+<button id="toTopButton" class="hidden d-md-none btn btn-secondary p-3 lh-1 rounded-2" aria-label="Scroll to Top" role="button" tabindex="0">
+	<?php @include('images/icons/icon-arrow-up.svg'); ?>
+</button>
 
-	<div class="<?php echo esc_attr( $container ); ?>">
+<div class="wrapper bg-primary text-white py-6" id="wrapper-footer">
 
-		<div class="row">
+	<div class="container">
 
-			<div class="col-md-12">
+		<footer class="site-footer" id="colophon">
 
-				<footer class="site-footer" id="colophon">
+			<div class="row mx-0 gx-5">
+				<div class="col-12 col-lg-4">
+					<img class="mb-6" src="<?php echo get_stylesheet_directory_uri(); ?>/images/sigma-logo-footer.png" alt="Sigma Assessment Systems Logo" width="300" height="62">
+					<p class="fs-xs lh-lg">SIGMA Assessment Systems provides talent assessments, succession planning, executive coaching, and consulting services to help organizations hire and develop strong performers.</p>
+					<p class="fs-xs"><a class="link-light text-decoration-none" href="<?php echo get_field('privacy_policy_page', 'option'); ?>">Privacy Policy</a> <span class="mx-2">|</span> <a class="link-light text-decoration-none" href="<?php echo get_field('terms_of_use_page', 'option'); ?>">Terms & Conditions of Use</a></p>
+				</div>
+				<div class="col-6 col-lg-2">
+					<h3 class="h5 mb-3 text-uppercase fw-bold text-white">Solutions</h3>
+					<?php 
+					wp_nav_menu(
+						array(
+							'menu'			  => 'Solutions',
+							'menu_class' 		  => 'menu ps-0 fs-sm',
+							'fallback_cb'     => '',
+							'depth'           => 2,
+							'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+						)
+					);
+					?>
+				</div>
+				<div class="col-6 col-lg-2">
+					<h3 class="h5 mb-3 text-uppercase fw-bold text-white">Resources</h3>
+					<?php 
+					wp_nav_menu(
+						array(
+							'menu'			  => 'Resources',
+							'menu_class' 		  => 'menu ps-0 fs-sm',
+							'fallback_cb'     => '',
+							'depth'           => 2,
+							'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+						)
+					);
+					?>
+				</div>
+				<div class="col-6 col-lg-2">
+					<h3 class="h5 mb-3 text-uppercase fw-bold text-white">Support</h3>
+					<?php 
+					wp_nav_menu(
+						array(
+							'menu'			  => 'Support',
+							'menu_class' 		  => 'menu ps-0 fs-sm',
+							'fallback_cb'     => '',
+							'depth'           => 2,
+							'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+						)
+					);
+					?>
+				</div>
+				<div class="col-6 col-lg-2">
+					<h3 class="h5 mb-3 text-uppercase fw-bold text-white">Contact Us</h3>
+					<p class="fs-sm">
+						<strong class="fw-boldest">London, ON</strong><br>
+						<a class="text-white" href="tel:<?= $phone1; ?>"><?= $phone1; ?></a>
+					</p>
 
-					<div class="site-info">
+					<p class="fs-sm">
+						<strong class="fw-boldest">Port Huron, MI</strong><br>
+						<a class="text-white" href="tel:<?= $phone2; ?>"><?= $phone2; ?></a>
+					</p>
 
-						<?php understrap_site_info(); ?>
+					<?php if(have_rows('social_media_links', 'option')): ?>
+						<div class="social-links">
+							<?php while(have_rows('social_media_links', 'option')): the_row(); ?>
+								<a class="social-link d-inline text-decoration-none mx-1" href="<?php the_sub_field('link'); ?>" target="_blank" rel="noopener noreferrer">
+									<?php include('images/icons/icon-' . strtolower(get_sub_field('name')) . '.svg'); ?>
+								</a>
+							<?php endwhile; ?>
+						</div>
+					<?php endif; ?>
+				</div>
 
-					</div><!-- .site-info -->
+			</div>
 
-				</footer><!-- #colophon -->
-
-			</div><!-- col -->
-
-		</div><!-- .row -->
+		</footer><!-- #colophon -->
 
 	</div><!-- .container(-fluid) -->
 
 </div><!-- #wrapper-footer -->
 
+<div class="py-4 footer-copyright text-white">
+	<div class="text-center fs-xs">
+	© 2018 - <?php echo date('Y'); ?> SIGMA Assessment Systems Inc. All rights reserved.
+	</div>
+</div>
+
 <?php // Closing div#page from header.php. ?>
 </div><!-- #page -->
+
+<?php 
+if(get_field('json_schema')):
+echo get_field('json_schema');
+endif;
+?>
 
 <?php wp_footer(); ?>
 

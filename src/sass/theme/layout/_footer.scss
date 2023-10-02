@@ -1,0 +1,32 @@
+.site-footer {
+    .social-links {
+        svg {
+            max-height: 24px;
+            fill: $white;
+            transition: fill .2s;
+
+            &:hover {
+                fill: shade-color($white, 20%);
+            }
+        }
+    }
+
+    .menu {
+        list-style-type: none;
+
+        li {
+            margin-bottom: 1rem;
+
+            .nav-link {
+                &:hover {
+                    color: $secondary;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.footer-copyright {
+    background-color: shade-color($primary, 20%);
+}

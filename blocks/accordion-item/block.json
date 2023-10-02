@@ -1,0 +1,16 @@
+{
+    "name": "acf/accordion-item",
+    "title": "Accordion Item",
+    "description": "An accordion item to go inside the accordion block.",
+    "category": "sigma-blocks",
+    "icon": "text",
+    "keywords": ["accordion", "item"],
+    "supports": {
+        "jsx": true
+    },
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "block-accordion-item.php"
+    },
+    "parent": ["accordion"]
+}

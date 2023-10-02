@@ -1,0 +1,29 @@
+div:not(.acf-block-preview) {
+    .shadowbox-block {
+        &:has(a) {
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+.shadowbox-block {
+    padding: 2rem;
+    box-shadow: 1px 5px 20px -6px rgb(97 96 96 / 25%);
+    transition: .2s;
+
+    a {
+        text-decoration: none;
+
+        &:after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+            content: "";
+        }
+    }
+}

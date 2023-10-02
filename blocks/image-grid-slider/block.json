@@ -1,0 +1,12 @@
+{
+    "name": "acf/image-grid-slider",
+    "title": "Image Grid slider",
+    "description": "A custom block to display images in a grid slider.",
+    "category": "sigma-blocks",
+    "icon": "grid-view",
+    "keywords": ["images", "logos", "slider", "grid"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "block-image-grid-slider.php"
+    }
+}

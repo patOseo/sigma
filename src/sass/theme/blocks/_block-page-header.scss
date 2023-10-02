@@ -1,0 +1,11 @@
+.block-page-header {
+    .page-header-bg {
+        background-size: cover;
+        background-position: center center;
+        min-height: 240px; 
+        
+        @include media-breakpoint-up(xl) {
+            min-height: 480px;
+        }
+    }
+}

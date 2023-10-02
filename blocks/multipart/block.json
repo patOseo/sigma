@@ -1,0 +1,15 @@
+{
+    "name": "acf/multipart",
+    "title": "Multiple Sections",
+    "description": "A custom block to display content in multiple sections with a nav.",
+    "category": "sigma-blocks",
+    "icon": "table-col-after",
+    "keywords": ["sections", "templates", "multipart", "multiple"],
+    "supports": {
+        "jsx": true
+    },
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block-multipart.php"
+    }
+}

@@ -1,3 +1,41 @@
+html {
+    scroll-padding-top: 4rem;
+}
+
 body {
     -webkit-font-smoothing: antialiased;
+
+    a {
+        transition: .2s;
+    }
+
+    .entry-content,
+    .wp-block-post-content {
+        p, ul {
+            line-height: 2;
+            -webkit-font-smoothing: initial;
+
+            strong {
+                font-weight: 900;
+            }
+
+            &:not(.has-text-color) {
+                strong {
+                    color: $secondary;
+                }
+            }
+        }
+
+        .wp-block-heading {
+            &:not(:first-child) {
+                margin-top: 3rem;
+            }
+            margin-bottom: 1rem;
+            
+        }
+    }
+}
+
+::selection {
+    background: tint-color($secondary, 20%);
 }

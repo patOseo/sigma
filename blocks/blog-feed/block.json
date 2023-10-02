@@ -1,0 +1,12 @@
+{
+    "name": "acf/blog-feed",
+    "title": "Blog Feed",
+    "description": "A custom block to display a blog feed.",
+    "category": "sigma-blocks",
+    "icon": "welcome-write-blog",
+    "keywords": ["blog", "feed", "posts"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "block-blog-feed.php"
+    }
+}

@@ -50,3 +50,6 @@ phpcs.xml
 dist/
 dist-product/
 **/img
+
+# Other custom files
+changes.txt

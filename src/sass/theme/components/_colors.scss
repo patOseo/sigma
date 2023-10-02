@@ -1,0 +1,33 @@
+$colors: (
+    "darkgrey": $darkgrey,
+    "grey": $grey,
+    "lightgrey": $lightgrey,
+    "lightestgrey": $lightestgrey,    
+);
+
+@for $i from 1 through length($colors) {
+  $name: nth(map-keys($backgrounds), $i);
+  $color: nth(map-values($backgrounds), $i);
+
+  .text-#{$name} {
+    color: $color;
+  }
+}
+
+.has-text-color {
+    a {
+        color: inherit !important;
+    }
+}
+
+.has-sigmablue-background-color {
+    &.has-white-color {
+        a:not(.button) {
+            color: $secondary !important;
+
+            &:hover {
+                color: $secondary !important;
+            }
+        }
+    }
+}

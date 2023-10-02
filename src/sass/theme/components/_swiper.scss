@@ -1,0 +1,14 @@
+.swiper-button-next,
+.swiper-button-prev {
+    transition: .2s;
+    &:after {
+        transition: color .2s;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+        &:after {
+            color: $darkergreen;
+        }
+    }
+}

@@ -2,6 +2,10 @@
     "$schema": "https://schemas.wp.org/trunk/theme.json",
     "version": 2,
     "settings": {
+        "spacing": {
+			"margin": true,
+			"padding": true
+		},
         "typography": {
             "fontFamilies": [
 				{
@@ -15,7 +19,8 @@
 					"name": "Open Sans"
 				}
 			],
-            "fontWeight": true
+            "fontWeight": true,
+            "lineHeight": true
         },
         "color": {
             "palette": [
@@ -35,30 +40,39 @@
                     "name": "SIGMA Green"
                 },
                 {
+                    "slug": "sigmadarkgreen",
+                    "color": "#9da013",
+                    "name": "SIGMA Darker Green"
+                },
+                {
                     "slug": "sigmablue",
                     "color": "#12355a",
                     "name": "SIGMA Blue"
                 },
                 {
                     "slug": "darkgrey",
-                    "color": "#797979",
+                    "color": "#353535",
                     "name": "Dark Grey"
                 },
                 {
                     "slug": "grey",
-                    "color": "#353535",
+                    "color": "#797979", 
                     "name": "Grey"
                 },
                 {
                     "slug": "lightgrey",
                     "color": "#C8C9C9",
                     "name": "Light Grey"
+                },
+                {
+                    "slug": "lightestgrey",
+                    "color": "#EFEFEF",
+                    "name": "Lightest Grey"
                 }
             ]
         },
         "layout": {
-            "contentSize": "1380px",
-            "wideSize": "1800px"
+            "contentSize": "1400px"
         }
     }
 }

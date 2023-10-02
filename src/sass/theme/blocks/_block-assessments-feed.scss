@@ -1,0 +1,22 @@
+.assessments-feed-block {
+    .assessments-feed-item-image {
+        height: 244px;
+    }
+
+    .assessments-category {
+        top: 15%;
+        padding: 10px 20px;
+        background-color: rgba( $primary, 0.75 );
+        z-index: 1;
+    }
+
+    .assessments-feed-item {
+        &:hover {
+            .btn {
+                border-color: $primary;
+                background-color: $primary;
+                color: $white;
+            }
+        }
+    }
+}

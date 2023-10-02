@@ -1,0 +1,21 @@
+{
+    "name": "acf/header",
+    "title": "Page Header",
+    "description": "A custom block to display a page header.",
+    "category": "sigma-blocks",
+    "icon": "cover-image",
+    "keywords": ["header", "banner", "h1"],
+    "supports": {
+        "jsx": true
+    },
+    "attributes": {
+        "align": {
+            "type": "string",
+            "default": "full"
+        }
+    },
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block-page-header.php"
+    }
+}

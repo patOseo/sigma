@@ -1,0 +1,15 @@
+{
+    "name": "acf/shadowbox",
+    "title": "Shadowbox",
+    "description": "A custom block to display a shadowbox.",
+    "category": "sigma-blocks",
+    "icon": "button",
+    "keywords": ["box", "shadowbox"],
+    "supports": {
+        "jsx": true
+    },
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block-shadowbox.php"
+    }
+}

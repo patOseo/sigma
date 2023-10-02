@@ -1,0 +1,12 @@
+{
+    "name": "acf/testimonials",
+    "title": "Testimonials",
+    "description": "A custom block to display a testimonial slider.",
+    "category": "sigma-blocks",
+    "icon": "format-chat",
+    "keywords": ["testimonials", "reviews", "slider"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "block-testimonials.php"
+    }
+}

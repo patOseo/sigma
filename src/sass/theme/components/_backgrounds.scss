@@ -1,0 +1,19 @@
+// For each background color, we generate a class that sets the background color
+
+$backgrounds: (
+    "darkgrey": $darkgrey,
+    "grey": $grey,
+    "lightgrey": $lightgrey,
+    "lightestgrey": $lightestgrey,    
+);
+
+@for $i from 1 through length($backgrounds) {
+  $name: nth(map-keys($backgrounds), $i);
+  $color: nth(map-values($backgrounds), $i);
+
+  .bg-#{$name} {
+    background-color: $color;
+  }
+}
+
+

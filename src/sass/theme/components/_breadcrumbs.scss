@@ -1,0 +1,12 @@
+.yoast-breadcrumbs {
+    margin-bottom: 2rem;
+    font-size: .85rem;
+
+    a {
+        color: $darkergreen;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+}

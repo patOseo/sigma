@@ -1,0 +1,40 @@
+.entry-content {
+    ul {
+        list-style: none;
+
+        &:not(.pagination) li {
+            position: relative;
+            &:before {
+                position: absolute;
+                left: -1rem;
+                top: 0.75rem;
+                content: "";
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 50%;
+                background-color: #b9be10;
+            }
+        }
+    }
+
+    .wp-block-table {
+        td {
+            mark {
+                position: relative;
+                margin-left: .5rem;
+    
+                &:before {
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    content: "";
+                    width: 0.5rem;
+                    height: 0.5rem;
+                    border-radius: 50%;
+                    background-color: #b9be10;
+                }
+            }
+        }
+    }
+}

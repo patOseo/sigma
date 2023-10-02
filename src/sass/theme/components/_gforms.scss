@@ -1,0 +1,36 @@
+.gform_required_legend {
+    display: none;
+}
+
+.gfield {
+    input, select, textarea {
+        border: 1px solid shade-color($lightestgrey, 5%);
+        border-radius: 4px;
+    }
+}
+
+.gform_button {
+    padding: .75rem 2rem !important;
+    border: 2px solid $primary !important;
+    border-radius: 2rem !important;
+    background-color: $primary !important;
+    color: $white !important;
+    transition: color .2s, background-color .2s;
+
+    &:hover {
+        background-color: shade-color($primary, 20%) !important;
+    }
+}
+
+.has-sigmablue-background-color {
+    .gform_button {
+        background-color: transparent !important;
+        color: $secondary !important;
+        border-color: $secondary !important;
+
+        &:hover {
+            background-color: $secondary !important;
+            color: $white !important;
+        }
+    }
+}

@@ -1,0 +1,73 @@
+.btn-lightestgrey {
+    border-color: $lightestgrey;
+    background-color: $lightestgrey;
+    color: $type;
+
+    &:hover {
+        border-color: shade-color($lightestgrey, 10%);
+        background-color: shade-color($lightestgrey, 10%);
+    }
+}
+
+.wp-block-button {
+    .wp-element-button {
+        text-decoration: none !important;
+        transition: color .2s, background-color .2s;
+    
+        &:not(.has-background) {
+            background-color: $primary;
+            color: $white;
+
+            &:hover {
+                background-color: $secondary;
+                color: $type;
+            }
+        }
+
+        &.has-lightestgrey-background-color,
+        &.has-lightgrey-background-color {
+            &:not(.has-text-color) {
+                color: $type !important;
+            }
+        }
+
+        &.has-lightestgrey-background-color {
+            &:hover {
+                background-color: shade-color($lightestgrey, 10%) !important;
+            }
+        }
+
+        &.has-lightgrey-background-color {
+            &:hover {
+                background-color: shade-color($lightgrey, 10%) !important;
+            }
+        }
+
+        &.has-grey-background-color {
+            &:not(.has-text-color) {
+                color: $white !important;
+            }
+            &:hover {
+                background-color: shade-color($grey, 10%) !important;
+            }
+        }
+
+        &.has-sigmablue-background-color {
+            &:not(.has-text-color) {
+                color: $white !important;
+            }
+            &:hover {
+                background-color: $secondary !important;
+            }
+        }
+    }
+
+    &.is-style-outline {
+        .has-sigmagreen-color {
+            &:hover {
+                color: $white !important;
+                background: $secondary !important;
+            }
+        }
+    }
+}

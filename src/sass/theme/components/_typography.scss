@@ -1,3 +1,36 @@
+// Families
+.ff-opensans {
+    font-family: $font-family-sans-serif;
+}
+
+.ff-montserrat {
+    font-family: $headings-font-family;
+}
+
+// Sizes
+
 .fs-sm {
     font-size: .9rem;
+}
+
+.fs-xs {
+    font-size: .75rem;
+}
+
+.fs-xxs {
+    font-size: .65rem;
+}
+
+// Weights
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-boldest {
+    font-weight: 900;
+}
+
+// Shadow
+.text-shadow {
+    text-shadow: 0 0 12px rgba(0,0,0,1);
 }

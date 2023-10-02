@@ -2,20 +2,66 @@
 // To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
 // Just copy a variable from src/sass/assets/bootstrap5/_variables.scss, paste it here and edit the value.
 
-
 $blue: #12355a;
 $green: #babf10;
+$darkergreen: #9da013;
 $darkgrey: #353535;
 $grey: #797979;
 $lightgrey: #C8C9C9;
+$lightestgrey: #EFEFEF;
 $primary: $blue;
 $secondary: $green;
 $type: $darkgrey;
 
 
+$enable-negative-margins: true;
+
+// scss-docs-start grid-breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 540px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;
+// scss-docs-end grid-breakpoints
+
+
+// scss-docs-start spacer-variables-maps
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 1.875,
+  6: $spacer * 3,
+) !default;
+// scss-docs-end spacer-variables-maps
+
+$border-widths: (
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px,
+  6: 6px,
+) !default;
+
+
 // TYPOGRAPHY
 $font-family-sans-serif: 'Open Sans', sans-serif;
 $headings-font-family: 'Montserrat', sans-serif;
+$headings-color: $primary;
+
+$font-weight-base: 300;
+
+$link-decoration: none;
+$link-hover-decoration: underline;
+$link-color: $secondary;
+$link-hover-color: $primary;
 
 /*
 $h1-font-size:                $font-size-base * 2.5 !default;
@@ -24,7 +70,17 @@ $h3-font-size:                $font-size-base * 1.75 !default;
 $h4-font-size:                $font-size-base * 1.5 !default;
 $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
-*/ 
+*/
+
+$display-font-sizes: (
+  1: 5rem,
+  2: 4.5rem,
+  3: 3.8rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem
+) !default;
+$display-font-weight: bold;
 
 // scss-docs-start container-max-widths
 $container-max-widths: (
@@ -35,3 +91,8 @@ $container-max-widths: (
   xxl: 1400px
 ) !default;
 // scss-docs-end container-max-widths
+
+$navbar-nav-link-padding-x: .65rem;
+
+// Tables
+$table-border-width: 0;

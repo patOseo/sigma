@@ -1,0 +1,13 @@
+.blog-feed-item {
+    .blog-feed-item-image {
+        height: 244px;
+    }
+    
+    &:hover {
+        .btn {
+            border-color: $primary;
+            background-color: $primary;
+            color: $white;
+        }
+    }
+}

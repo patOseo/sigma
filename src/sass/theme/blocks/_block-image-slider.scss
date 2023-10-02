@@ -1,0 +1,11 @@
+.image-grid-slider-block {
+    .swiper-slide {
+        img {
+            max-width: 210px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            max-height: 130px;
+            object-fit: contain;
+        }
+    }
+}
