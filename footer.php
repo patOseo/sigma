@@ -28,7 +28,7 @@ $phone2 = get_field('phone_2', 'option');
 
 		<footer class="site-footer" id="colophon">
 
-			<div class="row mx-0 gx-5">
+			<div class="row mx-0 gx-xl-5">
 				<div class="col-12 col-lg-4">
 					<img class="mb-6" src="<?php echo get_stylesheet_directory_uri(); ?>/images/sigma-logo-footer.png" alt="Sigma Assessment Systems Logo" width="300" height="62">
 					<p class="fs-xs lh-lg">SIGMA Assessment Systems provides talent assessments, succession planning, executive coaching, and consulting services to help organizations hire and develop strong performers.</p>
