@@ -4,6 +4,99 @@ function sigma_register_columns_patterns() {
 	$site_url = get_site_url();
 
 	register_block_pattern(
+	    'sigma/shadowboxes',
+	    array(
+	        'title'       => __( 'Shadowboxes', 'sigma' ),
+	        'categories'  => array('columns-layouts', 'sigma-all'),
+	        'content'     => '<!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|80"}}},"layout":{"type":"constrained"}} -->
+			<div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--80)"><!-- wp:columns {"className":"row gx-0"} -->
+			<div class="wp-block-columns row gx-0"><!-- wp:column {"className":"col"} -->
+			<div class="wp-block-column col"><!-- wp:acf/shadowbox {"name":"acf/shadowbox","mode":"preview"} -->
+			<!-- wp:heading {"textAlign":"center","style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|40"}}},"textColor":"sigmablue"} -->
+			<h2 class="wp-block-heading has-text-align-center has-sigmablue-color has-text-color" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--40)"><a href="' . $site_url . '/succession/succession-planning-launch-series/">Succession Planning Launch</a></h2>
+			<!-- /wp:heading -->
+			
+			<!-- wp:heading {"textAlign":"center","level":3,"style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|40"}}},"textColor":"sigmadarkgreen"} -->
+			<h3 class="wp-block-heading has-text-align-center has-sigmadarkgreen-color has-text-color" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--40)">Need a succession plan today?</h3>
+			<!-- /wp:heading -->
+			
+			<!-- wp:paragraph {"align":"center"} -->
+			<p class="has-text-align-center">Get started immediately with SIGMA’s Succession Planning Launch. Our consultants deliver a detailed succession plan for each of your leaders in just six weeks.</p>
+			<!-- /wp:paragraph -->
+			
+			<!-- wp:image {"align":"center","id":19206,"width":150,"sizeSlug":"full","linkDestination":"none"} -->
+			<figure class="wp-block-image aligncenter size-full is-resized"><img src="' . $site_url . '/wp-content/uploads/2023/04/Launch-Icon-1.png" alt="" class="wp-image-19206" style="width:150px" width="150"/></figure>
+			<!-- /wp:image -->
+			<!-- /wp:acf/shadowbox --></div>
+			<!-- /wp:column -->
+			
+			<!-- wp:column {"className":"col"} -->
+			<div class="wp-block-column col"><!-- wp:acf/shadowbox {"name":"acf/shadowbox","mode":"preview"} -->
+			<!-- wp:heading {"textAlign":"center","style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|40"}}},"textColor":"sigmablue"} -->
+			<h2 class="wp-block-heading has-text-align-center has-sigmablue-color has-text-color" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--40)"><a href="' . $site_url . '/customized-consulting-2/">Custom Consulting</a></h2>
+			<!-- /wp:heading -->
+			
+			<!-- wp:heading {"textAlign":"center","level":3,"style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|40"}}},"textColor":"sigmadarkgreen"} -->
+			<h3 class="wp-block-heading has-text-align-center has-sigmadarkgreen-color has-text-color" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--40)">Seeking a customized solution?</h3>
+			<!-- /wp:heading -->
+			
+			<!-- wp:paragraph {"align":"center"} -->
+			<p class="has-text-align-center">Our consultants work with you to create a project plan that meets the unique needs of your organization. Engagements can be as large or as small as needed.</p>
+			<!-- /wp:paragraph -->
+			
+			<!-- wp:image {"align":"center","id":19205,"width":150,"sizeSlug":"full","linkDestination":"none"} -->
+			<figure class="wp-block-image aligncenter size-full is-resized"><img src="' . $site_url . '/wp-content/uploads/2023/04/Customized-Consulting-1.png" alt="" class="wp-image-19205" style="width:150px" width="150"/></figure>
+			<!-- /wp:image -->
+			<!-- /wp:acf/shadowbox --></div>
+			<!-- /wp:column --></div>
+			<!-- /wp:columns -->
+			
+			<!-- wp:columns {"className":"row gx-0"} -->
+			<div class="wp-block-columns row gx-0"><!-- wp:column {"className":"col"} -->
+			<div class="wp-block-column col"><!-- wp:acf/shadowbox {"name":"acf/shadowbox","mode":"preview"} -->
+			<!-- wp:heading {"textAlign":"center","style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|40"}}},"textColor":"sigmablue"} -->
+			<h2 class="wp-block-heading has-text-align-center has-sigmablue-color has-text-color" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--40)"><a href="' . $site_url . '/succession-planning-template/">Succession Planning Guide</a></h2>
+			<!-- /wp:heading -->
+			
+			<!-- wp:heading {"textAlign":"center","level":3,"style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|40"}}},"textColor":"sigmadarkgreen"} -->
+			<h3 class="wp-block-heading has-text-align-center has-sigmadarkgreen-color has-text-color" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--40)">Want to try it on your own?</h3>
+			<!-- /wp:heading -->
+			
+			<!-- wp:paragraph {"align":"center"} -->
+			<p class="has-text-align-center">Download SIGMA’s Succession Planning Guide. This guide combines all our best tools and templates in one powerful resource.</p>
+			<!-- /wp:paragraph -->
+			
+			<!-- wp:image {"align":"center","id":19207,"width":150,"sizeSlug":"full","linkDestination":"none"} -->
+			<figure class="wp-block-image aligncenter size-full is-resized"><img src="' . $site_url . '/wp-content/uploads/2023/04/SP-Guide-Icon-1.png" alt="" class="wp-image-19207" style="width:150px" width="150"/></figure>
+			<!-- /wp:image -->
+			<!-- /wp:acf/shadowbox --></div>
+			<!-- /wp:column -->
+			
+			<!-- wp:column {"className":"col"} -->
+			<div class="wp-block-column col"><!-- wp:acf/shadowbox {"name":"acf/shadowbox","mode":"preview"} -->
+			<!-- wp:heading {"textAlign":"center","style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|40"}}},"textColor":"sigmablue"} -->
+			<h2 class="wp-block-heading has-text-align-center has-sigmablue-color has-text-color" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--40)"><a href="' . $site_url . '/succession-planning-certification-workshop/">Succession Planning Training</a></h2>
+			<!-- /wp:heading -->
+			
+			<!-- wp:heading {"textAlign":"center","level":3,"style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|40"}}},"textColor":"sigmadarkgreen"} -->
+			<h3 class="wp-block-heading has-text-align-center has-sigmadarkgreen-color has-text-color" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--40)">Interested in learning the fundamentals?</h3>
+			<!-- /wp:heading -->
+			
+			<!-- wp:paragraph {"align":"center"} -->
+			<p class="has-text-align-center">Complete SIGMA’s online, self-guided training. These five modules will give you a comprehensive introduction to the succession planning process.</p>
+			<!-- /wp:paragraph -->
+			
+			<!-- wp:image {"align":"center","id":19208,"width":150,"sizeSlug":"full","linkDestination":"none"} -->
+			<figure class="wp-block-image aligncenter size-full is-resized"><img src="' . $site_url . '/wp-content/uploads/2023/04/SP-Training-Icon-1.png" alt="" class="wp-image-19208" style="width:150px" width="150"/></figure>
+			<!-- /wp:image -->
+			<!-- /wp:acf/shadowbox --></div>
+			<!-- /wp:column --></div>
+			<!-- /wp:columns --></div>
+			<!-- /wp:group -->',
+	    )
+	);
+
+	register_block_pattern(
 	    'sigma/rounded-img-w-text',
 	    array(
 	        'title'       => __( 'Rounded image with large text', 'sigma' ),
@@ -191,7 +284,7 @@ function sigma_register_columns_patterns() {
 	    'sigma/timeline',
 	    array(
 	        'title'       => __( 'Timeline', 'sigma' ),
-	        'categories'  => array('columns-layouts', 'components', 'sigma-all'),
+	        'categories'  => array('columns-layouts', 'blue', 'components', 'sigma-all'),
 	        'content'     => '<!-- wp:group {"align":"full","backgroundColor":"sigmablue","textColor":"white","className":"blue-section-with-heading position-relative my-6 pt-6 pb-3 border-6 border-top border-bottom border-secondary","layout":{"type":"constrained"}} -->
 			<div class="wp-block-group alignfull blue-section-with-heading position-relative my-6 pt-6 pb-3 border-6 border-top border-bottom border-secondary has-white-color has-sigmablue-background-color has-text-color has-background"><!-- wp:heading {"level":3,"backgroundColor":"sigmagreen","className":"blue-section-title position-absolute top-0 start-50 translate-middle px-5 py-2 text-white text-center rounded-pill"} -->
 			<h3 class="wp-block-heading blue-section-title position-absolute top-0 start-50 translate-middle px-5 py-2 text-white text-center rounded-pill has-sigmagreen-background-color has-background">Types of Assessments</h3>
@@ -215,7 +308,7 @@ function sigma_register_columns_patterns() {
 	    'sigma/blue-section-w-heading',
 	    array(
 	        'title'       => __( 'Blue Section with Heading', 'sigma' ),
-	        'categories'  => array('columns-layouts', 'sigma-all'),
+	        'categories'  => array('columns-layouts', 'blue', 'sigma-all'),
 	        'content'     => '<!-- wp:group {"align":"full","backgroundColor":"sigmablue","textColor":"white","className":"blue-section-with-heading position-relative py-6 border-6 border-top border-bottom border-secondary","layout":{"type":"constrained"}} -->
 			<div class="wp-block-group alignfull blue-section-with-heading position-relative py-6 border-6 border-top border-bottom border-secondary has-white-color has-sigmablue-background-color has-text-color has-background"><!-- wp:heading {"level":3,"backgroundColor":"sigmagreen","className":"blue-section-title position-absolute top-0 start-50 translate-middle px-5 py-2 text-white text-center rounded-pill"} -->
 			<h3 class="wp-block-heading blue-section-title position-absolute top-0 start-50 translate-middle px-5 py-2 text-white text-center rounded-pill has-sigmagreen-background-color has-background">The Section Title</h3>
@@ -229,6 +322,39 @@ function sigma_register_columns_patterns() {
 			<!-- wp:paragraph -->
 			<p>Mi ipsum faucibus vitae aliquet nec ullamcorper sit. Tempus iaculis urna id volutpat. Sed libero enim sed faucibus turpis in eu. Dictum non consectetur a erat nam. Ipsum consequat nisl vel pretium lectus quam id leo in. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Urna id volutpat lacus laoreet non curabitur gravida. Fermentum iaculis eu non diam phasellus vestibulum. Magna ac placerat vestibulum lectus mauris ultrices eros in cursus. Dignissim convallis aenean et tortor at. Pellentesque adipiscing commodo elit at imperdiet dui accumsan sit. Placerat in egestas erat imperdiet sed euismod nisi porta lorem. Purus sit amet volutpat consequat mauris nunc congue nisi vitae. Urna id volutpat lacus laoreet non curabitur gravida arcu.</p>
 			<!-- /wp:paragraph --></div>
+			<!-- /wp:group --></div>
+			<!-- /wp:group -->',
+	    )
+	);
+
+	register_block_pattern(
+	    'sigma/blue-section-w-form',
+	    array(
+	        'title'       => __( 'Blue Section with Form', 'sigma' ),
+	        'categories'  => array('blue', 'sigma-all'),
+	        'content'     => '<!-- wp:group {"align":"full","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"sigmablue","textColor":"white","className":"blue-section-with-heading position-relative py-6 border-6 border-top border-bottom border-secondary","layout":{"type":"constrained"}} -->
+			<div class="wp-block-group alignfull blue-section-with-heading position-relative py-6 border-6 border-top border-bottom border-secondary has-white-color has-sigmablue-background-color has-text-color has-background" style="margin-top:0;margin-bottom:0"><!-- wp:heading {"level":3,"backgroundColor":"sigmagreen","className":"blue-section-title position-absolute top-0 start-50 translate-middle px-5 py-2 text-white text-center rounded-pill"} -->
+			<h3 class="wp-block-heading blue-section-title position-absolute top-0 start-50 translate-middle px-5 py-2 text-white text-center rounded-pill has-sigmagreen-background-color has-background">Ready to Start Succession Planning?</h3>
+			<!-- /wp:heading -->
+			
+			<!-- wp:group {"className":"py-5","layout":{"type":"constrained"}} -->
+			<div class="wp-block-group py-5"><!-- wp:columns -->
+			<div class="wp-block-columns"><!-- wp:column {"width":"20%"} -->
+			<div class="wp-block-column" style="flex-basis:20%"></div>
+			<!-- /wp:column -->
+			
+			<!-- wp:column {"width":"60%"} -->
+			<div class="wp-block-column" style="flex-basis:60%"><!-- wp:paragraph {"align":"center"} -->
+			<p class="has-text-align-center">SIGMA’s Succession Planning Launch is a great place to begin. In just two sessions, we will work with your leadership team to build a succinct succession plan that meets the needs of your organization.</p>
+			<!-- /wp:paragraph -->
+			
+			<!-- wp:gravityforms/form {"formId":"9","title":false,"description":false,"inputPrimaryColor":"#204ce5"} /--></div>
+			<!-- /wp:column -->
+			
+			<!-- wp:column {"width":"20%"} -->
+			<div class="wp-block-column" style="flex-basis:20%"></div>
+			<!-- /wp:column --></div>
+			<!-- /wp:columns --></div>
 			<!-- /wp:group --></div>
 			<!-- /wp:group -->',
 	    )

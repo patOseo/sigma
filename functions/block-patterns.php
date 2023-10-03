@@ -30,6 +30,9 @@ function sigma_block_pattern_categories() {
 	register_block_pattern_category( 'ctas', array(
 		'label' => __( 'Call-to-actions', 'sigma' )
 	) );
+	register_block_pattern_category( 'blue', array(
+		'label' => __( 'Blue Section', 'sigma' )
+	) );
 }
 add_action( 'init', 'sigma_block_pattern_categories' );
 
