@@ -28,7 +28,7 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 
 	<!-- ******************* The Navbar Area ******************* -->
 	<div class="mobile-top-bar d-xl-none py-2 bg-primary fs-sm fw-500 text-center text-white">
-		<div class="row">
+		<div class="row mx-0 gx-0">
 			<div class="col-6">
 				<p class="mb-0">London, ON:<br><a class="text-secondary" href="tel:<?php the_field('phone_1', 'option'); ?>"><?php the_field('phone_1', 'option'); ?></a></p>
 			</div>
