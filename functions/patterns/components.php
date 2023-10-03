@@ -3,17 +3,11 @@
 // Register patterns
 function sigma_register_components_patterns() {
 	register_block_pattern(
-	    'sigma/team-members',
+	    'sigma/testimonials',
 	    array(
-	        'title'       => __( 'Team Members', 'sigma' ),
+	        'title'       => __( 'Testimonials', 'sigma' ),
 	        'categories'  => array('components', 'sigma-all'),
-	        'content'     => '<!-- wp:group {"layout":{"type":"constrained"}} -->
-			<div class="wp-block-group"><!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|70"}}},"textColor":"sigmadarkgreen"} -->
-			<h3 class="wp-block-heading has-sigmadarkgreen-color has-text-color" style="margin-bottom:var(--wp--preset--spacing--70)">Meet our Team</h3>
-			<!-- /wp:heading -->
-			
-			<!-- wp:acf/team-members {"name":"acf/team-members","data":{"field_65161beb9bf6c":"1","field_651628d5b8f15":"1"},"mode":"preview"} /--></div>
-			<!-- /wp:group -->',
+	        'content'     => '<!-- wp:acf/testimonials {"name":"acf/testimonials","data":{"field_65134e44c90d3":["520"],"field_6516d91816be6":"3"},"mode":"preview"} /-->',
 	    )
 	);
 	register_block_pattern(
@@ -50,7 +44,7 @@ function sigma_register_components_patterns() {
 			<h4 class="wp-block-heading has-text-align-center has-darkgrey-color has-text-color">Trusted by over 8,500 organizations across North America, including:</h4>
 			<!-- /wp:heading -->
 			
-			<!-- wp:acf/image-grid-slider {"name":"acf/image-grid-slider","data":{"num_rows":"2","_num_rows":"field_6515904055562","num_cols":"4","_num_cols":"field_65158ee348ca4","images":["19979","19977","19975","19972","19978","19976","19974","19971","19970","19968","16942","16940","19969","19967","16941","16939","16938","16936","16934","16932","16937","16935","16933","16931","16930","16928","16926","16924","16929","16927","16925","16923","16922","16920","16918","16916","16921","16919","16917","16915"],"_images":"field_65158cac1d30f"},"mode":"edit"} /--></div>
+			<!-- wp:acf/image-grid-slider {"name":"acf/image-grid-slider","data":{"num_rows":"2","_num_rows":"field_6515904055562","num_cols":"4","_num_cols":"field_65158ee348ca4","images":["19979","19977","19975","19972","19978","19976","19974","19971","19970","19968","16942","16940","19969","19967","16941","16939","16938","16936","16934","16932","16937","16935","16933","16931","16930","16928","16926","16924","16929","16927","16925","16923","16922","16920","16918","16916","16921","16919","16917","16915"],"_images":"field_65158cac1d30f"},"mode":"preview"} /--></div>
 			<!-- /wp:group -->',
 	    )
 	);

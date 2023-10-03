@@ -24,6 +24,9 @@ function sigma_block_pattern_categories() {
 	register_block_pattern_category( 'components', array(
 		'label' => __( 'Components', 'sigma' )
 	) );
+	register_block_pattern_category( 'team', array(
+		'label' => __( 'Team', 'sigma' )
+	) );
 	register_block_pattern_category( 'ctas', array(
 		'label' => __( 'Call-to-actions', 'sigma' )
 	) );
@@ -35,3 +38,4 @@ add_action( 'init', 'sigma_block_pattern_categories' );
 @include_once('patterns/components.php');
 @include_once('patterns/columns-layouts.php');
 @include_once('patterns/call-to-actions.php');
+@include_once('patterns/team.php');
