@@ -39,7 +39,7 @@ if(get_field('image')) {
 			
 				<div class="entry-content pt-5">
 					<div class="fs-xs">
-                    <p id="breadcrumbs"><span><span><a href="/">Home</a></span> » <span><span><a href="<?php echo get_permalink($team_page_id); ?>">The SIGMA Team</a></span> » <span class="breadcrumb_last" aria-current="page">Ted Jackson</span></span></p>
+                    <p id="breadcrumbs"><span><span><a href="/">Home</a></span> » <span><span><a href="<?php echo get_permalink($team_page_id); ?>">The SIGMA Team</a></span> » <span class="breadcrumb_last" aria-current="page"><?php the_title(); ?></span></span></p>
                     </div>
                     
                     <div class="row gx-6 py-5">

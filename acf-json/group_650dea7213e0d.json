@@ -41,8 +41,41 @@
             "ui": 1
         },
         {
+            "key": "field_651b79f8bbb3c",
+            "label": "Select Blogs:",
+            "name": "selection_type",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_650dea72b3a65",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "manually": "Manually",
+                "by_cat": "By Category"
+            },
+            "default_value": "manually",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "horizontal",
+            "save_other_choice": 0
+        },
+        {
             "key": "field_650deb6eb3a66",
-            "label": "Select Blogs",
+            "label": "Select Blogs Manually",
             "name": "select_blogs",
             "aria-label": "",
             "type": "relationship",
@@ -54,6 +87,11 @@
                         "field": "field_650dea72b3a65",
                         "operator": "!=",
                         "value": "1"
+                    },
+                    {
+                        "field": "field_651b79f8bbb3c",
+                        "operator": "==",
+                        "value": "manually"
                     }
                 ]
             ],
@@ -79,6 +117,44 @@
             "elements": "",
             "bidirectional": 0,
             "bidirectional_target": []
+        },
+        {
+            "key": "field_651b7a5cbbb3f",
+            "label": "Select Category",
+            "name": "select_category",
+            "aria-label": "",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_650dea72b3a65",
+                        "operator": "!=",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_651b79f8bbb3c",
+                        "operator": "==",
+                        "value": "by_cat"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "category",
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "field_type": "multi_select",
+            "allow_null": 0,
+            "bidirectional": 0,
+            "multiple": 0,
+            "bidirectional_target": []
         }
     ],
     "location": [
@@ -99,5 +175,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1695997657
+    "modified": 1696299712
 }

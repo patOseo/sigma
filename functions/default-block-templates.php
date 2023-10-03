@@ -1,7 +1,7 @@
 <?php
 
 function sigma_add_default_block_template_to_post_type($args, $post_type) {
-    if ('page' === $post_type) {
+    if ('page' === $post_type || 'post' === $post_type) {
         $args['template'] = array(
             array(
                 'acf/header',

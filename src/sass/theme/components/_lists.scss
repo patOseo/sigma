@@ -17,6 +17,16 @@
         }
     }
 
+    ol {
+        li {
+            &::marker {
+                color: $secondary;
+                font-weight: bold;
+                font-family: $headings-font-family;
+            }
+        }
+    }
+
     .wp-block-table {
         td {
             mark {

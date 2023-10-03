@@ -3,6 +3,13 @@
         background-size: cover;
         background-position: center center;
         min-height: 240px; 
+
+        @include media-breakpoint-down(md) {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+        
         
         @include media-breakpoint-up(xl) {
             min-height: 480px;

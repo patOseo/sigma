@@ -1,6 +1,8 @@
 <?php
 // Register patterns
 function sigma_register_columns_patterns() {
+	$site_url = get_site_url();
+
 	register_block_pattern(
 	    'sigma/rounded-img-w-text',
 	    array(
@@ -10,7 +12,7 @@ function sigma_register_columns_patterns() {
 			<div class="wp-block-group mb-6"><!-- wp:columns {"verticalAlignment":null,"className":"px-lg-6"} -->
 			<div class="wp-block-columns px-lg-6"><!-- wp:column {"verticalAlignment":"center","width":"33.33%"} -->
 			<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:33.33%"><!-- wp:image {"align":"center","id":4070,"sizeSlug":"medium","linkDestination":"none","className":"image-border is-style-rounded"} -->
-			<figure class="wp-block-image aligncenter size-medium image-border is-style-rounded"><img src="http://sigma.local/wp-content/uploads/2018/08/No_3_400x400-1-300x300.jpg" alt="Company Icon" class="wp-image-4070"/></figure>
+			<figure class="wp-block-image aligncenter size-medium image-border is-style-rounded"><img src="' . $site_url . '/wp-content/uploads/2018/08/No_3_400x400-1-300x300.jpg" alt="Company Icon" class="wp-image-4070"/></figure>
 			<!-- /wp:image --></div>
 			<!-- /wp:column -->
 			
@@ -43,7 +45,7 @@ function sigma_register_columns_patterns() {
 			
 			<!-- wp:column {"width":"90%"} -->
 			<div class="wp-block-column" style="flex-basis:90%"><!-- wp:image {"align":"center"} -->
-			<figure class="wp-block-image aligncenter"><img src="https://www.sigmaassessmentsystems.com/wp-content/uploads/2018/08/Assessments-150x150.png" alt="Assessments – SIGMA Assessment Systems" title="Assessments"/></figure>
+			<figure class="wp-block-image aligncenter"><img src="' . $site_url . '/wp-content/uploads/2018/08/Assessments-150x150.png" alt="Assessments – SIGMA Assessment Systems" title="Assessments"/></figure>
 			<!-- /wp:image -->
 			
 			<!-- wp:paragraph {"align":"center","fontSize":"medium"} -->
@@ -88,7 +90,7 @@ function sigma_register_columns_patterns() {
 			<div class="wp-block-column"><!-- wp:group {"className":"mb-4 pt-4 home-box home-box-line-right home-box-line-bottom position-relative text-center","layout":{"type":"constrained"}} -->
 			<div class="wp-block-group mb-4 pt-4 home-box home-box-line-right home-box-line-bottom position-relative text-center"><!-- wp:group {"className":"position-relative px-lg-6","layout":{"type":"constrained"}} -->
 			<div class="wp-block-group position-relative px-lg-6"><!-- wp:image {"align":"center","id":582,"sizeSlug":"thumbnail","linkDestination":"none"} -->
-			<figure class="wp-block-image aligncenter size-thumbnail"><img src="http://sigma.local/wp-content/uploads/2018/08/Assessments-1-150x150.png" alt="Assessments – SIGMA Assessment Systems" class="wp-image-582"/></figure>
+			<figure class="wp-block-image aligncenter size-thumbnail"><img src="' . $site_url . '/wp-content/uploads/2018/08/Assessments-1-150x150.png" alt="Assessments – SIGMA Assessment Systems" class="wp-image-582"/></figure>
 			<!-- /wp:image -->
 			
 			<!-- wp:heading {"className":"mt-0"} -->
@@ -101,7 +103,7 @@ function sigma_register_columns_patterns() {
 			
 			<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
 			<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"white","textColor":"sigmagreen","className":"is-style-outline","fontSize":"small"} -->
-			<div class="wp-block-button has-custom-font-size is-style-outline has-small-font-size"><a class="wp-block-button__link has-sigmagreen-color has-white-background-color has-text-color has-background wp-element-button" href="http://sigma.local/assessments/">LEARN MORE</a></div>
+			<div class="wp-block-button has-custom-font-size is-style-outline has-small-font-size"><a class="wp-block-button__link has-sigmagreen-color has-white-background-color has-text-color has-background wp-element-button" href="/assessments/">LEARN MORE</a></div>
 			<!-- /wp:button --></div>
 			<!-- /wp:buttons --></div>
 			<!-- /wp:group --></div>
@@ -112,7 +114,7 @@ function sigma_register_columns_patterns() {
 			<div class="wp-block-column"><!-- wp:group {"className":"mb-4 pt-4 home-box home-box-line-bottom text-center position-relative","layout":{"type":"constrained"}} -->
 			<div class="wp-block-group mb-4 pt-4 home-box home-box-line-bottom text-center position-relative"><!-- wp:group {"className":"position-relative px-lg-6","layout":{"type":"constrained"}} -->
 			<div class="wp-block-group position-relative px-lg-6"><!-- wp:image {"align":"center","id":583,"sizeSlug":"thumbnail","linkDestination":"none"} -->
-			<figure class="wp-block-image aligncenter size-thumbnail"><img src="http://sigma.local/wp-content/uploads/2018/08/Coaching-1-150x150.png" alt="Leadership coaching – SIGMA Assessment Systems" class="wp-image-583"/></figure>
+			<figure class="wp-block-image aligncenter size-thumbnail"><img src="' . $site_url . '/wp-content/uploads/2018/08/Coaching-1-150x150.png" alt="Leadership coaching – SIGMA Assessment Systems" class="wp-image-583"/></figure>
 			<!-- /wp:image -->
 			
 			<!-- wp:heading {"className":"mt-0"} -->
@@ -125,7 +127,7 @@ function sigma_register_columns_patterns() {
 			
 			<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
 			<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"white","textColor":"sigmagreen","className":"is-style-outline","fontSize":"small"} -->
-			<div class="wp-block-button has-custom-font-size is-style-outline has-small-font-size"><a class="wp-block-button__link has-sigmagreen-color has-white-background-color has-text-color has-background wp-element-button" href="http://sigma.local/coaching-and-training/">LEARN MORE</a></div>
+			<div class="wp-block-button has-custom-font-size is-style-outline has-small-font-size"><a class="wp-block-button__link has-sigmagreen-color has-white-background-color has-text-color has-background wp-element-button" href="/coaching-and-training/">LEARN MORE</a></div>
 			<!-- /wp:button --></div>
 			<!-- /wp:buttons --></div>
 			<!-- /wp:group --></div>
@@ -138,7 +140,7 @@ function sigma_register_columns_patterns() {
 			<div class="wp-block-column"><!-- wp:group {"className":"mb-4 pt-4 home-box home-box-line-right text-center position-relative","layout":{"type":"constrained"}} -->
 			<div class="wp-block-group mb-4 pt-4 home-box home-box-line-right text-center position-relative"><!-- wp:group {"className":"position-relative px-lg-6","layout":{"type":"constrained"}} -->
 			<div class="wp-block-group position-relative px-lg-6"><!-- wp:image {"align":"center","id":584,"sizeSlug":"thumbnail","linkDestination":"none"} -->
-			<figure class="wp-block-image aligncenter size-thumbnail"><img src="http://sigma.local/wp-content/uploads/2018/08/Succession-1-150x150.png" alt="Succession Planning – SIGMA Assessment Systems" class="wp-image-584"/></figure>
+			<figure class="wp-block-image aligncenter size-thumbnail"><img src="' . $site_url . '/wp-content/uploads/2018/08/Succession-1-150x150.png" alt="Succession Planning – SIGMA Assessment Systems" class="wp-image-584"/></figure>
 			<!-- /wp:image -->
 			
 			<!-- wp:heading {"className":"mt-0"} -->
@@ -151,7 +153,7 @@ function sigma_register_columns_patterns() {
 			
 			<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
 			<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"white","textColor":"sigmagreen","className":"is-style-outline","fontSize":"small"} -->
-			<div class="wp-block-button has-custom-font-size is-style-outline has-small-font-size"><a class="wp-block-button__link has-sigmagreen-color has-white-background-color has-text-color has-background wp-element-button" href="http://sigma.local/succession/">LEARN MORE</a></div>
+			<div class="wp-block-button has-custom-font-size is-style-outline has-small-font-size"><a class="wp-block-button__link has-sigmagreen-color has-white-background-color has-text-color has-background wp-element-button" href="/succession/">LEARN MORE</a></div>
 			<!-- /wp:button --></div>
 			<!-- /wp:buttons --></div>
 			<!-- /wp:group --></div>
@@ -162,7 +164,7 @@ function sigma_register_columns_patterns() {
 			<div class="wp-block-column"><!-- wp:group {"className":"mb-4 pt-4 home-box text-center position-relative","layout":{"type":"constrained"}} -->
 			<div class="wp-block-group mb-4 pt-4 home-box text-center position-relative"><!-- wp:group {"className":"position-relative px-lg-6","layout":{"type":"constrained"}} -->
 			<div class="wp-block-group position-relative px-lg-6"><!-- wp:image {"align":"center","id":585,"sizeSlug":"thumbnail","linkDestination":"none"} -->
-			<figure class="wp-block-image aligncenter size-thumbnail"><img src="http://sigma.local/wp-content/uploads/2018/08/Consulting-1-150x150.png" alt="Leadership Consulting Services – SIGMA Assessment Systems" class="wp-image-585"/></figure>
+			<figure class="wp-block-image aligncenter size-thumbnail"><img src="' . $site_url . '/wp-content/uploads/2018/08/Consulting-1-150x150.png" alt="Leadership Consulting Services – SIGMA Assessment Systems" class="wp-image-585"/></figure>
 			<!-- /wp:image -->
 			
 			<!-- wp:heading {"className":"mt-0"} -->
@@ -175,7 +177,7 @@ function sigma_register_columns_patterns() {
 			
 			<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
 			<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"white","textColor":"sigmagreen","className":"is-style-outline","fontSize":"small"} -->
-			<div class="wp-block-button has-custom-font-size is-style-outline has-small-font-size"><a class="wp-block-button__link has-sigmagreen-color has-white-background-color has-text-color has-background wp-element-button" href="http://sigma.local/consulting/">LEARN MORE</a></div>
+			<div class="wp-block-button has-custom-font-size is-style-outline has-small-font-size"><a class="wp-block-button__link has-sigmagreen-color has-white-background-color has-text-color has-background wp-element-button" href="/consulting/">LEARN MORE</a></div>
 			<!-- /wp:button --></div>
 			<!-- /wp:buttons --></div>
 			<!-- /wp:group --></div>
@@ -200,7 +202,7 @@ function sigma_register_columns_patterns() {
 			<p class="has-text-align-center">Our tests are available online and are simple and intuitive for candidates to use.<br>Choose a category below to see a list of options to meet your needs.</p>
 			<!-- /wp:paragraph -->
 			
-			<!-- wp:acf/timeline {"name":"acf/timeline","data":{"heading_html_tag":"h3","_heading_html_tag":"field_63efeeea7b237","timeline_content_0_icon":617,"_timeline_content_0_icon":"field_6510df0bbfb16","timeline_content_0_link":{"title":"Leadership Assessments","url":"http://sigma.local/assessments-category/leadership-development/","target":""},"_timeline_content_0_link":"field_6512f859ac8e6","timeline_content_0_heading":" LEADERSHIP ASSESSMENTS","_timeline_content_0_heading":"field_63efeec77b235","timeline_content_0_content":"Identify strengths and developmental opportunities in your leaders.","_timeline_content_0_content":"field_63efeecd7b236","timeline_content_1_icon":618,"_timeline_content_1_icon":"field_6510df0bbfb16","timeline_content_1_link":{"title":"Pre-Employment Assessments","url":"http://sigma.local/assessments-category/employee-selection/","target":""},"_timeline_content_1_link":"field_6512f859ac8e6","timeline_content_1_heading":"PRE-EMPLOYMENT ASSESSMENTS","_timeline_content_1_heading":"field_63efeec77b235","timeline_content_1_content":"Identify the most qualified candidates for the job.","_timeline_content_1_content":"field_63efeecd7b236","timeline_content_2_icon":619,"_timeline_content_2_icon":"field_6510df0bbfb16","timeline_content_2_link":{"title":"Career Assessments","url":"http://sigma.local/assessments-category/career-tests/","target":""},"_timeline_content_2_link":"field_6512f859ac8e6","timeline_content_2_heading":"CAREER ASSESSMENTS","_timeline_content_2_heading":"field_63efeec77b235","timeline_content_2_content":"Find a role that fits your interests, skills, and career goals. ","_timeline_content_2_content":"field_63efeecd7b236","timeline_content_3_icon":620,"_timeline_content_3_icon":"field_6510df0bbfb16","timeline_content_3_link":{"title":"Personality Tests","url":"http://sigma.local/assessments-category/personality-tests/","target":""},"_timeline_content_3_link":"field_6512f859ac8e6","timeline_content_3_heading":"PERSONALITY TESTS","_timeline_content_3_heading":"field_63efeec77b235","timeline_content_3_content":"Uncover science-based insights on personality for hiring, development, coaching, and counselling purposes. ","_timeline_content_3_content":"field_63efeecd7b236","timeline_content_4_icon":621,"_timeline_content_4_icon":"field_6510df0bbfb16","timeline_content_4_link":{"title":"Clinical/Counseling Assessments","url":"http://sigma.local/assessments-category/clinical-counseling-assessments/","target":""},"_timeline_content_4_link":"field_6512f859ac8e6","timeline_content_4_heading":"CLINICAL/COUNSELING ASSESSMENTS","_timeline_content_4_heading":"field_63efeec77b235","timeline_content_4_content":"Evidence-based evaluations designed to help you meet your clients’ needs.","_timeline_content_4_content":"field_63efeecd7b236","timeline_content":5,"_timeline_content":"field_63efeea87b234"},"mode":"preview","className":"mb-6"} /-->
+			<!-- wp:acf/timeline {"name":"acf/timeline","data":{"heading_html_tag":"h3","_heading_html_tag":"field_63efeeea7b237","timeline_content_0_icon":617,"_timeline_content_0_icon":"field_6510df0bbfb16","timeline_content_0_link":{"title":"Leadership Assessments","url":"/assessments-category/leadership-development/","target":""},"_timeline_content_0_link":"field_6512f859ac8e6","timeline_content_0_heading":" LEADERSHIP ASSESSMENTS","_timeline_content_0_heading":"field_63efeec77b235","timeline_content_0_content":"Identify strengths and developmental opportunities in your leaders.","_timeline_content_0_content":"field_63efeecd7b236","timeline_content_1_icon":618,"_timeline_content_1_icon":"field_6510df0bbfb16","timeline_content_1_link":{"title":"Pre-Employment Assessments","url":"/assessments-category/employee-selection/","target":""},"_timeline_content_1_link":"field_6512f859ac8e6","timeline_content_1_heading":"PRE-EMPLOYMENT ASSESSMENTS","_timeline_content_1_heading":"field_63efeec77b235","timeline_content_1_content":"Identify the most qualified candidates for the job.","_timeline_content_1_content":"field_63efeecd7b236","timeline_content_2_icon":619,"_timeline_content_2_icon":"field_6510df0bbfb16","timeline_content_2_link":{"title":"Career Assessments","url":"/assessments-category/career-tests/","target":""},"_timeline_content_2_link":"field_6512f859ac8e6","timeline_content_2_heading":"CAREER ASSESSMENTS","_timeline_content_2_heading":"field_63efeec77b235","timeline_content_2_content":"Find a role that fits your interests, skills, and career goals. ","_timeline_content_2_content":"field_63efeecd7b236","timeline_content_3_icon":620,"_timeline_content_3_icon":"field_6510df0bbfb16","timeline_content_3_link":{"title":"Personality Tests","url":"/assessments-category/personality-tests/","target":""},"_timeline_content_3_link":"field_6512f859ac8e6","timeline_content_3_heading":"PERSONALITY TESTS","_timeline_content_3_heading":"field_63efeec77b235","timeline_content_3_content":"Uncover science-based insights on personality for hiring, development, coaching, and counselling purposes. ","_timeline_content_3_content":"field_63efeecd7b236","timeline_content_4_icon":621,"_timeline_content_4_icon":"field_6510df0bbfb16","timeline_content_4_link":{"title":"Clinical/Counseling Assessments","url":"/assessments-category/clinical-counseling-assessments/","target":""},"_timeline_content_4_link":"field_6512f859ac8e6","timeline_content_4_heading":"CLINICAL/COUNSELING ASSESSMENTS","_timeline_content_4_heading":"field_63efeec77b235","timeline_content_4_content":"Evidence-based evaluations designed to help you meet your clients’ needs.","_timeline_content_4_content":"field_63efeecd7b236","timeline_content":5,"_timeline_content":"field_63efeea87b234"},"mode":"preview","className":"mb-6"} /-->
 			
 			<!-- wp:paragraph {"align":"center"} -->
 			<p class="has-text-align-center">Need help deciding which assessments to use?&nbsp;<a href="https://www.sigmaassessmentsystems.com/contact/">Ask our experts</a>&nbsp;for advice.</p>

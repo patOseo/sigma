@@ -1,0 +1,12 @@
+{
+    "name": "acf/stages",
+    "title": "Stages",
+    "description": "A custom block to display the SIGMA stages.",
+    "category": "sigma-blocks",
+    "icon": "screenoptions",
+    "keywords": ["stages"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block-stages.php"
+    }
+}

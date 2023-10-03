@@ -63,11 +63,35 @@
     }
 
     &.is-style-outline {
-        .has-sigmagreen-color {
-            &:hover {
-                color: $white !important;
-                background: $secondary !important;
+        .wp-element-button {
+            border-width: 1px !important;
+
+            &.has-sigmagreen-color,
+            &.has-sigmadarkgreen-color {
+                &:hover {
+                    color: $white !important;
+                    background: $secondary !important;
+                }
             }
         }
+        
+
+        .has-sigmablue-background-color {
+            &:hover {
+                background: $lightestgrey !important;
+            }
+        }
+    }
+}
+
+.btn.template-download-btn {
+    padding: 0.5rem 1rem;
+    background: $primary;
+    color: #fff;
+    border-radius: 2rem;
+    transition: .2s;
+
+    &:hover {
+        background-color: $secondary;
     }
 }

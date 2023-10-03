@@ -32,7 +32,7 @@ $phone2 = get_field('phone_2', 'option');
 				<div class="col-12 col-lg-4">
 					<img class="mb-6" src="<?php echo get_stylesheet_directory_uri(); ?>/images/sigma-logo-footer.png" alt="Sigma Assessment Systems Logo" width="300" height="62">
 					<p class="fs-xs lh-lg">SIGMA Assessment Systems provides talent assessments, succession planning, executive coaching, and consulting services to help organizations hire and develop strong performers.</p>
-					<p class="fs-xs"><a class="link-light text-decoration-none" href="<?php echo get_field('privacy_policy_page', 'option'); ?>">Privacy Policy</a> <span class="mx-2">|</span> <a class="link-light text-decoration-none" href="<?php echo get_field('terms_of_use_page', 'option'); ?>">Terms & Conditions of Use</a></p>
+					<p class="fs-xs mb-5 mb-xl-0"><a class="link-light text-decoration-none" href="<?php echo get_field('privacy_policy_page', 'option'); ?>">Privacy Policy</a> <span class="mx-2">|</span> <a class="link-light text-decoration-none" href="<?php echo get_field('terms_of_use_page', 'option'); ?>">Terms & Conditions of Use</a></p>
 				</div>
 				<div class="col-6 col-lg-2">
 					<h3 class="h5 mb-3 text-uppercase fw-bold text-white">Solutions</h3>

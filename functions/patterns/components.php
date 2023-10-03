@@ -33,6 +33,14 @@ function sigma_register_components_patterns() {
 	    )
 	);
 	register_block_pattern(
+	    'sigma/stages',
+	    array(
+	        'title'       => __( 'Stages', 'sigma' ),
+	        'categories'  => array('components', 'sigma-all'),
+	        'content'     => '<!-- wp:acf/stages {"name":"acf/stages","data":{"current_stage":"i","_current_stage":"field_651b99ce47e97"},"mode":"preview"} /-->',
+	    )
+	);
+	register_block_pattern(
 	    'sigma/client-logo-slider',
 	    array(
 	        'title'       => __( 'Clients Logo Slider', 'sigma' ),

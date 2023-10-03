@@ -1,0 +1,9 @@
+.stages-block {
+    .stages-img {
+        @include media-breakpoint-down(md) {
+            transform: rotate(90deg);
+            margin-top: -60px;
+            margin-bottom: -60px;
+        }
+    }
+}

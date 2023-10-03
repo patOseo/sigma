@@ -1,11 +1,10 @@
 <?php 
 
 $show_all = get_field('show_all_blogs');
-
-if($show_all): 
-
 $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 
+if($show_all): 
+    
 $args = array(
     'post_type' => 'post',
     'post_status' => 'publish',
@@ -16,6 +15,38 @@ $args = array(
 );
 
 else: 
+    $selection_type = get_field('selection_type');
+
+    if($selection_type == 'manually') {
+        $selected_blogs = get_field('select_blogs');
+
+        $args = array(
+            'post_type' => 'post',
+            'post_status' => 'publish',
+            'posts_per_page' => 12,
+            'orderby' => 'post__in',
+            'order' => 'ASC',
+            'post__in' => $selected_blogs,
+            'paged' => $paged
+        );
+    } elseif($selection_type == 'by_cat') {
+        $blog_cats = get_field('select_category');
+
+        $args = array(
+            'post_type' => 'post',
+            'post_status' => 'publish',
+            'posts_per_page' => 12,
+            'paged' => $paged,
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'category',
+                    'field' => 'term_id',
+                    'terms' => $blog_cats
+                )
+            )
+        );
+    }
+    
 
 endif;
 
@@ -25,6 +56,7 @@ $blogs = new WP_Query($args);
 
 <?php if($blogs->have_posts()): ?>
     <div class="blog-feed-block my-6">
+        <?php if($show_all): // Only show blog categories if "show all blogs" is selected ?>
         <div class="blog-categories mb-4">
             <?php 
             $blog_cats = get_terms(array(
@@ -44,6 +76,7 @@ $blogs = new WP_Query($args);
             
             <?php endforeach; ?>
         </div>
+        <?php endif; ?>
         <div class="row">
             <?php while($blogs->have_posts()): $blogs->the_post(); ?>
                 <div class="col-md-4 mb-4">

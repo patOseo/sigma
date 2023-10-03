@@ -103,7 +103,7 @@ function sigma_register_templates_patterns() {
             
             <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
             <div class="wp-block-buttons"><!-- wp:button {"className":"mt-3"} -->
-            <div class="wp-block-button mt-3"><a class="wp-block-button__link wp-element-button" href="http://sigma.local/contact/">CONTACT US</a></div>
+            <div class="wp-block-button mt-3"><a class="wp-block-button__link wp-element-button" href="/contact/">CONTACT US</a></div>
             <!-- /wp:button --></div>
             <!-- /wp:buttons --></div>
             <!-- /wp:column -->
@@ -271,11 +271,132 @@ function sigma_register_templates_patterns() {
             <!-- /wp:button -->
             
             <!-- wp:button {"width":100} -->
-            <div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link wp-element-button" href="http://sigma.local/contact/">CONTACT US</a></div>
+            <div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link wp-element-button" href="/contact/">CONTACT US</a></div>
             <!-- /wp:button --></div>
             <!-- /wp:buttons --></div>
             <!-- /wp:column --></div>
             <!-- /wp:columns -->',
+	    )
+	);
+
+    register_block_pattern(
+	    'sigma/assessment-internal',
+	    array(
+	        'title'       => __( 'Internal Assessment Page', 'sigma' ),
+	        'categories'  => array('templates'),
+	        'content'     => '<!-- wp:paragraph -->
+            <p>The LCIA-360 is designed&nbsp;to provide you with feedback on your leadership character based on multiple perspectives. The report provides information on your self-ratings on a series of character dimensions and elements, and compares&nbsp;these&nbsp;with ratings collected from leaders, colleagues, direct/indirect reports, and other relevant raters. The&nbsp;LCIA–360&nbsp;report also contains specific comments from your raters designed to facilitate your character development.</p>
+            <!-- /wp:paragraph -->
+            
+            <!-- wp:columns {"style":{"spacing":{"margin":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}}} -->
+            <div class="wp-block-columns" style="margin-top:var(--wp--preset--spacing--60);margin-bottom:var(--wp--preset--spacing--60)"><!-- wp:column {"width":"25%"} -->
+            <div class="wp-block-column" style="flex-basis:25%"><!-- wp:image {"sizeSlug":"large"} -->
+            <figure class="wp-block-image size-large"><img src="https://www.sigmaassessmentsystems.com/wp-content/uploads/2022/08/LCIA-360-Report.jpg" alt=""/></figure>
+            <!-- /wp:image --></div>
+            <!-- /wp:column -->
+            
+            <!-- wp:column {"verticalAlignment":"center","width":"75%"} -->
+            <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:75%"><!-- wp:heading {"textColor":"sigmadarkgreen"} -->
+            <h2 class="wp-block-heading has-sigmadarkgreen-color has-text-color"><strong>LCIA-360 Report Contents</strong></h2>
+            <!-- /wp:heading -->
+            
+            <!-- wp:list -->
+            <ul><!-- wp:list-item -->
+            <li>Page 3 – Nature &amp; Importance of Leadership Character&nbsp;</li>
+            <!-- /wp:list-item -->
+            
+            <!-- wp:list-item -->
+            <li>Page 6 – LCIA Results Overview&nbsp;</li>
+            <!-- /wp:list-item -->
+            
+            <!-- wp:list-item -->
+            <li>Page 10 – Detailed Character Profile&nbsp;</li>
+            <!-- /wp:list-item --></ul>
+            <!-- /wp:list -->
+            
+            <!-- wp:buttons -->
+            <div class="wp-block-buttons"><!-- wp:button -->
+            <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://www.sigmaassessmentsystems.com/wp-content/uploads/2015/02/LCIA-360-Sample-Report.pdf" target="_blank" rel="noreferrer noopener">Download</a></div>
+            <!-- /wp:button --></div>
+            <!-- /wp:buttons --></div>
+            <!-- /wp:column --></div>
+            <!-- /wp:columns -->
+            
+            <!-- wp:acf/accordion {"name":"acf/accordion","data":{"advanced_mode":"1","_advanced_mode":"field_65171a64c3ce4"},"mode":"preview"} -->
+            <!-- wp:acf/accordion-item {"name":"acf/accordion-item","data":{"item_title":"Nature \u0026 Importance of Leadership Character","_item_title":"field_65171fbb08aae","title_html_tag":"h4","_title_html_tag":"field_65171ff7c29c1","icon":"","_icon":"field_65172f70ac10f"},"mode":"preview"} -->
+            <!-- wp:columns -->
+            <div class="wp-block-columns"><!-- wp:column {"width":"33.33%"} -->
+            <div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:image {"sizeSlug":"large"} -->
+            <figure class="wp-block-image size-large"><img src="https://www.sigmaassessmentsystems.com/wp-content/uploads/2022/08/Leadership-Character.jpg" alt=""/></figure>
+            <!-- /wp:image --></div>
+            <!-- /wp:column -->
+            
+            <!-- wp:column {"width":"66.66%"} -->
+            <div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:paragraph -->
+            <p><br>This section provides information about the nature of leadership character, including its constituent dimensions and elements. This section also explains why character is essential for effective leadership and organizational performance.&nbsp;</p>
+            <!-- /wp:paragraph --></div>
+            <!-- /wp:column --></div>
+            <!-- /wp:columns -->
+            <!-- /wp:acf/accordion-item -->
+            
+            <!-- wp:acf/accordion-item {"name":"acf/accordion-item","data":{"item_title":"LCIA Results Overview","_item_title":"field_65171fbb08aae","title_html_tag":"h4","_title_html_tag":"field_65171ff7c29c1","icon":"","_icon":"field_65172f70ac10f"},"mode":"preview"} -->
+            <!-- wp:columns -->
+            <div class="wp-block-columns"><!-- wp:column {"width":"33.33%"} -->
+            <div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:image {"sizeSlug":"large"} -->
+            <figure class="wp-block-image size-large"><img src="https://www.sigmaassessmentsystems.com/wp-content/uploads/2022/08/ResultsOverview.jpg" alt=""/></figure>
+            <!-- /wp:image --></div>
+            <!-- /wp:column -->
+            
+            <!-- wp:column {"width":"66.66%"} -->
+            <div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:paragraph -->
+            <p>The Character Snapshot provides an overview of your results on each character dimension. The snapshot compares your own rating on each dimension with the average rating provided by all of your raters. Use this section to quickly identify both your strengths and areas for development.&nbsp;</p>
+            <!-- /wp:paragraph -->
+            
+            <!-- wp:paragraph -->
+            <p>The Character Summary summarizes your results on each element grouped according to its corresponding dimension. Your self assessment on each element&nbsp;is compared with your average rating. Use this information to dig deeper on dimensional scores and identify which&nbsp;elements that reflect strengths and which ones present opportunities for development.</p>
+            <!-- /wp:paragraph --></div>
+            <!-- /wp:column --></div>
+            <!-- /wp:columns -->
+            <!-- /wp:acf/accordion-item -->
+            
+            <!-- wp:acf/accordion-item {"name":"acf/accordion-item","data":{"item_title":"Detailed Character Profile","_item_title":"field_65171fbb08aae","title_html_tag":"h4","_title_html_tag":"field_65171ff7c29c1","icon":"","_icon":"field_65172f70ac10f"},"mode":"preview"} -->
+            <!-- wp:paragraph -->
+            <p>Keep in mind that character is formed through experience. Over time, the way we respond to these experiences becomes habitual, and those habits build character. Because of this, there are opportunities for character development available all the time in everyday life. In the LCIA-360 report, SIGMA offers developmental exercises you can use to begin developing your leader character today. However, there are also plenty of opportunities to begin developing character in other areas of life: work, home, friendships, etc. For example, reflecting about why you might be impatient, excessive, or careless in any of these areas provides the raw material for examining and developing your character in action.</p>
+            <!-- /wp:paragraph -->
+            
+            <!-- wp:paragraph -->
+            <p>Although the LCIA-360 report describes each dimension of character, your associated score, and how you can develop it, we continually reinforce the point that the dimensions support one another and are interdependent. Therefore, exercises to develop Courage, for example, also bring with them opportunities to develop the other dimensions since you need to exercise Judgment about what you are doing and perhaps exercise some Temperance and Accountability in the process.</p>
+            <!-- /wp:paragraph -->
+            <!-- /wp:acf/accordion-item -->
+            <!-- /wp:acf/accordion -->
+            
+            <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","bottom":"0"}}},"className":"py-6","layout":{"type":"constrained"}} -->
+            <div class="wp-block-group py-6" style="padding-top:0;padding-bottom:0"><!-- wp:columns {"style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}}} -->
+            <div class="wp-block-columns" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:column {"width":"15%"} -->
+            <div class="wp-block-column" style="flex-basis:15%"></div>
+            <!-- /wp:column -->
+            
+            <!-- wp:column {"width":"70%"} -->
+            <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"textAlign":"center","textColor":"sigmadarkgreen"} -->
+            <h2 class="wp-block-heading has-text-align-center has-sigmadarkgreen-color has-text-color"><strong>Get Practical Insights with the LCIA</strong></h2>
+            <!-- /wp:heading -->
+            
+            <!-- wp:paragraph {"align":"center"} -->
+            <p class="has-text-align-center">To gain access to a customized version of this report and more, order the LCIA online today or&nbsp;contact us to learn more&nbsp;about our&nbsp;<a href="https://www.sigmaassessmentsystems.com/assessments-category/leadership-development/" target="_blank" rel="noreferrer noopener">leadership development assessments</a>.&nbsp;</p>
+            <!-- /wp:paragraph -->
+            
+            <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+            <div class="wp-block-buttons"><!-- wp:button {"className":"mt-3"} -->
+            <div class="wp-block-button mt-3"><a class="wp-block-button__link wp-element-button" href="https://www.sigmaassessmentsystems.com/assessments/leadership-character-insight-assessment/">LCIA ASSESSMENT</a></div>
+            <!-- /wp:button --></div>
+            <!-- /wp:buttons --></div>
+            <!-- /wp:column -->
+            
+            <!-- wp:column {"width":"15%"} -->
+            <div class="wp-block-column" style="flex-basis:15%"></div>
+            <!-- /wp:column --></div>
+            <!-- /wp:columns --></div>
+            <!-- /wp:group -->',
 	    )
 	);
 }

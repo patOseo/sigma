@@ -11,7 +11,7 @@ body {
 
     .entry-content,
     .wp-block-post-content {
-        p, ul {
+        p, ul, ol, table {
             line-height: 2;
             -webkit-font-smoothing: initial;
 
@@ -19,11 +19,11 @@ body {
                 font-weight: 900;
             }
 
-            &:not(.has-text-color) {
-                strong {
-                    color: $secondary;
-                }
-            }
+            // &:not(.has-text-color) {
+            //     strong {
+            //         color: $secondary;
+            //     }
+            // }
         }
 
         .wp-block-heading {

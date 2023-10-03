@@ -1,0 +1,12 @@
+{
+    "name": "acf/resources-feed",
+    "title": "Resources Feed",
+    "description": "A custom block to display the resources feed.",
+    "category": "sigma-blocks",
+    "icon": "welcome-write-blog",
+    "keywords": ["resources", "feed"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block-resources-feed.php"
+    }
+}

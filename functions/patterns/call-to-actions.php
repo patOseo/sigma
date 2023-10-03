@@ -2,6 +2,7 @@
 
 // Register patterns
 function sigma_register_cta_patterns() {
+    $site_url = get_site_url();
 	register_block_pattern(
 	    'sigma/call-to-action',
 	    array(
@@ -62,7 +63,7 @@ function sigma_register_cta_patterns() {
             
             <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
             <div class="wp-block-buttons"><!-- wp:button {"className":"mt-3"} -->
-            <div class="wp-block-button mt-3"><a class="wp-block-button__link wp-element-button" href="http://sigma.local/contact/">CONTACT US</a></div>
+            <div class="wp-block-button mt-3"><a class="wp-block-button__link wp-element-button" href="/contact/">CONTACT US</a></div>
             <!-- /wp:button --></div>
             <!-- /wp:buttons --></div>
             <!-- /wp:column -->
@@ -89,7 +90,7 @@ function sigma_register_cta_patterns() {
             <div class="wp-block-column" style="flex-basis:80%"><!-- wp:columns -->
             <div class="wp-block-columns"><!-- wp:column {"width":"30%"} -->
             <div class="wp-block-column" style="flex-basis:30%"><!-- wp:image {"align":"center","id":661,"sizeSlug":"full","linkDestination":"none"} -->
-            <figure class="wp-block-image aligncenter size-full"><img src="http://sigma.local/wp-content/uploads/2018/08/glenPhoto-1.jpg" alt="consultant" class="wp-image-661"/></figure>
+            <figure class="wp-block-image aligncenter size-full"><img src="' . $site_url . '/wp-content/uploads/2018/08/glenPhoto-1.jpg" alt="consultant" class="wp-image-661"/></figure>
             <!-- /wp:image --></div>
             <!-- /wp:column -->
             
@@ -100,6 +101,55 @@ function sigma_register_cta_patterns() {
             
             <!-- wp:paragraph {"align":"left"} -->
             <p class="has-text-align-left">Would you like to learn more about SIGMA’s succession planning services? Talk to one of our experts and get started today. <a href="https://www.linkedin.com/in/gharrison/" target="_blank" rel="noreferrer noopener">Glen Harrison</a> is an organizational transformation consultant and succession planning expert. Over the course of his career, Glen has worked with one-third of the Fortune 500 list and with every level of government in Canada and the United States. Having worked with numerous clients to build robust succession plans from the ground up, Glen has extensive experience in the application of SIGMA’s products and services to help organizations realize their people potential.</p>
+            <!-- /wp:paragraph -->
+            
+            <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left"}} -->
+            <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"white","textColor":"sigmagreen","style":{"typography":{"fontStyle":"normal","fontWeight":"400"}},"className":"mt-3 is-style-outline"} -->
+            <div class="wp-block-button mt-3 is-style-outline" style="font-style:normal;font-weight:400"><a class="wp-block-button__link has-sigmagreen-color has-white-background-color has-text-color has-background wp-element-button" href="mailto:gharrison@sigmaassessmentsystems.com">Email Glen</a></div>
+            <!-- /wp:button -->
+            
+            <!-- wp:button {"backgroundColor":"white","textColor":"sigmagreen","style":{"typography":{"fontStyle":"normal","fontWeight":"400"}},"className":"mt-3 is-style-outline"} -->
+            <div class="wp-block-button mt-3 is-style-outline" style="font-style:normal;font-weight:400"><a class="wp-block-button__link has-sigmagreen-color has-white-background-color has-text-color has-background wp-element-button" href="https://meetings.hubspot.com/glen-harrison/sigma?__hstc=102999647.b91aceb936e3e3613b870ebbfb64831d.1683899028657.1695740915649.1695748815615.97&amp;__hssc=102999647.4.1695748815615&amp;__hsfp=2106842337" target="_blank" rel="noreferrer noopener">Schedule a Call</a></div>
+            <!-- /wp:button --></div>
+            <!-- /wp:buttons --></div>
+            <!-- /wp:column --></div>
+            <!-- /wp:columns --></div>
+            <!-- /wp:column -->
+            
+            <!-- wp:column {"width":"10%"} -->
+            <div class="wp-block-column" style="flex-basis:10%"></div>
+            <!-- /wp:column --></div>
+            <!-- /wp:columns --></div>
+            <!-- /wp:group -->',
+	    )
+	);
+
+    register_block_pattern(
+	    'sigma/cta-glen-expert',
+	    array(
+	        'title'       => __( 'Glen - Talk to an Expert', 'sigma' ),
+	        'categories'  => array('ctas', 'sigma-all'),
+	        'content'     => '<!-- wp:group {"className":"px-lg-6 py-6","layout":{"type":"constrained"}} -->
+            <div class="wp-block-group px-lg-6 py-6"><!-- wp:columns -->
+            <div class="wp-block-columns"><!-- wp:column {"width":"10%"} -->
+            <div class="wp-block-column" style="flex-basis:10%"></div>
+            <!-- /wp:column -->
+            
+            <!-- wp:column {"width":"80%"} -->
+            <div class="wp-block-column" style="flex-basis:80%"><!-- wp:columns -->
+            <div class="wp-block-columns"><!-- wp:column {"width":"30%"} -->
+            <div class="wp-block-column" style="flex-basis:30%"><!-- wp:image {"align":"center","id":661,"sizeSlug":"full","linkDestination":"none"} -->
+            <figure class="wp-block-image aligncenter size-full"><img src="' . $site_url . '/wp-content/uploads/2018/08/glenPhoto-1.jpg" alt="consultant" class="wp-image-661"/></figure>
+            <!-- /wp:image --></div>
+            <!-- /wp:column -->
+            
+            <!-- wp:column {"width":"70%"} -->
+            <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"textAlign":"left"} -->
+            <h2 class="wp-block-heading has-text-align-left"><strong>Talk to an Expert</strong></h2>
+            <!-- /wp:heading -->
+            
+            <!-- wp:paragraph {"align":"left"} -->
+            <p class="has-text-align-left">Glen Harrison is an organizational transformation consultant and succession planning expert. Over the course of his career, Glen has worked with one-third of the Fortune 500 list and with every level of government in Canada and the United States. Having worked with numerous clients to build robust succession plans from the ground up, Glen has extensive experience in the application of SIGMA’s products and services to help organizations realize their people potential. If you are interested in learning more about SIGMA’s succession planning services, send Glen an email or give him a call. He’d be pleased to chat with you.</p>
             <!-- /wp:paragraph -->
             
             <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left"}} -->

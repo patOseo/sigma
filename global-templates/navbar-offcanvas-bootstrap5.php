@@ -21,10 +21,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<div class="container">
 
-		<div class="col-lg-3 d-flex justify-content-center">
+		<div class="col-9 col-xl-3 d-flex">
 			<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop="url"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/sigma-logo.png" alt="SIGMA Assessment Systems Logo" width="320" height="66"></a>
 		</div>
-		<div class="col-lg-9">
+		<div class="col-3 col-xl-9 text-end">
 			<button
 				class="navbar-toggler"
 				type="button"
@@ -58,20 +58,24 @@ $container = get_theme_mod( 'understrap_container_type' );
 					></button>
 				</div><!-- .offcancas-header -->
 				<!-- The WordPress Menu goes here -->
-				<?php
-				wp_nav_menu(
-					array(
-						'theme_location'  => 'primary',
-						'container_class' => 'offcanvas-body',
-						'container_id'    => '',
-						'menu_class'      => 'navbar-nav justify-content-end flex-grow-1',
-						'fallback_cb'     => '',
-						'menu_id'         => 'main-menu',
-						'depth'           => 3,
-						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
-					)
-				);
-				?>
+				<div class="offcanvas-body justify-content-end">
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location'  => 'primary',
+							'container_class' => '',
+							'container_id'    => '',
+							'menu_class'      => 'navbar-nav justify-content-end flex-grow-1 text-start',
+							'fallback_cb'     => '',
+							'menu_id'         => 'main-menu',
+							'depth'           => 3,
+							'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+						)
+					);
+					?>
+					<div class="d-xl-none mt-5 px-3"><?php echo get_search_form(); ?></div>
+				</div>
+				
 			</div><!-- .offcanvas -->
 		</div>
 

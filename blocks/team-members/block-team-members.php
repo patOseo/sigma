@@ -33,7 +33,7 @@ $members = new WP_Query($args);
 <?php if($members->have_posts()): ?>
     <div class="row">
         <?php while($members->have_posts()): $members->the_post(); ?>
-            <div class="col-6 col-md-4">
+            <div class="col-<?php echo $show_bio ? '12' : '6'; ?> col-md-4">
                 <div class="team-member position-relative mb-4 mb-lg-6">
                     <div class="team-member-image text-center">
                         <?php

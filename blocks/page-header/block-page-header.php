@@ -50,3 +50,10 @@ $template = array(
         </div>
     </div>
 </div>
+
+<?php
+if(is_single() && get_post_type() == 'post'):
+    if ( function_exists('yoast_breadcrumb') ) {
+        yoast_breadcrumb( '<p class="yoast-breadcrumbs" id="breadcrumbs">','</p>' );
+    }
+endif;
