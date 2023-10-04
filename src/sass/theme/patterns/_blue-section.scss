@@ -13,5 +13,9 @@
                 color: inherit !important;
             }
         }
+
+        @include media-breakpoint-down(lg) {
+            width: 90%;
+        }
     }
 }

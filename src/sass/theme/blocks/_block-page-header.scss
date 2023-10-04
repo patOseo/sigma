@@ -9,7 +9,12 @@
                 font-size: 2rem;
             }
         }
-        
+
+        @include media-breakpoint-between(md, xxl) {
+            h1 {
+                font-size: 3.2rem;
+            }
+        }
         
         @include media-breakpoint-up(xl) {
             min-height: 480px;
