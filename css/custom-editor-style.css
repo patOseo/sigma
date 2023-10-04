@@ -13966,6 +13966,15 @@ body .wp-block-post-content .wp-block-heading:not(:first-child) {
   color: #fff;
 }
 
+.current-cat {
+  background-color: #12355a;
+  color: #fff;
+}
+.current-cat:hover {
+  background-color: #12355a;
+  color: #fff;
+}
+
 .assessments-feed-block .assessments-feed-item-image {
   height: 244px;
 }

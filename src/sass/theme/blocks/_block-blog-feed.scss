@@ -11,3 +11,13 @@
         }
     }
 }
+
+.current-cat {
+    background-color: $primary;
+    color: $white;
+
+    &:hover {
+        background-color: $primary;
+        color: $white;
+    }
+}

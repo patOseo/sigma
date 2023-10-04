@@ -55,7 +55,7 @@ $query = new WP_Query($args);
 ?>
 <div class="blog-feed-block my-6">
     <?php if($show_all): // Only show blog categories if "show all blogs" is selected ?>
-        <div class="blog-categories mb-5">
+        <div class="blog-categories text-center mb-5">
             <?php 
             $blog_cats = get_terms(array(
                 'taxonomy' => 'category',
@@ -64,7 +64,7 @@ $query = new WP_Query($args);
                 'order' => 'ASC'
             ));
             ?>
-            <a class="category-link active btn btn-lightestgrey btn-primary btn-lg mb-2 px-3 py-2 fw-light fs-sm rounded-pill" data-cat="all" href="/blog-posts/">All</a>
+            <a class="category-link btn btn-lightestgrey current-cat btn-lg mb-2 px-3 py-2 fw-light fs-sm rounded-pill" data-cat="all" href="/blog-posts/">All</a>
             <?php foreach($blog_cats as $blog_cat): if($blog_cat->slug == 'uncategorized') { continue; }
                 $cat_link = get_term_link($blog_cat->term_id);
                 $cat_name = $blog_cat->name;

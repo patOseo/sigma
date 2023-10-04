@@ -6814,8 +6814,8 @@
 	    });
 	  }
 	  $('.category-link').click(function () {
-	    $('.category-link').removeClass('active btn-primary');
-	    $(this).addClass('active btn-primary');
+	    $('.category-link').removeClass('current-cat');
+	    $(this).addClass('current-cat');
 	  });
 	  $('.category-link').click(filterBlogs);
 
