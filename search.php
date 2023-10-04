@@ -53,11 +53,13 @@ $post_types = array(
 
 					<?php foreach($post_types as $post_type): ?>
 						<?php 
+						$searchTerm = $_GET['s'];
+						$sanitizeSearch = sanitize_text_field($searchTerm);
 						$args = array(  
 							'post_status' 		=> 'publish',
 							'post_type' 		=> $post_type['name'],
 							'posts_per_page'	=> 9,
-							's'					=> $_GET['s'],
+							's'					=> $sanitizeSearch,
 							'orderby'			=> 'relevance',
 							'order'				=> 'DESC'
 						);

@@ -102,3 +102,4 @@ add_action( 'customize_controls_enqueue_scripts', 'understrap_child_customize_co
 @require_once('functions/breadcrumbs.php');
 @require_once('functions/default-block-templates.php');
 @require_once('functions/block-patterns.php');
+@require_once('functions/ajax-filtering-blogs.php');

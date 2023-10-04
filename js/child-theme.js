@@ -6789,6 +6789,47 @@
 	      $('.search-overlay').removeClass('in-view');
 	    }
 	  });
+
+	  // Blog Filtering
+	  var currentPage = 1;
+	  function filterBlogs(e) {
+	    e.preventDefault();
+	    var cat = $(this).data('cat');
+	    $.ajax({
+	      url: '/wp-admin/admin-ajax.php',
+	      type: 'POST',
+	      data: {
+	        action: 'filter_blogs',
+	        page: currentPage,
+	        category: cat
+	      },
+	      beforeSend: function () {
+	        $('#blogFeed').removeClass('fade-in');
+	        $('#blogFeed').html('<div class="my-6 py-6 text-center"><div class="my-lg-6 spinner-grow text-primary text-center mx-auto" role="status"><span class="visually-hidden">Loading...</span></div></div>');
+	      },
+	      success: function (response) {
+	        $('#blogFeed').html(response);
+	        $('#blogFeed').addClass('fade-in');
+	      }
+	    });
+	  }
+	  $('.category-link').click(function () {
+	    $('.category-link').removeClass('active btn-primary');
+	    $(this).addClass('active btn-primary');
+	  });
+	  $('.category-link').click(filterBlogs);
+
+	  // AJAX Pagination handling
+	  $(document).on('click', '.blog-feed-block .pagination a', function (e) {
+	    e.preventDefault();
+	    $(this).attr('href');
+	    currentPage = $(this).attr('data-page'); // Update the page number from pagination links
+	    // Scroll to top of Resource list
+	    $('html, body').animate({
+	      scrollTop: $('#blogFeed').offset().top - 200
+	    }, 200);
+	    filterBlogs();
+	  });
 	});
 
 	exports.Alert = alert;

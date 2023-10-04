@@ -13821,6 +13821,19 @@ body .wp-block-post-content .wp-block-heading:not(:first-child) {
   text-align: center;
 }
 
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .assessment-header {
   min-height: 240px;
   background-position: center center;
