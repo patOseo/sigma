@@ -4,13 +4,24 @@
         background-position: center center;
         min-height: 240px; 
 
-        @include media-breakpoint-down(md) {
+        h1 {
+            font-size: 1.8rem;
+        }
+
+        @include media-breakpoint-up(sm) {
             h1 {
                 font-size: 2rem;
             }
         }
+        
+        @include media-breakpoint-up(md) {
+            min-height: 320px;
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
 
-        @include media-breakpoint-between(md, xxl) {
+        @include media-breakpoint-up(lg) {
             h1 {
                 font-size: 3.2rem;
             }
@@ -18,6 +29,12 @@
         
         @include media-breakpoint-up(xl) {
             min-height: 480px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            h1 {
+                font-size: 3.8rem;
+            }
         }
     }
 }
