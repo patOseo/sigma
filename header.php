@@ -25,7 +25,7 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 <body <?php body_class(); ?> <?php understrap_body_attributes(); ?>>
 <?php do_action( 'wp_body_open' ); ?>
 <div class="site" id="page">
-
+<?php get_template_part('global-templates/search-overlay'); ?>
 	<!-- ******************* The Navbar Area ******************* -->
 	<div class="mobile-top-bar d-xl-none py-2 bg-primary fs-sm fw-500 text-center text-white">
 		<div class="row mx-0 gx-0">

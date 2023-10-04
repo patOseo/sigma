@@ -26,4 +26,15 @@ jQuery(function($) {
     $('#main-nav .menu-item .dropdown-trigger').click(function() { // Toggles the dropdown
         $(this).siblings('.dropdown-menu').toggleClass('show');
     });
+
+    // Search Overlay
+    $('.search-button').click(function() {
+        $('.search-overlay').toggleClass('in-view');
+        $('.search-overlay .search-field').focus();
+    });
+    $('.search-close').click(function() {
+        if($('.search-overlay').hasClass('in-view')) {
+            $('.search-overlay').removeClass('in-view');
+        }
+    });
 });

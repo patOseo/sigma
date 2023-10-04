@@ -57,7 +57,7 @@ $blogs = new WP_Query($args);
 <?php if($blogs->have_posts()): ?>
     <div class="blog-feed-block my-6">
         <?php if($show_all): // Only show blog categories if "show all blogs" is selected ?>
-        <div class="blog-categories mb-4">
+        <div class="blog-categories mb-5">
             <?php 
             $blog_cats = get_terms(array(
                 'taxonomy' => 'category',
@@ -79,7 +79,7 @@ $blogs = new WP_Query($args);
         <?php endif; ?>
         <div class="row">
             <?php while($blogs->have_posts()): $blogs->the_post(); ?>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-6">
                     <div class="blog-feed-item position-relative">
                         <div class="blog-feed-item-image mb-3 position-relative overflow-hidden">
                             <?php echo wp_get_attachment_image(get_post_thumbnail_id(), 'post-thumbnail'); ?>

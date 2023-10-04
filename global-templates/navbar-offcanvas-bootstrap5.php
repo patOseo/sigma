@@ -46,7 +46,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<?php endwhile; ?>
 				</div>
 			<?php endif; ?>
-			<?php include(get_stylesheet_directory() . '/images/icons/icon-search.svg'); ?>
+			<div class="search-button d-inline"><?php include(get_stylesheet_directory() . '/images/icons/icon-search.svg'); ?></div>
 			</div>
 			<div class="offcanvas offcanvas-end bg-primary" tabindex="-1" id="navbarNavOffcanvas">
 				<div class="offcanvas-header justify-content-end">
