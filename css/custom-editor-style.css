@@ -13497,6 +13497,9 @@ body .wp-block-post-content .wp-block-heading:not(:first-child) {
 .search-overlay.in-view {
   top: 0;
 }
+.search-overlay .search-field {
+  color: #fff;
+}
 
 .search-result .search-result-image {
   height: 244px;

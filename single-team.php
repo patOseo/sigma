@@ -68,6 +68,7 @@ if(get_field('image')) {
 
 <?php
 // Include the schema generator for assessment pages
-@include_once('schema/schema-assessments.php'); 
+@include_once('schema/schema-team.php'); 
+
 
 get_footer();
