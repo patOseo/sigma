@@ -49,10 +49,8 @@ jQuery(function($) {
 
     // Blog Filtering
     var currentPage = 1;
-    function filterBlogs(e) {
-        e.preventDefault();
-        
-        var cat = $(this).data('cat');
+    function filterBlogs() {
+        var cat = $('.category-link.current-cat').data('cat');
         $.ajax({
             url: '/wp-admin/admin-ajax.php',
             type: 'POST',
@@ -73,20 +71,22 @@ jQuery(function($) {
         });
     }
 
-    $('.category-link').click(function(){
+    $('.category-link').click(function(e){
+        e.preventDefault();
+        currentPage = 1;
         $('.category-link').removeClass('current-cat');
         $(this).addClass('current-cat');
     });
-    $('.category-link').click(filterBlogs);
+    $('.category-link').on('click', filterBlogs);
 
     // AJAX Pagination handling
     $(document).on('click', '.blog-feed-block .pagination a', function(e) {
         e.preventDefault();
         var href = $(this).attr('href');
         currentPage = $(this).attr('data-page'); // Update the page number from pagination links
-        // Scroll to top of Resource list
+        // Scroll to top of Blog list
         $('html, body').animate({
-            scrollTop: $('#blogFeed').offset().top - 200
+            scrollTop: $('.blog-feed-block').offset().top - 200
         }, 200);
         filterBlogs();
     });

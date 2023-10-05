@@ -18,14 +18,20 @@
         ?>
     </div>
     <div class="pagination-container mt-5">
-        <?php 
+    <?php
+        $blogs_page = get_permalink(get_page_by_path('blog-posts'));
+
         $pagination_args = array(
             'total' => $query->max_num_pages,
+            'base' => $blogs_page . '%_%',
             'prev_text' => '&#60;',
             'next_text' => '&#62;',
         );
-            
+        if(isset($_POST['page'])) {
+            $page = $_POST['page'];
+            $pagination_args['current'] = $page;
+        }
+        understrap_pagination( $pagination_args, 'pagination fw-bold' ); 
         ?>
-        <?php understrap_pagination($pagination_args); ?>
     </div>
 <?php endif; wp_reset_postdata();
