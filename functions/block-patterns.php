@@ -33,6 +33,9 @@ function sigma_block_pattern_categories() {
 	register_block_pattern_category( 'blue', array(
 		'label' => __( 'Blue Section', 'sigma' )
 	) );
+	register_block_pattern_category( 'hubspot', array(
+		'label' => __( 'HubSpot Forms', 'sigma' )
+	) );
 }
 add_action( 'init', 'sigma_block_pattern_categories' );
 
@@ -42,3 +45,4 @@ add_action( 'init', 'sigma_block_pattern_categories' );
 @include_once('patterns/columns-layouts.php');
 @include_once('patterns/call-to-actions.php');
 @include_once('patterns/team.php');
+@include_once('patterns/hubspot.php');
