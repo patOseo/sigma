@@ -17198,6 +17198,9 @@ div:not(.acf-block-preview) .shadowbox-block:has(a):hover {
     width: 90%;
   }
 }
+.blue-section-with-heading .hs-richtext {
+  color: #fff;
+}
 
 @media (min-width: 768px) {
   .home-boxes .home-box.home-box-line-right:before {
