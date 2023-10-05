@@ -13838,6 +13838,10 @@ body .wp-block-post-content .wp-block-heading:not(:first-child) {
     opacity: 1;
   }
 }
+.hs-form-iframe {
+  padding-bottom: 1rem;
+}
+
 .assessment-header {
   min-height: 240px;
   background-position: center center;
