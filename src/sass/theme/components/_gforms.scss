@@ -9,7 +9,9 @@
     }
 }
 
-.gform_button {
+.gform_button,
+.gform_next_button,
+.gform_previous_button {
     padding: .75rem 2rem !important;
     border: 2px solid $primary !important;
     border-radius: 2rem !important;

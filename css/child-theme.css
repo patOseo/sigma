@@ -16532,7 +16532,9 @@ body .wp-block-post-content .wp-block-heading:not(:first-child) {
   border-radius: 4px;
 }
 
-.gform_button {
+.gform_button,
+.gform_next_button,
+.gform_previous_button {
   padding: 0.75rem 2rem !important;
   border: 2px solid #12355a !important;
   border-radius: 2rem !important;
@@ -16540,7 +16542,9 @@ body .wp-block-post-content .wp-block-heading:not(:first-child) {
   color: #fff !important;
   transition: color 0.2s, background-color 0.2s;
 }
-.gform_button:hover {
+.gform_button:hover,
+.gform_next_button:hover,
+.gform_previous_button:hover {
   background-color: #0e2a48 !important;
 }
 
