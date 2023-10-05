@@ -2,6 +2,15 @@
 
 jQuery(function($) {
 
+    // Check if the HubSpot form script is loaded
+    var hubspotFormScript = document.querySelector('script[src="//js.hsforms.net/forms/embed/v2.js"]');
+    if (hubspotFormScript) {
+        // Increase the height of .hs-form-iframe to add 100px to its initial height after 2 seconds
+        setTimeout(function() {
+            $('.hs-form-iframe').css('height', '+=100px');
+        }, 2000);
+    }
+
     // Scrollspy for Multiple Sections block
     $('body').scrollspy({ target: '#tableContents', offset: 200 });
 
