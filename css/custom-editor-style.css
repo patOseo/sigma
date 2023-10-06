@@ -13346,6 +13346,10 @@ body .entry-content .wp-block-heading:not(:first-child),
 body .wp-block-post-content .wp-block-heading:not(:first-child) {
   margin-top: 3rem;
 }
+body .post-password-required {
+  padding: 4rem 0;
+  text-align: center;
+}
 
 ::-moz-selection {
   background: #c8cc40;
