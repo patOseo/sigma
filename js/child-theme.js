@@ -6840,6 +6840,11 @@
 	    }, 200);
 	    filterBlogs();
 	  });
+
+	  // If .modal is present, move the div to the start of the .site div
+	  if ($('.modal').length) {
+	    $('.modal').prependTo('.site');
+	  }
 	});
 
 	exports.Alert = alert;

@@ -1,0 +1,100 @@
+{
+    "key": "group_651f554eb2dc6",
+    "title": "Block – Modal Popup",
+    "fields": [
+        {
+            "key": "field_651f554e45e23",
+            "label": "Select Modal to Show",
+            "name": "select_modal",
+            "aria-label": "",
+            "type": "post_object",
+            "instructions": "Select an existing modal from the <a href=\"\/wp-admin\/edit.php?post_type=modal\" target=\"_blank\">Modals<\/a> list. You can also <a href=\"\/wp-admin\/post-new.php?post_type=modal\" target=\"_blank\">create a new one<\/a>.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "modal"
+            ],
+            "post_status": [
+                "publish"
+            ],
+            "taxonomy": "",
+            "return_format": "id",
+            "multiple": 0,
+            "allow_null": 0,
+            "bidirectional": 0,
+            "ui": 1,
+            "bidirectional_target": []
+        },
+        {
+            "key": "field_651f601ef494a",
+            "label": "Modal Button Text",
+            "name": "btn_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Download",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_651f602cf494b",
+            "label": "Modal Button Color",
+            "name": "modal_button_color",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "blue": "Blue",
+                "green": "Green",
+                "outline": "Green Outline"
+            },
+            "default_value": "blue",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/modal-popup"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1696555117
+}

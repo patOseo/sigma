@@ -1,0 +1,12 @@
+{
+    "name": "acf/modal-popup",
+    "title": "Modal Popup",
+    "description": "A custom block to display a modal popup.",
+    "category": "sigma-blocks",
+    "icon": "align-center",
+    "keywords": ["modal", "popup", "form", "gate"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "block-modal-popup.php"
+    }
+}

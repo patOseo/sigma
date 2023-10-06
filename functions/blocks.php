@@ -31,4 +31,5 @@ function register_acf_blocks() {
     register_block_type( __DIR__ . '/../blocks/team-members' );
     register_block_type( __DIR__ . '/../blocks/multipart' );
     register_block_type( __DIR__ . '/../blocks/multipart-section' );
+    register_block_type( __DIR__ . '/../blocks/modal-popup' );
 }
