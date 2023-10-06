@@ -191,5 +191,62 @@ function sigma_register_cta_patterns() {
             <!-- /wp:group -->',
 	    )
 	);
+    register_block_pattern(
+	    'sigma/looking-for-more',
+	    array(
+	        'title'       => __( 'Looking for More', 'sigma' ),
+	        'categories'  => array('ctas', 'blue', 'sigma-all'),
+	        'content'     => '<!-- wp:spacer -->
+            <div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+            <!-- /wp:spacer -->
+            
+            <!-- wp:group {"align":"full","backgroundColor":"sigmablue","textColor":"white","className":"blue-section-with-heading position-relative py-6 border-6 border-top border-bottom border-secondary","layout":{"type":"constrained"}} -->
+            <div class="wp-block-group alignfull blue-section-with-heading position-relative py-6 border-6 border-top border-bottom border-secondary has-white-color has-sigmablue-background-color has-text-color has-background"><!-- wp:heading {"level":3,"backgroundColor":"sigmagreen","className":"blue-section-title position-absolute top-0 start-50 translate-middle px-5 py-2 text-white text-center rounded-pill"} -->
+            <h3 class="wp-block-heading blue-section-title position-absolute top-0 start-50 translate-middle px-5 py-2 text-white text-center rounded-pill has-sigmagreen-background-color has-background">LOOKING FOR MORE?</h3>
+            <!-- /wp:heading -->
+            
+            <!-- wp:group {"className":"py-5","layout":{"type":"constrained"}} -->
+            <div class="wp-block-group py-5"><!-- wp:columns -->
+            <div class="wp-block-columns"><!-- wp:column -->
+            <div class="wp-block-column"><!-- wp:image {"align":"center","id":10502,"sizeSlug":"full","linkDestination":"none"} -->
+            <figure class="wp-block-image aligncenter size-full"><img src="' . $site_url . '/wp-content/uploads/2020/06/certification-1.png" alt="SIMPLE Succession Planning Certification" class="wp-image-10502"/></figure>
+            <!-- /wp:image -->
+            
+            <!-- wp:acf/modal-popup {"name":"acf/modal-popup","data":{"select_modal":37499,"_select_modal":"field_651f554e45e23","btn_text":"Download the Succession Planning Guide","_btn_text":"field_651f601ef494a","modal_button_color":"outline","_modal_button_color":"field_651f602cf494b"},"align":"center","mode":"preview"} /--></div>
+            <!-- /wp:column -->
+            
+            <!-- wp:column -->
+            <div class="wp-block-column"><!-- wp:image {"align":"center","id":12367,"sizeSlug":"full","linkDestination":"none"} -->
+            <figure class="wp-block-image aligncenter size-full"><img src="' . $site_url . '/wp-content/uploads/2021/04/library-1-1.png" alt="Library Icon" class="wp-image-12367"/></figure>
+            <!-- /wp:image -->
+            
+            <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+            <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"sigmablue","textColor":"sigmadarkgreen","className":"is-style-outline"} -->
+            <div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-sigmadarkgreen-color has-sigmablue-background-color has-text-color has-background wp-element-button" href="' . $site_url . '/succession/succession-planning-template-library/">View the Template Library</a></div>
+            <!-- /wp:button --></div>
+            <!-- /wp:buttons --></div>
+            <!-- /wp:column -->
+            
+            <!-- wp:column -->
+            <div class="wp-block-column"><!-- wp:image {"align":"center","id":10503,"sizeSlug":"full","linkDestination":"none"} -->
+            <figure class="wp-block-image aligncenter size-full"><img src="' . $site_url . '/wp-content/uploads/2020/06/launch-1.png" alt="Succession Planning Launch Series" class="wp-image-10503"/></figure>
+            <!-- /wp:image -->
+            
+            <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+            <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"sigmablue","textColor":"sigmadarkgreen","className":"is-style-outline"} -->
+            <div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-sigmadarkgreen-color has-sigmablue-background-color has-text-color has-background wp-element-button" href="' . $site_url . '/succession/succession-planning-launch-series/">Launch Series &amp; Succession Planning Workshops</a></div>
+            <!-- /wp:button --></div>
+            <!-- /wp:buttons --></div>
+            <!-- /wp:column --></div>
+            <!-- /wp:columns --></div>
+            <!-- /wp:group --></div>
+            <!-- /wp:group -->
+            
+            <!-- wp:spacer {"height":"60px"} -->
+            <div style="height:60px" aria-hidden="true" class="wp-block-spacer"></div>
+            <!-- /wp:spacer -->',
+	    )
+	);
+
 }
 add_action( 'init', 'sigma_register_cta_patterns' );
