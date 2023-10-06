@@ -13689,6 +13689,13 @@ body .post-password-required {
   color: #fff !important;
 }
 
+#gform_confirmation_message_14 {
+  padding: 2rem;
+  border: 2px solid #b9be10;
+  background: #efefef;
+  border-radius: 1rem;
+}
+
 .wp-block-table {
   border: 1px solid #e4e4e4;
   border-radius: 4px;
