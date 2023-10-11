@@ -20,8 +20,8 @@ $assessment_cat = get_field('select_category');
         'post_type' => 'assessments',
         'post_status' => 'publish',
         'posts_per_page' => 12,
-        'orderby' => 'date',
-        'order' => 'DESC',
+        'orderby' => 'menu_order',
+        'order' => 'ASC',
         'tax_query' => array(
             array(
                 'taxonomy' => 'assessment-types',
