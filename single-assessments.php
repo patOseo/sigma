@@ -53,12 +53,15 @@ if($is_parent) {
 <div class="assessment-info py-4 bg-primary text-white">
 	<div class="container">
 		<div class="row">
+			<?php if($age): ?>
 			<div class="col-4 col-md mb-4 mb-md-0">
 				<div class="assessment-criteria text-center">
 					<div class="fs-xs fw-500">Age:</div>
-					<h3 class="mb-0 fs-1 ff-montserrat fw-500 text-white"><?php the_field('age'); ?>+</h3>
+					<h3 class="mb-0 fs-1 ff-montserrat fw-500 text-white"><?= $age; ?>+</h3>
 				</div>
 			</div>
+			<?php endif; ?>
+			<?php if($time): ?>
 			<div class="col-4 col-md mb-4 mb-md-0">
 				<div class="assessment-criteria text-center">
 					<div class="fs-xs fw-500">Time:</div>
@@ -68,12 +71,16 @@ if($is_parent) {
 						</h3>
 				</div>
 			</div>
+			<?php endif; ?>
+			<?php if($qual): ?>
 			<div class="col-4 col-md mb-4 mb-md-0">
 				<div class="assessment-criteria text-center">
 					<div class="fs-xs fw-500">Test User Qualifications:</div> 
 					<div class="d-inline-block mt-2 mb-0 py-0 px-1 fs-2 lh-1 text-white border"><?= $qual; ?><i class="fa fa-check"></i></div>
 				</div>
 			</div>
+			<?php endif; ?>
+			<?php if($formats): ?>
 			<div class="col-4 col-md mb-4 mb-md-0">
 				<div class="assessment-criteria text-center row">
 					<div class="fs-xs fw-500">Formats:</div>
@@ -104,6 +111,8 @@ if($is_parent) {
 					<?php endforeach; ?>
 				</div>
 			</div>
+			<?php endif; ?>
+			<?php if($langs): ?>
 			<div class="col-4 col-md mb-4 mb-md-0">
 				<div class="assessment-criteria text-center">
 					<div class="fs-xs fw-500">Languages:</div>
@@ -114,6 +123,7 @@ if($is_parent) {
 					<?php endforeach; ?>
 				</div>
 			</div>
+			<?php endif; ?>
 			<?php if($sample): ?>
 			<div class="col-4 col-md mb-4 mb-md-0">
 				<div class="assessment-criteria text-center">
