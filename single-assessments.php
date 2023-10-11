@@ -114,12 +114,14 @@ if($is_parent) {
 					<?php endforeach; ?>
 				</div>
 			</div>
+			<?php if($sample): ?>
 			<div class="col-4 col-md mb-4 mb-md-0">
 				<div class="assessment-criteria text-center">
 					<div class="fs-xs fw-500">Sample Report:</div>
 					<a href="<?= $sample; ?>" class="btn btn-secondary mt-2 rounded-pill btn-lg fs-xs text-white text-uppercase" target="_blank" rel="noopener noreferrer">Sample Report</a>
 				</div>
 			</div>
+			<?php endif; ?>
 		</div>
 	</div>
 </div>
