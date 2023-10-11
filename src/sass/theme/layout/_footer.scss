@@ -11,6 +11,14 @@
         }
     }
 
+    a {
+        color: $white;
+        &:hover {
+            color: $secondary;
+            text-decoration: none !important;
+        }
+    }
+
     .menu {
         list-style-type: none;
 
@@ -28,5 +36,5 @@
 }
 
 .footer-copyright {
-    background-color: shade-color($primary, 20%);
+    background-color: $white;
 }
