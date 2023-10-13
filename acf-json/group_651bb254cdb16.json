@@ -19,9 +19,7 @@
             "post_type": [
                 "team"
             ],
-            "post_status": [
-                "publish"
-            ],
+            "post_status": "",
             "taxonomy": "",
             "return_format": "id",
             "multiple": 0,
@@ -49,5 +47,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1696314027
+    "modified": 1697218548
 }
