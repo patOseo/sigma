@@ -80,8 +80,8 @@ $author_id = get_field('associated_user');
                     );
                     $query = new WP_Query($args);
                     ?>
-                    <h2 class="text-secondary fw-bold my-6"><?php the_title(); ?>'s Latest Articles</h2>
                     <?php if($query->have_posts()): ?>
+                        <h2 class="text-secondary fw-bold my-6"><?php the_title(); ?>'s Latest Articles</h2>
                         <div class="row">
                             <?php while($query->have_posts()): $query->the_post(); ?>
                                 <div class="col-md-4 mb-6">
