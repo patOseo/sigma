@@ -9,7 +9,7 @@
 defined( 'ABSPATH' ) || exit;
 $author_id = get_the_author_meta('ID');
 $author_team_page = get_field('user_page', 'user_' . $author_id);
-
+$hide_author = get_field('hide_author_block');
 if(get_field('image', $author_team_page)) {
     $member_img = get_field('image', $author_team_page);
 } else {
@@ -29,6 +29,7 @@ if(get_field('image', $author_team_page)) {
 			</div>
 		</div>
 
+		<?php if($author_team_page && !$hide_author): ?>
 		<div class="row justify-content-center my-6">
 			<div class="col-xl-10">
 				<div class="author-block">
@@ -68,6 +69,7 @@ if(get_field('image', $author_team_page)) {
 				</div>
 			</div>
 		</div>
+		<?php endif; ?>
 
 	</div><!-- .entry-content -->
 
