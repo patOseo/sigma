@@ -2,6 +2,324 @@
 
 // Register patterns
 function sigma_register_templates_patterns() {
+    $site_url = get_site_url();
+    register_block_pattern(
+	    'sigma/succession-planning-page',
+	    array(
+	        'title'       => __( 'Succession Planning Page', 'sigma' ),
+	        'categories'  => array('templates'),
+	        'content'     => '<!-- wp:acf/header {"name":"acf/header","data":{"bg_img":15350,"_bg_img":"field_650b146f0c88e"},"mode":"preview"} -->
+            <!-- wp:group {"style":{"color":{"background":"#0000004d"}},"className":"w-100 py-5 text-center text-white","layout":{"type":"constrained"}} -->
+            <div class="wp-block-group w-100 py-5 text-center text-white has-background" style="background-color:#0000004d"><!-- wp:heading {"level":1,"className":"text-uppercase text-white text-shadow display-3"} -->
+            <h1 class="wp-block-heading text-uppercase text-white text-shadow display-3">Succession Planning SERVICES</h1>
+            <!-- /wp:heading -->
+            
+            <!-- wp:heading {"textColor":"white","className":"mt-4 mb-0"} -->
+            <h2 class="wp-block-heading mt-4 mb-0 has-white-color has-text-color">Create a succession plan that will prepare <br>your next generation of talent.</h2>
+            <!-- /wp:heading --></div>
+            <!-- /wp:group -->
+            <!-- /wp:acf/header -->
+            
+            <!-- wp:group {"layout":{"type":"constrained"}} -->
+            <div class="wp-block-group"><!-- wp:yoast-seo/breadcrumbs /-->
+            
+            <!-- wp:columns -->
+            <div class="wp-block-columns"><!-- wp:column {"width":"25%"} -->
+            <div class="wp-block-column" style="flex-basis:25%"></div>
+            <!-- /wp:column -->
+            
+            <!-- wp:column {"width":"90%"} -->
+            <div class="wp-block-column" style="flex-basis:90%"><!-- wp:paragraph {"align":"center"} -->
+            <p class="has-text-align-center">Succession planning is a critical aspect of any organization’s long-term success, as it provides a roadmap for ensuring continuity during times of change. Whether it’s due to retirement, promotion, or unforeseen circumstances, having a well-designed succession plan in place is essential for smoothly transitioning leadership roles and maintaining business momentum.</p>
+            <!-- /wp:paragraph -->
+            
+            <!-- wp:paragraph {"align":"center"} -->
+            <p class="has-text-align-center">For more than 50 years, SIGMA’s experts have combined evidence-based theory with practical industry experience to deliver effective succession planning services. Explore our services below.</p>
+            <!-- /wp:paragraph --></div>
+            <!-- /wp:column -->
+            
+            <!-- wp:column {"width":"25%"} -->
+            <div class="wp-block-column" style="flex-basis:25%"></div>
+            <!-- /wp:column --></div>
+            <!-- /wp:columns -->
+            
+            <!-- wp:heading {"textAlign":"center","textColor":"sigmadarkgreen"} -->
+            <h2 class="wp-block-heading has-text-align-center has-sigmadarkgreen-color has-text-color">SIGMA’s Succession Planning Services</h2>
+            <!-- /wp:heading --></div>
+            <!-- /wp:group -->
+            
+            <!-- wp:spacer {"height":"40px"} -->
+            <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
+            <!-- /wp:spacer -->
+            
+            <!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|80"}}},"layout":{"type":"constrained"}} -->
+            <div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--80)"><!-- wp:columns {"className":"row gx-0"} -->
+            <div class="wp-block-columns row gx-0"><!-- wp:column {"className":"col"} -->
+            <div class="wp-block-column col"><!-- wp:acf/shadowbox {"name":"acf/shadowbox","mode":"preview"} -->
+            <!-- wp:heading {"textAlign":"center","style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|40"}}},"textColor":"sigmablue","className":"h3"} -->
+            <h2 class="wp-block-heading has-text-align-center h3 has-sigmablue-color has-text-color" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--40)"><a href="' . $site_url . '/succession/succession-planning-launch-series/">Succession Planning Launch</a></h2>
+            <!-- /wp:heading -->
+            
+            <!-- wp:heading {"textAlign":"center","level":3,"style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|40"}}},"textColor":"sigmadarkgreen","className":"h4"} -->
+            <h3 class="wp-block-heading has-text-align-center h4 has-sigmadarkgreen-color has-text-color" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--40)">Need a succession plan today?</h3>
+            <!-- /wp:heading -->
+            
+            <!-- wp:paragraph {"align":"center"} -->
+            <p class="has-text-align-center">Get started immediately with SIGMA’s Succession Planning Launch. Our consultants deliver a detailed succession plan for each of your leaders in just six weeks.</p>
+            <!-- /wp:paragraph -->
+            
+            <!-- wp:image {"align":"center","id":19206,"width":"150px","height":"undefinedpx","sizeSlug":"full","linkDestination":"none"} -->
+            <figure class="wp-block-image aligncenter size-full is-resized"><img src="' . $site_url . '/wp-content/uploads/2023/04/Launch-Icon-1.png" alt="" class="wp-image-19206" style="width:150px;height:undefinedpx"/></figure>
+            <!-- /wp:image -->
+            <!-- /wp:acf/shadowbox --></div>
+            <!-- /wp:column -->
+            
+            <!-- wp:column {"className":"col"} -->
+            <div class="wp-block-column col"><!-- wp:acf/shadowbox {"name":"acf/shadowbox","mode":"preview"} -->
+            <!-- wp:heading {"textAlign":"center","style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|40"}}},"textColor":"sigmablue","className":"h3"} -->
+            <h2 class="wp-block-heading has-text-align-center h3 has-sigmablue-color has-text-color" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--40)"><a href="' . $site_url . '/customized-consulting-2/">Custom Succession Planning Consulting</a></h2>
+            <!-- /wp:heading -->
+            
+            <!-- wp:heading {"textAlign":"center","level":3,"style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|40"}}},"textColor":"sigmadarkgreen","className":"h4"} -->
+            <h3 class="wp-block-heading has-text-align-center h4 has-sigmadarkgreen-color has-text-color" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--40)">Seeking a customized succession planning solution?</h3>
+            <!-- /wp:heading -->
+            
+            <!-- wp:paragraph {"align":"center"} -->
+            <p class="has-text-align-center">Our consultants will work with you to create a project plan that meets the unique needs of your organization. Engagements can be as large or as small as needed.</p>
+            <!-- /wp:paragraph -->
+            
+            <!-- wp:image {"align":"center","id":19205,"width":"150px","height":"undefinedpx","sizeSlug":"full","linkDestination":"none"} -->
+            <figure class="wp-block-image aligncenter size-full is-resized"><img src="' . $site_url . '/wp-content/uploads/2023/04/Customized-Consulting-1.png" alt="" class="wp-image-19205" style="width:150px;height:undefinedpx"/></figure>
+            <!-- /wp:image -->
+            <!-- /wp:acf/shadowbox --></div>
+            <!-- /wp:column --></div>
+            <!-- /wp:columns -->
+            
+            <!-- wp:columns {"className":"row gx-0"} -->
+            <div class="wp-block-columns row gx-0"><!-- wp:column {"className":"col"} -->
+            <div class="wp-block-column col"><!-- wp:acf/shadowbox {"name":"acf/shadowbox","mode":"preview"} -->
+            <!-- wp:heading {"textAlign":"center","style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|40"}}},"textColor":"sigmablue","className":"h3"} -->
+            <h2 class="wp-block-heading has-text-align-center h3 has-sigmablue-color has-text-color" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--40)"><a href="' . $site_url . '/succession-planning-template/">Succession Planning Guide</a></h2>
+            <!-- /wp:heading -->
+            
+            <!-- wp:heading {"textAlign":"center","level":3,"style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|40"}}},"textColor":"sigmadarkgreen","className":"h4"} -->
+            <h3 class="wp-block-heading has-text-align-center h4 has-sigmadarkgreen-color has-text-color" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--40)">Want to try it on your own?</h3>
+            <!-- /wp:heading -->
+            
+            <!-- wp:paragraph {"align":"center"} -->
+            <p class="has-text-align-center">Download SIGMA’s Succession Planning Guide. This guide combines all our best tools and templates in one powerful resource.</p>
+            <!-- /wp:paragraph -->
+            
+            <!-- wp:image {"align":"center","id":19207,"width":"150px","height":"undefinedpx","sizeSlug":"full","linkDestination":"none"} -->
+            <figure class="wp-block-image aligncenter size-full is-resized"><img src="' . $site_url . '/wp-content/uploads/2023/04/SP-Guide-Icon-1.png" alt="" class="wp-image-19207" style="width:150px;height:undefinedpx"/></figure>
+            <!-- /wp:image -->
+            <!-- /wp:acf/shadowbox --></div>
+            <!-- /wp:column -->
+            
+            <!-- wp:column {"className":"col"} -->
+            <div class="wp-block-column col"><!-- wp:acf/shadowbox {"name":"acf/shadowbox","mode":"preview"} -->
+            <!-- wp:heading {"textAlign":"center","style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|40"}}},"textColor":"sigmablue","className":"h3"} -->
+            <h2 class="wp-block-heading has-text-align-center h3 has-sigmablue-color has-text-color" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--40)"><a href="' . $site_url . '/succession-planning-certification-workshop/">Succession Planning Training</a></h2>
+            <!-- /wp:heading -->
+            
+            <!-- wp:heading {"textAlign":"center","level":3,"style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|40"}}},"textColor":"sigmadarkgreen","className":"h4"} -->
+            <h3 class="wp-block-heading has-text-align-center h4 has-sigmadarkgreen-color has-text-color" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--40)">Interested in learning the fundamentals?</h3>
+            <!-- /wp:heading -->
+            
+            <!-- wp:paragraph {"align":"center"} -->
+            <p class="has-text-align-center">Complete SIGMA’s online, self-guided training. These five modules will give you a comprehensive introduction to the succession planning process.</p>
+            <!-- /wp:paragraph -->
+            
+            <!-- wp:image {"align":"center","id":19208,"width":"150px","height":"undefinedpx","sizeSlug":"full","linkDestination":"none"} -->
+            <figure class="wp-block-image aligncenter size-full is-resized"><img src="' . $site_url . '/wp-content/uploads/2023/04/SP-Training-Icon-1.png" alt="" class="wp-image-19208" style="width:150px;height:undefinedpx"/></figure>
+            <!-- /wp:image -->
+            <!-- /wp:acf/shadowbox --></div>
+            <!-- /wp:column --></div>
+            <!-- /wp:columns -->
+            
+            <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"margin":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}}}} -->
+            <div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--80);margin-bottom:var(--wp--preset--spacing--80)"><!-- wp:button -->
+            <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#getStarted">Ready to Start Succession Planning?</a></div>
+            <!-- /wp:button --></div>
+            <!-- /wp:buttons --></div>
+            <!-- /wp:group -->
+            
+            <!-- wp:group {"align":"full","style":{"spacing":{"margin":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"},"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}},"backgroundColor":"sigmablue","textColor":"white","layout":{"type":"constrained"}} -->
+            <div class="wp-block-group alignfull has-white-color has-sigmablue-background-color has-text-color has-background" style="margin-top:var(--wp--preset--spacing--80);margin-bottom:var(--wp--preset--spacing--80);padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"top":"0"}}},"textColor":"white","className":"h3"} -->
+            <p class="has-text-align-center h3 has-white-color has-text-color" style="margin-top:0">Not sure what your organization needs? </p>
+            <!-- /wp:paragraph -->
+            
+            <!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"bottom":"0"}}}} -->
+            <p class="has-text-align-center" style="margin-bottom:0">Take&nbsp;<a href="' . $site_url . '/succession/#">SIGMA’s succession planning quiz</a>&nbsp;to learn about the state of your succession planning process and find out which SIGMA solution is right for you.</p>
+            <!-- /wp:paragraph --></div>
+            <!-- /wp:group -->
+            
+            <!-- wp:group {"layout":{"type":"constrained"}} -->
+            <div class="wp-block-group"><!-- wp:group {"layout":{"type":"constrained"}} -->
+            <div class="wp-block-group"><!-- wp:heading {"textAlign":"center","level":4,"textColor":"darkgrey"} -->
+            <h4 class="wp-block-heading has-text-align-center has-darkgrey-color has-text-color">Trusted by over 8,500 organizations across North America, including:</h4>
+            <!-- /wp:heading -->
+            
+            <!-- wp:acf/image-grid-slider {"name":"acf/image-grid-slider","data":{"num_rows":"2","_num_rows":"field_6515904055562","num_cols":"4","_num_cols":"field_65158ee348ca4","images":["19979","19977","19975","19972","19978","19976","19974","19971","19970","19968","16942","16940","19969","19967","16941","16939","16938","16936","16934","16932","16937","16935","16933","16931","16930","16928","16926","16924","16929","16927","16925","16923","16922","16920","16918","16916","16921","16919","16917","16915"],"_images":"field_65158cac1d30f"},"mode":"edit"} /-->
+            
+            <!-- wp:heading {"textAlign":"center","textColor":"sigmadarkgreen"} -->
+            <h2 class="wp-block-heading has-text-align-center has-sigmadarkgreen-color has-text-color">What Our Clients Have to Say</h2>
+            <!-- /wp:heading --></div>
+            <!-- /wp:group -->
+            
+            <!-- wp:acf/testimonials {"name":"acf/testimonials","data":{"select_category":"","_select_category":"field_65134e44c90d3"},"mode":"preview","className":"py-6"} /-->
+            
+            <!-- wp:group {"style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|80"},"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}},"backgroundColor":"lightestgrey","className":"rounded-3","layout":{"type":"constrained"}} -->
+            <div class="wp-block-group rounded-3 has-lightestgrey-background-color has-background" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--80);padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:paragraph {"align":"center","className":"h3"} -->
+            <p class="has-text-align-center h3">Looking for resources to help your succession planning efforts? </p>
+            <!-- /wp:paragraph -->
+            
+            <!-- wp:paragraph {"align":"center","style":{"typography":{"lineHeight":1.4}},"fontSize":"medium"} -->
+            <p class="has-text-align-center has-medium-font-size" style="line-height:1.4">Visit SIGMA’s<a href="' . $site_url . '/succession/succession-planning-template-library/" target="_blank" rel="noreferrer noopener">&nbsp;Succession Planning Template Library</a>&nbsp;for free form-fillable PDF templates, and refer to our Succession Planning FAQ for answers to&nbsp;<a href="' . $site_url . '/succession-faq/" target="_blank" rel="noreferrer noopener">frequently asked questions</a>.</p>
+            <!-- /wp:paragraph --></div>
+            <!-- /wp:group --></div>
+            <!-- /wp:group -->
+            
+            <!-- wp:group {"align":"full","backgroundColor":"sigmablue","textColor":"white","className":"blue-section-with-heading position-relative my-6 pt-6 pb-3 border-6 border-top border-bottom border-secondary","layout":{"type":"constrained"}} -->
+            <div class="wp-block-group alignfull blue-section-with-heading position-relative my-6 pt-6 pb-3 border-6 border-top border-bottom border-secondary has-white-color has-sigmablue-background-color has-text-color has-background"><!-- wp:heading {"level":3,"backgroundColor":"sigmagreen","className":"blue-section-title position-absolute top-0 start-50 translate-middle px-5 py-2 text-white text-center rounded-pill"} -->
+            <h3 class="wp-block-heading blue-section-title position-absolute top-0 start-50 translate-middle px-5 py-2 text-white text-center rounded-pill has-sigmagreen-background-color has-background"><a href="' . $site_url . '/sample-succession-planning-process/">Our Succession Planning Process</a></h3>
+            <!-- /wp:heading -->
+            
+            <!-- wp:group {"className":"py-5","layout":{"type":"constrained"}} -->
+            <div class="wp-block-group py-5"><!-- wp:acf/timeline {"name":"acf/timeline","data":{"heading_html_tag":"h4","_heading_html_tag":"field_63efeeea7b237","timeline_content_0_icon":508,"_timeline_content_0_icon":"field_6510df0bbfb16","timeline_content_0_link":{"title":"","url":"/succession-planning-where-to-start/","target":""},"_timeline_content_0_link":"field_6512f859ac8e6","timeline_content_0_heading":"IDENTIFYING CRITICAL ROLES","_timeline_content_0_heading":"field_63efeec77b235","timeline_content_0_content":"Determine which roles your organization should target through its succession program.","_timeline_content_0_content":"field_63efeecd7b236","timeline_content_1_icon":522,"_timeline_content_1_icon":"field_6510df0bbfb16","timeline_content_1_link":{"title":"","url":"/succession-planning-building-success-profiles/","target":""},"_timeline_content_1_link":"field_6512f859ac8e6","timeline_content_1_heading":"BUILDING SUCCESS PROFILES","_timeline_content_1_heading":"field_63efeec77b235","timeline_content_1_content":"Describe the talent composition required for each critical role today and in the future.","_timeline_content_1_content":"field_63efeecd7b236","timeline_content_2_icon":524,"_timeline_content_2_icon":"field_6510df0bbfb16","timeline_content_2_link":{"title":"","url":"/succession-planning-nominating-successors/","target":""},"_timeline_content_2_link":"field_6512f859ac8e6","timeline_content_2_heading":"NOMINATING SUCCESSORS","_timeline_content_2_heading":"field_63efeec77b235","timeline_content_2_content":"Choose candidates for each critical role through a nomination survey.","_timeline_content_2_content":"field_63efeecd7b236","timeline_content_3_icon":526,"_timeline_content_3_icon":"field_6510df0bbfb16","timeline_content_3_link":{"title":"","url":"/assessing-succession-needs/","target":""},"_timeline_content_3_link":"field_6512f859ac8e6","timeline_content_3_heading":"ASSESSING SUCCESSION NEEDS","_timeline_content_3_heading":"field_63efeec77b235","timeline_content_3_content":"Summarize each candidate’s talent profile and identify gaps to target through development.","_timeline_content_3_content":"field_63efeecd7b236","timeline_content_4_icon":527,"_timeline_content_4_icon":"field_6510df0bbfb16","timeline_content_4_link":{"title":"","url":"/develop-talent/","target":""},"_timeline_content_4_link":"field_6512f859ac8e6","timeline_content_4_heading":"DEVELOPING TALENT","_timeline_content_4_heading":"field_63efeec77b235","timeline_content_4_content":"Prepare development plans for candidates and track their development activities.","_timeline_content_4_content":"field_63efeecd7b236","timeline_content_5_icon":12547,"_timeline_content_5_icon":"field_6510df0bbfb16","timeline_content_5_link":{"title":"","url":"/talent-progress-scorecard-template/","target":""},"_timeline_content_5_link":"field_6512f859ac8e6","timeline_content_5_heading":"MEASURING PROGRESS","_timeline_content_5_heading":"field_63efeec77b235","timeline_content_5_content":"Measure the impact of your succession plan.","_timeline_content_5_content":"field_63efeecd7b236","timeline_content":6,"_timeline_content":"field_63efeea87b234"},"mode":"preview","className":"mb-6"} /--></div>
+            <!-- /wp:group --></div>
+            <!-- /wp:group -->
+            
+            <!-- wp:group {"className":"px-lg-6 py-6","layout":{"type":"constrained"}} -->
+            <div class="wp-block-group px-lg-6 py-6"><!-- wp:columns -->
+            <div class="wp-block-columns"><!-- wp:column {"width":"10%"} -->
+            <div class="wp-block-column" style="flex-basis:10%"></div>
+            <!-- /wp:column -->
+            
+            <!-- wp:column {"width":"80%"} -->
+            <div class="wp-block-column" style="flex-basis:80%"><!-- wp:columns -->
+            <div class="wp-block-columns"><!-- wp:column {"width":"30%"} -->
+            <div class="wp-block-column" style="flex-basis:30%"><!-- wp:image {"align":"center","id":661,"sizeSlug":"full","linkDestination":"none"} -->
+            <figure class="wp-block-image aligncenter size-full"><img src="' . $site_url . '/wp-content/uploads/2018/08/glenPhoto-1.jpg" alt="consultant" class="wp-image-661"/></figure>
+            <!-- /wp:image --></div>
+            <!-- /wp:column -->
+            
+            <!-- wp:column {"width":"70%"} -->
+            <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"textAlign":"left","textColor":"sigmadarkgreen"} -->
+            <h2 class="wp-block-heading has-text-align-left has-sigmadarkgreen-color has-text-color"><strong>Looking for More?</strong></h2>
+            <!-- /wp:heading -->
+            
+            <!-- wp:paragraph {"align":"left"} -->
+            <p class="has-text-align-left">Would you like to learn more about SIGMA’s succession planning services? Talk to one of our experts and get started today.&nbsp;<a href="https://www.linkedin.com/in/gharrison/" target="_blank" rel="noreferrer noopener">Glen Harrison</a>&nbsp;is an organizational transformation consultant and succession planning expert. Over the course of his career, Glen has worked with one-third of the Fortune 500 list and with every level of government in Canada and the United States. Having worked with numerous clients to build robust succession plans from the ground up, Glen has extensive experience in the application of SIGMA’s products and services to help organizations realize their people potential.</p>
+            <!-- /wp:paragraph -->
+            
+            <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left"}} -->
+            <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"white","textColor":"sigmagreen","style":{"typography":{"fontStyle":"normal","fontWeight":"400"}},"className":"mt-3 is-style-outline"} -->
+            <div class="wp-block-button mt-3 is-style-outline" style="font-style:normal;font-weight:400"><a class="wp-block-button__link has-sigmagreen-color has-white-background-color has-text-color has-background wp-element-button" href="' . $site_url . '/succession/succession-planning-launch-series/">Email Glen</a></div>
+            <!-- /wp:button -->
+            
+            <!-- wp:button {"backgroundColor":"white","textColor":"sigmagreen","style":{"typography":{"fontStyle":"normal","fontWeight":"400"}},"className":"mt-3 is-style-outline"} -->
+            <div class="wp-block-button mt-3 is-style-outline" style="font-style:normal;font-weight:400"><a class="wp-block-button__link has-sigmagreen-color has-white-background-color has-text-color has-background wp-element-button" href="https://meetings.hubspot.com/glen-harrison/sigma?__hstc=102999647.b91aceb936e3e3613b870ebbfb64831d.1683899028657.1695740915649.1695748815615.97&amp;__hssc=102999647.4.1695748815615&amp;__hsfp=2106842337" target="_blank" rel="noreferrer noopener">Schedule a Call</a></div>
+            <!-- /wp:button --></div>
+            <!-- /wp:buttons --></div>
+            <!-- /wp:column --></div>
+            <!-- /wp:columns --></div>
+            <!-- /wp:column -->
+            
+            <!-- wp:column {"width":"10%"} -->
+            <div class="wp-block-column" style="flex-basis:10%"></div>
+            <!-- /wp:column --></div>
+            <!-- /wp:columns --></div>
+            <!-- /wp:group -->
+            
+            <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}}},"layout":{"type":"constrained"}} -->
+            <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80)"><!-- wp:columns -->
+            <div class="wp-block-columns"><!-- wp:column -->
+            <div class="wp-block-column"><!-- wp:image {"id":19667,"sizeSlug":"full","linkDestination":"none"} -->
+            <figure class="wp-block-image size-full"><img src="' . $site_url . '/wp-content/uploads/2023/06/Screen-Shot-2023-06-13-at-1.30.09-PM-1.png" alt="White flowers in front of a blue sky; cover tile for blog on the costly consequence of insufficient succession planning." class="wp-image-19667"/></figure>
+            <!-- /wp:image -->
+            
+            <!-- wp:heading {"level":3,"textColor":"sigmagreen"} -->
+            <h3 class="wp-block-heading has-sigmagreen-color has-text-color"><a href="' . $site_url . '/costly-consequence-of-insufficient-succession-planning/">The Costly Consequence of Insufficient Planning</a></h3>
+            <!-- /wp:heading -->
+            
+            <!-- wp:paragraph -->
+            <p>Succession planning is a critical process that ensures organizations have the right people in place to fill key leadership roles when they become vacant. Despite its importance, many organizations neglect to plan for succession.</p>
+            <!-- /wp:paragraph --></div>
+            <!-- /wp:column -->
+            
+            <!-- wp:column -->
+            <div class="wp-block-column"><!-- wp:image {"id":19666,"sizeSlug":"full","linkDestination":"none"} -->
+            <figure class="wp-block-image size-full"><img src="' . $site_url . '/wp-content/uploads/2023/06/Screen-Shot-2023-06-13-at-1.29.45-PM-1.png" alt="Frosty evergreen trees; cover tile for succession planning case study." class="wp-image-19666"/></figure>
+            <!-- /wp:image -->
+            
+            <!-- wp:heading {"level":3,"textColor":"sigmagreen"} -->
+            <h3 class="wp-block-heading has-sigmagreen-color has-text-color"><a href="' . $site_url . '/a-case-study-on-succession-planning-outsource-or-do-it-yourself/">A Case Study on Succession Planning</a></h3>
+            <!-- /wp:heading -->
+            
+            <!-- wp:paragraph -->
+            <p>Sandy is the Vice President of Human Resources (VP of HR) at a mid-sized tech company in California. Her company has a strong executive team, however, most of them are legacy employees quickly approaching retirement.</p>
+            <!-- /wp:paragraph --></div>
+            <!-- /wp:column -->
+            
+            <!-- wp:column -->
+            <div class="wp-block-column"><!-- wp:image {"id":19668,"width":"471px","height":"301px","sizeSlug":"full","linkDestination":"none"} -->
+            <figure class="wp-block-image size-full is-resized"><img src="' . $site_url . '/wp-content/uploads/2023/06/Screen-Shot-2023-06-13-at-1.30.47-PM-1.png" alt="Row of green trees in front of a field; cover tile for succession planning guide landing page." class="wp-image-19668" style="width:471px;height:301px"/></figure>
+            <!-- /wp:image -->
+            
+            <!-- wp:heading {"level":3,"textColor":"sigmagreen"} -->
+            <h3 class="wp-block-heading has-sigmagreen-color has-text-color"><a href="' . $site_url . '/succession-planning-template/">SIGMA’s Succession Planning Guide</a> </h3>
+            <!-- /wp:heading -->
+            
+            <!-- wp:paragraph -->
+            <p>Succession planning is a strategic process that ensures operational continuity when talent changes occur. SIGMA’s Succession Planning Guide makes this process simple by walking you through what is required at every stage.</p>
+            <!-- /wp:paragraph --></div>
+            <!-- /wp:column --></div>
+            <!-- /wp:columns -->
+            
+            <!-- wp:heading {"textColor":"sigmadarkgreen"} -->
+            <h2 class="wp-block-heading has-sigmadarkgreen-color has-text-color">Succession Planning FAQs</h2>
+            <!-- /wp:heading -->
+            
+            <!-- wp:paragraph -->
+            <p>These are some of the most commonly asked questions we hear in regard to succession planning. Can’t find what you’re looking for? Give us a call! We’d be happy to answer your question.</p>
+            <!-- /wp:paragraph -->
+            
+            <!-- wp:acf/accordion {"name":"acf/accordion","data":{"html_tag":"h4","_html_tag":"field_651083d95f171","one_item":"1","_one_item":"field_6510c3bdb9257","include_icons":"0","_include_icons":"field_6510cac51a576","advanced_mode":"0","_advanced_mode":"field_65171a64c3ce4","accordion_0_title":"What is the process of succession planning?","_accordion_0_title":"field_65108359b0ffe","accordion_0_content":"Every organization has different needs when it comes to succession planning. Our \u003ca href=\u0022' . $site_url . '/sample-succession-planning-process/\u0022\u003esuccession planning process\u003c/a\u003e is supported by data-driven assessments that help your organization make the appropriate decision about who is next in line.\r\n\u003col\u003e\r\n \t\u003cli\u003e\u003cstrong\u003eIdentify critical roles:\u003c/strong\u003e Prioritize roles that might be urgent due to upcoming exits or retirements or are critical to business success.\u003c/li\u003e\r\n \t\u003cli\u003e\u003cstrong\u003eUnderstand critical roles\u003c/strong\u003e: Determine what is required to perform the role now as well as in the future, due to potential changes in the industry, or other determining factors.\u003c/li\u003e\r\n \t\u003cli\u003e\u003cstrong\u003eNominate potential successors:\u003c/strong\u003e Identify potential candidates for succession and determine current ability to address succession in critical roles.\u003c/li\u003e\r\n \t\u003cli\u003e\u003cstrong\u003eAssess potential successors:\u003c/strong\u003e Determine the degree of readiness of potential successors to take over critical roles.\u003c/li\u003e\r\n \t\u003cli\u003e\u003cstrong\u003eDevelop potential successors:\u003c/strong\u003e Foster development of potential successors by leveraging coaching and training opportunities.\u003c/li\u003e\r\n \t\u003cli\u003e\u003cstrong\u003eMeasure progress\u003c/strong\u003e: Use objective and subjective measures to track the progress of candidates and readiness for transitioning potential successors into critical roles.\u003c/li\u003e\r\n\u003c/ol\u003e\r\nFor more information on SIGMA’s succession planning process check out our \u003ca href=\u0022' . $site_url . '/succession-planning-template/\u0022\u003esuccession planning template\u003c/a\u003e and the\u003ca href=\u0022' . $site_url . '/succession/succession-planning-webinar/\u0022\u003e succession planning webinar\u003c/a\u003e.","_accordion_0_content":"field_6510c30e2506c","accordion_1_title":"How do I create a succession plan?","_accordion_1_title":"field_65108359b0ffe","accordion_1_content":"The steps to developing a succession plan are outlined above in the simple succession planning process. In addition to the 6-step succession planning process, the following are important to keep in mind when creating a succession plan.\r\n\u003col\u003e\r\n \t\u003cli\u003eSuccession planning should be a company-wide initiative involving senior management and employees, not just HR.\u003c/li\u003e\r\n \t\u003cli\u003eFocus on finding the best candidate for each role, not just seeking adequate replacements.\u003c/li\u003e\r\n \t\u003cli\u003eTransparent and frequent communication with all involved is an important way to maintain enthusiasm and commitment to the initiative.\u003c/li\u003e\r\n\u003c/ol\u003e\r\nMeasure the maturity of your succession plan with SIGMA’s \u003ca href=\u0022' . $site_url . '/succession-planning-success-checklist/\u0022\u003esuccession planning success checklist\u003c/a\u003e.","_accordion_1_content":"field_6510c30e2506c","accordion_2_title":"What are the benefits of succession planning?","_accordion_2_title":"field_65108359b0ffe","accordion_2_content":"When done properly, succession planning can:\r\n\u003col\u003e\r\n \t\u003cli\u003eProtect your organization from unforeseen exits and retirements and help the organization remain flexible in the face of staffing challenges.\u003c/li\u003e\r\n \t\u003cli\u003eRetain top talent within your organization and identify meaningful development opportunities by starting a dialogue about employee interests and ambitions.\u003c/li\u003e\r\n \t\u003cli\u003eAttract candidates by \u003ca href=\u0022http://atrract%20candidates%20by%20hiring%20with%20your%20succession%20plan%20in%20mind/\u0022\u003ehiring with your succession plan in mind.\u003c/a\u003e Clearly identify the applicants interested in future development opportunities and help them visualize their potential career trajectory within your organization.\u003c/li\u003e\r\n \t\u003cli\u003eIdentify potential succession opportunities for qualified candidates to help improve the \u003ca href=\u0022' . $site_url . '/succession-bench-diversity/\u0022\u003ediversity among senior positions\u003c/a\u003e.\u003c/li\u003e\r\n\u003c/ol\u003e","_accordion_2_content":"field_6510c30e2506c","accordion_3_title":"How do you identify key positions in succession planning?","_accordion_3_title":"field_65108359b0ffe","accordion_3_content":"Consider the following criteria when \u003ca href=\u0022' . $site_url . '/succession-planning-where-to-start/\u0022\u003eidentifying critical roles\u003c/a\u003e for succession planning:\r\n\u003col\u003e\r\n \t\u003cli\u003eImpact of the role on business operations\u003c/li\u003e\r\n \t\u003cli\u003eAvailability of external succession candidates\u003c/li\u003e\r\n \t\u003cli\u003eAvailability of internal succession candidates\u003c/li\u003e\r\n \t\u003cli\u003eUniqueness of skills or knowledge required for position\u003c/li\u003e\r\n\u003c/ol\u003e\r\nDownload SIGMA’s\u003ca href=\u0022' . $site_url . '/critical-roles-identification-questionnaire/\u0022\u003e critical role identification questionnaire\u003c/a\u003e to determine the key positions within your organization.","_accordion_3_content":"field_6510c30e2506c","accordion_4_title":"What is the difference between succession planning and replacement hiring?","_accordion_4_title":"field_65108359b0ffe","accordion_4_content":"\u003cfigure class=\u0022wp-block-table aligncenter\u0022\u003e\r\n\u003cdiv class=\u0022atwm-responsive-table\u0022\u003e\r\n\u003cdiv class=\u0022atwm-responsive-table\u0022\u003e\r\n\u003ctable\u003e\r\n\u003ctbody\u003e\r\n\u003ctr\u003e\r\n\u003ctd\u003e\u003cstrong\u003eSuccession Planning\u003c/strong\u003e\u003c/td\u003e\r\n\u003ctd\u003e\u003cstrong\u003eReplacement Hiring \u003c/strong\u003e\u003c/td\u003e\r\n\u003c/tr\u003e\r\n\u003ctr\u003e\r\n\u003ctd\u003eA long-term approach to talent management\u003c/td\u003e\r\n\u003ctd\u003eReactionary and occurs only when there is an immediate need\u003c/td\u003e\r\n\u003c/tr\u003e\r\n\u003ctr\u003e\r\n\u003ctd\u003eIntegrates with broader company policies\u003c/td\u003e\r\n\u003ctd\u003eDriven by operational needs\u003c/td\u003e\r\n\u003c/tr\u003e\r\n\u003ctr\u003e\r\n\u003ctd\u003eAllows for effective decision-making because candidates can be developed\r\nto meet role requirements and carefully compared\u003c/td\u003e\r\n\u003ctd\u003eDefaults to a single candidate without comparing a broad range of candidates\u003c/td\u003e\r\n\u003c/tr\u003e\r\n\u003c/tbody\u003e\r\n\u003c/table\u003e\r\n\u003c/div\u003e\r\n\u003c/div\u003e\u003c/figure\u003e\r\nAvoid replacement hiring with the \u003ca href=\u0022' . $site_url . '/succession-planning-vs-replacement-hiring-checklist/\u0022\u003esuccession planning vs replacement hiring checklist\u003c/a\u003e.","_accordion_4_content":"field_6510c30e2506c","accordion_5_title":"How should I approach succession planning?","_accordion_5_title":"field_65108359b0ffe","accordion_5_content":"For your succession plan to be successful it is important to dedicate the time and resources needed for the initiative. Begin by outlining a systematic process to develop and implement your plan, or leverage an already proven process. Make sure you build in accountability and track the progress of your succession plan and include objective and subjective measures to evaluate your success.\r\n\r\nThere is no better place to start than our \u003ca href=\u0022' . $site_url . '/succession/succession-planning-launch-series/\u0022\u003eSuccession Planning Launch.\u003c/a\u003e","_accordion_5_content":"field_6510c30e2506c","accordion_6_title":"How should I communicate my succession plan to employees?","_accordion_6_title":"field_65108359b0ffe","accordion_6_content":"It is important to be transparent when communicating with your employees about succession. This includes successes, setbacks, and challenges. Maintaining regular communication with your staff can help you \u003ca href=\u0022' . $site_url . '/gaining-employee-buy-in-for-succession/\u0022\u003egain employee buy-in \u003c/a\u003eand enthusiasm about the process. By obtaining \u003ca href=\u0022' . $site_url . '/getting-senior-management-buy-in-for-succession-planning/\u0022\u003ebuy-in from senior management\u003c/a\u003e you can leverage them as credible channels to communicate succession planning information within your organization.","_accordion_6_content":"field_6510c30e2506c","accordion_7_title":"How much does succession planning cost?","_accordion_7_title":"field_65108359b0ffe","accordion_7_content":"Having a proper succession plan can save your organization a lot of money. According to a recent study by Harvard Business Review (HBR), the S\u0026amp;P 1500 forgoes close to $1 trillion in market value each year due to poorly managed CEO and C-suite transitions. HBR estimates that better succession planning alone could help increase annual company valuations and investor returns by 20-25%. The absence of a strong leadership bench can be detrimental to both employee, shareholder, and public relations. Read our blog to learn more about how a good succession plan saves money, and contact us regarding pricing information for SIGMA’s Succession Planning Launch.","_accordion_7_content":"field_6510c30e2506c","accordion_8_title":"How do you implement succession planning in an organization?","_accordion_8_title":"field_65108359b0ffe","accordion_8_content":"To begin succession planning, start by considering the core values of your organization and how they might be achieved through succession. This will help you determine the goals you want to achieve with succession planning. Identify any industry trends and challenges that might be faced by the organization in the future to proactively address these situations in your plan. Remember to take into account organization-specific statistics on turnover, retirement, and promotion to target important outcomes for the organization.\r\n\r\nTake the first step towards developing a detailed implementation plan by scheduling your \u003ca href=\u0022' . $site_url . '/succession/succession-planning-launch-series/\u0022\u003eSuccession Planning Launch\u003c/a\u003e.","_accordion_8_content":"field_6510c30e2506c","accordion_9_title":"When should we start succession planning?","_accordion_9_title":"field_65108359b0ffe","accordion_9_content":"The best time to start a succession plan is now. As a strategic initiative, succession planning can take time before you begin to see positive results. The earlier you begin your succession plan, the more prepared you will be for unexpected vacancies in critical roles in the future.","_accordion_9_content":"field_6510c30e2506c","accordion_10_title":"How will we know if our succession plan is working?","_accordion_10_title":"field_65108359b0ffe","accordion_10_content":"In order to know whether or not your succession plan is working it is important to \u003ca href=\u0022' . $site_url . '/measuring-success/\u0022\u003emeasure the progress of your plan\u003c/a\u003e. Your formal succession plan should be evaluated on a regular basis with both objective and subjective measures.\r\n\r\nExamples of objective measures include the percentage of position you are able to fill internally or the number of years it takes for the average candidate to be ready for a new role. Subjective measures such as employee engagement or job satisfaction are also important.\r\n\r\nWhichever metrics you choose, be sure that they are related to your succession planning goals and that they are things you can measure regularly.","_accordion_10_content":"field_6510c30e2506c","accordion":11,"_accordion":"field_65108333b0ffd"},"mode":"preview"} /--></div>
+            <!-- /wp:group -->
+            
+            <!-- wp:spacer -->
+            <div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+            <!-- /wp:spacer -->
+            
+            <!-- wp:group {"align":"full","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"sigmablue","textColor":"white","className":"blue-section-with-heading position-relative py-6 border-6 border-top border-bottom border-secondary","layout":{"type":"constrained"}} -->
+            <div class="wp-block-group alignfull blue-section-with-heading position-relative py-6 border-6 border-top border-bottom border-secondary has-white-color has-sigmablue-background-color has-text-color has-background" id="getStarted" style="margin-top:0;margin-bottom:0"><!-- wp:heading {"level":3,"backgroundColor":"sigmagreen","className":"blue-section-title position-absolute top-0 start-50 translate-middle px-5 py-2 text-white text-center rounded-pill"} -->
+            <h3 class="wp-block-heading blue-section-title position-absolute top-0 start-50 translate-middle px-5 py-2 text-white text-center rounded-pill has-sigmagreen-background-color has-background">Ready to Start Succession Planning?</h3>
+            <!-- /wp:heading -->
+            
+            <!-- wp:group {"className":"py-5","layout":{"type":"constrained"}} -->
+            <div class="wp-block-group py-5"><!-- wp:columns -->
+            <div class="wp-block-columns"><!-- wp:column {"width":"20%"} -->
+            <div class="wp-block-column" style="flex-basis:20%"></div>
+            <!-- /wp:column -->
+            
+            <!-- wp:column {"width":"60%"} -->
+            <div class="wp-block-column" style="flex-basis:60%"><!-- wp:paragraph {"align":"center"} -->
+            <p class="has-text-align-center">SIGMA’s Succession Planning Launch is a great place to begin. In just two sessions, we will work with your leadership team to build a succinct succession plan that meets the needs of your organization.</p>
+            <!-- /wp:paragraph -->
+            
+            <!-- wp:gravityforms/form {"formId":"9","title":false,"description":false,"inputPrimaryColor":"#204ce5"} /--></div>
+            <!-- /wp:column -->
+            
+            <!-- wp:column {"width":"20%"} -->
+            <div class="wp-block-column" style="flex-basis:20%"></div>
+            <!-- /wp:column --></div>
+            <!-- /wp:columns --></div>
+            <!-- /wp:group --></div>
+            <!-- /wp:group -->',
+	    )
+	);
+
 	register_block_pattern(
 	    'sigma/assessment-cat',
 	    array(

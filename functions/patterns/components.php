@@ -2,6 +2,251 @@
 
 // Register patterns
 function sigma_register_components_patterns() {
+	$site_url = get_site_url();
+	register_block_pattern(
+	    'sigma/templates-library',
+	    array(
+	        'title'       => __( 'Templates Library', 'sigma' ),
+	        'categories'  => array('components', 'sigma-all'),
+	        'content'     => '<!-- wp:acf/multipart {"name":"acf/multipart","data":{"toc_title":"Succession Planning Templates","_toc_title":"field_651700528aadf"},"mode":"preview"} -->
+			<!-- wp:acf/multipartsection {"name":"acf/multipartsection","data":{"section_title":"Critical Roles Identification Questionnaire","_section_title":"field_641de6ffd2fbb","section_link":"/critical-roles-identification-questionnaire/","_section_link":"field_65170157d9d3e"},"mode":"preview"} -->
+			<!-- wp:columns -->
+			<div class="wp-block-columns"><!-- wp:column -->
+			<div class="wp-block-column"><!-- wp:image {"sizeSlug":"large"} -->
+			<figure class="wp-block-image size-large"><img src="/wp-content/uploads/2020/08/2020-08-20-Critical-Role-Identification-Questionnaire.png" alt=""/></figure>
+			<!-- /wp:image --></div>
+			<!-- /wp:column -->
+			
+			<!-- wp:column {"verticalAlignment":"center"} -->
+			<div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph -->
+			<p>The Critical Roles Identification Questionnaire is a succession planning template that will help you to identify those key roles that your organization should target in your succession program.</p>
+			<!-- /wp:paragraph -->
+			
+			<!-- wp:buttons -->
+			<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"sigmagreen"} -->
+			<div class="wp-block-button"><a class="wp-block-button__link has-sigmagreen-background-color has-background wp-element-button" href="/critical-roles-identification-questionnaire/"><strong>Download</strong></a></div>
+			<!-- /wp:button --></div>
+			<!-- /wp:buttons --></div>
+			<!-- /wp:column --></div>
+			<!-- /wp:columns -->
+			<!-- /wp:acf/multipartsection -->
+			
+			<!-- wp:acf/multipartsection {"name":"acf/multipartsection","data":{"section_title":"Success Profile Template","_section_title":"field_641de6ffd2fbb","section_link":"/success-profile-template/","_section_link":"field_65170157d9d3e"},"mode":"preview"} -->
+			<!-- wp:columns -->
+			<div class="wp-block-columns"><!-- wp:column -->
+			<div class="wp-block-column"><!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
+			<figure class="wp-block-image size-large"><img src="' . $site_url . '/wp-content/uploads/2022/09/Success-Profile_Image-1024x791.png" alt=""/></figure>
+			<!-- /wp:image --></div>
+			<!-- /wp:column -->
+			
+			<!-- wp:column {"verticalAlignment":"center"} -->
+			<div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph -->
+			<p>The Success Profile Template is a succession planning worksheet designed to describe the talent needed for success in a key role.</p>
+			<!-- /wp:paragraph -->
+			
+			<!-- wp:buttons -->
+			<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"sigmagreen"} -->
+			<div class="wp-block-button"><a class="wp-block-button__link has-sigmagreen-background-color has-background wp-element-button" href="/success-profile-template/"><strong>Download</strong></a></div>
+			<!-- /wp:button --></div>
+			<!-- /wp:buttons --></div>
+			<!-- /wp:column --></div>
+			<!-- /wp:columns -->
+			<!-- /wp:acf/multipartsection -->
+			
+			<!-- wp:acf/multipartsection {"name":"acf/multipartsection","data":{"section_title":"Succession Nomination Survey Template","_section_title":"field_641de6ffd2fbb","section_link":"/succession-nomination-survey-template/","_section_link":"field_65170157d9d3e"},"mode":"preview"} -->
+			<!-- wp:columns -->
+			<div class="wp-block-columns"><!-- wp:column -->
+			<div class="wp-block-column"><!-- wp:image {"sizeSlug":"large"} -->
+			<figure class="wp-block-image size-large"><img src="/wp-content/uploads/2019/01/Nomination-Survey_Paper.png" alt=""/></figure>
+			<!-- /wp:image --></div>
+			<!-- /wp:column -->
+			
+			<!-- wp:column {"verticalAlignment":"center"} -->
+			<div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph -->
+			<p>The Succession Nomination Survey is a simple succession planning tool that can be used to identify which candidates to consider for the critical roles you identified in phase one.</p>
+			<!-- /wp:paragraph -->
+			
+			<!-- wp:buttons -->
+			<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"sigmagreen"} -->
+			<div class="wp-block-button"><a class="wp-block-button__link has-sigmagreen-background-color has-background wp-element-button" href="/succession-nomination-survey-template/"><strong>Download</strong></a></div>
+			<!-- /wp:button --></div>
+			<!-- /wp:buttons --></div>
+			<!-- /wp:column --></div>
+			<!-- /wp:columns -->
+			<!-- /wp:acf/multipartsection -->
+			
+			<!-- wp:acf/multipartsection {"name":"acf/multipartsection","data":{"section_title":"Succession Bench Template","_section_title":"field_641de6ffd2fbb","section_link":"/building-your-succession-bench/","_section_link":"field_65170157d9d3e"},"mode":"preview"} -->
+			<!-- wp:columns -->
+			<div class="wp-block-columns"><!-- wp:column -->
+			<div class="wp-block-column"><!-- wp:image {"sizeSlug":"large"} -->
+			<figure class="wp-block-image size-large"><img src="/wp-content/uploads/2021/02/Screen-Shot-2021-02-03-at-12.02.19-PM-edited-1024x791.png" alt=""/></figure>
+			<!-- /wp:image --></div>
+			<!-- /wp:column -->
+			
+			<!-- wp:column {"verticalAlignment":"center"} -->
+			<div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph -->
+			<p>The Succession Bench Template is used to evaluate the overall readiness of your succession candidates for a role.</p>
+			<!-- /wp:paragraph -->
+			
+			<!-- wp:buttons -->
+			<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"sigmagreen"} -->
+			<div class="wp-block-button"><a class="wp-block-button__link has-sigmagreen-background-color has-background wp-element-button" href="/building-your-succession-bench/"><strong>Download</strong></a></div>
+			<!-- /wp:button --></div>
+			<!-- /wp:buttons --></div>
+			<!-- /wp:column --></div>
+			<!-- /wp:columns -->
+			<!-- /wp:acf/multipartsection -->
+			
+			<!-- wp:acf/multipartsection {"name":"acf/multipartsection","data":{"section_title":"Candidate Succession Profile Template","_section_title":"field_641de6ffd2fbb","section_link":"/candidate-succession-profile-template/","_section_link":"field_65170157d9d3e"},"mode":"preview"} -->
+			<!-- wp:columns -->
+			<div class="wp-block-columns"><!-- wp:column -->
+			<div class="wp-block-column"><!-- wp:image {"sizeSlug":"large"} -->
+			<figure class="wp-block-image size-large"><img src="/wp-content/uploads/2019/07/Candidate-Profile_Image-768x593.png" alt=""/></figure>
+			<!-- /wp:image --></div>
+			<!-- /wp:column -->
+			
+			<!-- wp:column {"verticalAlignment":"center"} -->
+			<div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph -->
+			<p>The Candidate Succession Profile Template is designed to identify gaps between the requirements for a role and the potential candidate being developed for that key leadership position.</p>
+			<!-- /wp:paragraph -->
+			
+			<!-- wp:buttons -->
+			<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"sigmagreen"} -->
+			<div class="wp-block-button"><a class="wp-block-button__link has-sigmagreen-background-color has-background wp-element-button" href="/candidate-succession-profile-template/"><strong>Download</strong></a></div>
+			<!-- /wp:button --></div>
+			<!-- /wp:buttons --></div>
+			<!-- /wp:column --></div>
+			<!-- /wp:columns -->
+			<!-- /wp:acf/multipartsection -->
+			
+			<!-- wp:acf/multipartsection {"name":"acf/multipartsection","data":{"section_title":"Individual Development Plan Template","_section_title":"field_641de6ffd2fbb","section_link":"/develop-talent/","_section_link":"field_65170157d9d3e"},"mode":"preview"} -->
+			<!-- wp:columns -->
+			<div class="wp-block-columns"><!-- wp:column -->
+			<div class="wp-block-column"><!-- wp:image {"sizeSlug":"large"} -->
+			<figure class="wp-block-image size-large"><img src="' . $site_url . '/wp-content/uploads/2022/02/Development-Actions-Form.jpg" alt=""/></figure>
+			<!-- /wp:image --></div>
+			<!-- /wp:column -->
+			
+			<!-- wp:column {"verticalAlignment":"center"} -->
+			<div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph -->
+			<p>The Individual Development Plan is a two-part worksheet that outlines a succession candidate’s goals, action plans, and milestones for their growth and development.</p>
+			<!-- /wp:paragraph -->
+			
+			<!-- wp:buttons -->
+			<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"sigmagreen"} -->
+			<div class="wp-block-button"><a class="wp-block-button__link has-sigmagreen-background-color has-background wp-element-button" href="/develop-talent/"><strong>Download</strong></a></div>
+			<!-- /wp:button --></div>
+			<!-- /wp:buttons --></div>
+			<!-- /wp:column --></div>
+			<!-- /wp:columns -->
+			<!-- /wp:acf/multipartsection -->
+			
+			<!-- wp:acf/multipartsection {"name":"acf/multipartsection","data":{"section_title":"Talent Progress Scorecard Template","_section_title":"field_641de6ffd2fbb","section_link":"/talent-progress-scorecard-template/","_section_link":"field_65170157d9d3e"},"mode":"preview"} -->
+			<!-- wp:columns -->
+			<div class="wp-block-columns"><!-- wp:column -->
+			<div class="wp-block-column"><!-- wp:image {"sizeSlug":"large"} -->
+			<figure class="wp-block-image size-large"><img src="' . $site_url . '/wp-content/uploads/2019/02/Succession-Planning-Template-Talent-Scorecard-1.png" alt=""/></figure>
+			<!-- /wp:image --></div>
+			<!-- /wp:column -->
+			
+			<!-- wp:column {"verticalAlignment":"center"} -->
+			<div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph -->
+			<p>The Talent Progress Scorecard Template allows you to review the outcomes of your business succession plan across several important indicators.</p>
+			<!-- /wp:paragraph -->
+			
+			<!-- wp:buttons -->
+			<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"sigmagreen"} -->
+			<div class="wp-block-button"><a class="wp-block-button__link has-sigmagreen-background-color has-background wp-element-button" href="/talent-progress-scorecard-template/"><strong>Download</strong></a></div>
+			<!-- /wp:button --></div>
+			<!-- /wp:buttons --></div>
+			<!-- /wp:column --></div>
+			<!-- /wp:columns -->
+			<!-- /wp:acf/multipartsection -->
+			
+			<!-- wp:acf/multipartsection {"name":"acf/multipartsection","data":{"section_title":"Succession Planning Guide","_section_title":"field_641de6ffd2fbb","section_link":"/succession-planning-template/","_section_link":"field_65170157d9d3e"},"mode":"preview"} -->
+			<!-- wp:columns -->
+			<div class="wp-block-columns"><!-- wp:column -->
+			<div class="wp-block-column"><!-- wp:image {"sizeSlug":"large"} -->
+			<figure class="wp-block-image size-large"><img src="' . $site_url . '/wp-content/uploads/2022/11/Succession-Planning-Guide-Cover-Page.png" alt=""/></figure>
+			<!-- /wp:image --></div>
+			<!-- /wp:column -->
+			
+			<!-- wp:column {"verticalAlignment":"center"} -->
+			<div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph -->
+			<p>Our succession planning guide will walk you through what is required at each stage of the succession process along with some helpful tips to get you started.</p>
+			<!-- /wp:paragraph -->
+			
+			<!-- wp:buttons -->
+			<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"sigmagreen"} -->
+			<div class="wp-block-button"><a class="wp-block-button__link has-sigmagreen-background-color has-background wp-element-button" href="/succession-planning-template/"><strong>Download</strong></a></div>
+			<!-- /wp:button --></div>
+			<!-- /wp:buttons --></div>
+			<!-- /wp:column --></div>
+			<!-- /wp:columns -->
+			<!-- /wp:acf/multipartsection -->
+			
+			<!-- wp:acf/multipartsection {"name":"acf/multipartsection","data":{"section_title":"Succession Planning Checklist","_section_title":"field_641de6ffd2fbb","section_link":"/succession-planning-success-checklist/","_section_link":"field_65170157d9d3e"},"mode":"preview"} -->
+			<!-- wp:columns -->
+			<div class="wp-block-columns"><!-- wp:column -->
+			<div class="wp-block-column"><!-- wp:image {"sizeSlug":"large"} -->
+			<figure class="wp-block-image size-large"><img src="' . $site_url . '/wp-content/uploads/2021/02/Screen-Shot-2021-02-03-at-11.53.55-AM-edited.png" alt=""/></figure>
+			<!-- /wp:image --></div>
+			<!-- /wp:column -->
+			
+			<!-- wp:column {"verticalAlignment":"center"} -->
+			<div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph -->
+			<p>The succession planning checklist is a quick measure of the maturity level of your succession plan and what areas need to be improved.</p>
+			<!-- /wp:paragraph -->
+			
+			<!-- wp:buttons -->
+			<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"sigmagreen"} -->
+			<div class="wp-block-button"><a class="wp-block-button__link has-sigmagreen-background-color has-background wp-element-button" href="/succession-planning-success-checklist/"><strong>Download</strong></a></div>
+			<!-- /wp:button --></div>
+			<!-- /wp:buttons --></div>
+			<!-- /wp:column --></div>
+			<!-- /wp:columns -->
+			<!-- /wp:acf/multipartsection -->
+			
+			<!-- wp:acf/multipartsection {"name":"acf/multipartsection","data":{"section_title":"Succession Planning vs Replacement Hiring Checklist","_section_title":"field_641de6ffd2fbb","section_link":"/succession-planning-vs-replacement-hiring-checklist/","_section_link":"field_65170157d9d3e"},"mode":"preview"} -->
+			<!-- wp:columns -->
+			<div class="wp-block-columns"><!-- wp:column -->
+			<div class="wp-block-column"><!-- wp:image {"sizeSlug":"large"} -->
+			<figure class="wp-block-image size-large"><img src="' . $site_url . '/wp-content/uploads/2021/03/Are-You-Engaging-in-Succession-Planning-Checklist.png" alt=""/></figure>
+			<!-- /wp:image --></div>
+			<!-- /wp:column -->
+			
+			<!-- wp:column {"verticalAlignment":"center"} -->
+			<div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph -->
+			<p>The succession planning vs replacement hiring checklist will help you identify if your organization is engaging in strategic long-term planning or settling for a quick fix.</p>
+			<!-- /wp:paragraph -->
+			
+			<!-- wp:buttons -->
+			<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"sigmagreen"} -->
+			<div class="wp-block-button"><a class="wp-block-button__link has-sigmagreen-background-color has-background wp-element-button" href="/succession-planning-vs-replacement-hiring-checklist/"><strong>Download</strong></a></div>
+			<!-- /wp:button --></div>
+			<!-- /wp:buttons --></div>
+			<!-- /wp:column --></div>
+			<!-- /wp:columns -->
+			<!-- /wp:acf/multipartsection -->
+			
+			<!-- wp:acf/multipartsection {"name":"acf/multipartsection","data":{"section_title":"Developing a Succession Plan that Supports Diversity","_section_title":"field_641de6ffd2fbb","section_link":"/wp-content/uploads/2022/12/Developing-a-Succession-Plan-that-Supports-Diversity.pdf","_section_link":"field_65170157d9d3e"},"mode":"preview"} -->
+			<!-- wp:columns -->
+			<div class="wp-block-columns"><!-- wp:column {"verticalAlignment":"center"} -->
+			<div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph -->
+			<p>In this guide, we discuss the importance of diversity, how building diversity can benefit your team, and how you can use succession planning to create a leadership development program that supports diversity.</p>
+			<!-- /wp:paragraph -->
+			
+			<!-- wp:buttons -->
+			<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"sigmagreen"} -->
+			<div class="wp-block-button"><a class="wp-block-button__link has-sigmagreen-background-color has-background wp-element-button" href="' . $site_url . '/wp-content/uploads/2022/12/Developing-a-Succession-Plan-that-Supports-Diversity.pdf" target="_blank" rel="noreferrer noopener"><strong>Download</strong></a></div>
+			<!-- /wp:button --></div>
+			<!-- /wp:buttons --></div>
+			<!-- /wp:column --></div>
+			<!-- /wp:columns -->
+			<!-- /wp:acf/multipartsection -->
+			<!-- /wp:acf/multipart -->',
+	    )
+	);
 	register_block_pattern(
 	    'sigma/testimonials',
 	    array(
