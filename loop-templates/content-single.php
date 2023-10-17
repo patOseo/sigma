@@ -22,7 +22,7 @@ if(get_field('image', $author_team_page)) {
 	<div class="entry-content">
 
 		<div class="row justify-content-center">
-			<div class="col-xl-10">
+			<div class="col-xl-11">
 				<?php
 				the_content();
 				?>
