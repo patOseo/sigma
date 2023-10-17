@@ -16575,6 +16575,34 @@ body .post-password-required {
   border-radius: 1rem;
 }
 
+/* Interactive Quiz */
+#gform_14 .boxed,
+#gform_14 #field_14_7 {
+  padding: 1rem;
+  border: 2px solid #abba39;
+  border-radius: 6px;
+}
+
+#gform_14 ul {
+  list-style-type: none;
+}
+
+#gform_14 label {
+  color: #12355a;
+}
+
+#gform_14 .gfield_checkbox label {
+  color: #353535;
+}
+
+#gform_14 li.gfield.gf_left_half:before {
+  display: none;
+}
+
+#gform_14 #gfield_description_14_7 {
+  font-size: 1rem;
+}
+
 .wp-block-table {
   border: 1px solid #e4e4e4;
   border-radius: 4px;
