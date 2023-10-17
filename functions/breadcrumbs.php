@@ -20,3 +20,24 @@ function sigma_modify_breadcrumbs($links) {
 }
 
 add_filter('wpseo_breadcrumb_links', 'sigma_modify_breadcrumbs');
+
+
+
+// Check if the 'yoast-seo/breadcrumbs' block is present on the current page, including nested blocks
+function sigma_check_yoast_seo_breadcrumbs_block($blocks) {
+    foreach ($blocks as $block) {
+        if ($block['blockName'] === 'yoast-seo/breadcrumbs') {
+            return true;
+        }
+
+        // Check for nested blocks
+        if (!empty($block['innerBlocks'])) {
+            $nested_blocks = $block['innerBlocks'];
+            if (sigma_check_yoast_seo_breadcrumbs_block($nested_blocks)) {
+                return true;
+            }
+        }
+    }
+
+    return false; // If the block is not found, return false
+}

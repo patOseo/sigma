@@ -53,7 +53,13 @@ $template = array(
 
 <?php
 if(is_single() && get_post_type() == 'post'):
-    if ( function_exists('yoast_breadcrumb') ) {
-        yoast_breadcrumb( '<p class="yoast-breadcrumbs" id="breadcrumbs">','</p>' );
+    $post = get_post();
+    if($post) {
+        $blocks = parse_blocks($post->post_content);
+        if(!sigma_check_yoast_seo_breadcrumbs_block($blocks)) {
+            if ( function_exists('yoast_breadcrumb') ) {
+                yoast_breadcrumb( '<p class="yoast-breadcrumbs" id="breadcrumbs">','</p>' );
+            }
+        }
     }
 endif;
