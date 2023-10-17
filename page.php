@@ -38,5 +38,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 </div><!-- #page-wrapper -->
 
+<?php get_template_part( 'global-templates/modal-loader' ); ?>
+
 <?php
 get_footer();

@@ -162,6 +162,8 @@ if($is_parent) {
 </div><!-- #single-wrapper -->
 
 <?php
+get_template_part( 'global-templates/modal-loader' );
+
 // Include the schema generator for assessment pages
 @include_once('schema/schema-assessments.php'); 
 

@@ -1,0 +1,113 @@
+{
+    "key": "group_652ea1ad3a9f1",
+    "title": "Modals",
+    "fields": [
+        {
+            "key": "field_652ea1ad066ca",
+            "label": "Load Modals on Page",
+            "name": "load_modals",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Loads a pop-up <a href=\"\/wp-admin\/edit.php?post_type=modal\" target=\"_blank\">modal<\/a> on the page that you can then target with a link using the modal trigger. For example, adding the modal \"Succession Planning Guide Download\" and the modal trigger \"downloadGuide\" will allow you to open the modal with a link to \"#downloadGuide\". For the modal trigger, use letters and underscores only – no numbers, dashes or spaces.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 1,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Modal",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_652ea1cc066cb",
+                    "label": "Select Modal",
+                    "name": "select_modal",
+                    "aria-label": "",
+                    "type": "post_object",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "modal"
+                    ],
+                    "post_status": [
+                        "publish"
+                    ],
+                    "taxonomy": "",
+                    "return_format": "id",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "bidirectional": 0,
+                    "ui": 1,
+                    "bidirectional_target": [],
+                    "parent_repeater": "field_652ea1ad066ca"
+                },
+                {
+                    "key": "field_652ea1e9066cc",
+                    "label": "Modal Trigger",
+                    "name": "modal_trigger",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_652ea1ad066ca"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "assessments"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1697555558
+}
