@@ -13700,11 +13700,15 @@ body .post-password-required {
 }
 
 /* Interactive Quiz */
-#gform_14 .boxed,
-#gform_14 #field_14_7 {
+#gform_14 .boxed {
+  width: 100%;
   padding: 1rem;
   border: 2px solid #abba39;
   border-radius: 6px;
+}
+
+#field_14_7 {
+  display: none;
 }
 
 #gform_14 ul {
