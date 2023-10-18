@@ -91,7 +91,7 @@ $phone2 = get_field('phone_2', 'option');
 					<?php if(have_rows('social_media_links', 'option')): ?>
 						<div class="social-links row mx-0 gx-0">
 							<?php while(have_rows('social_media_links', 'option')): the_row(); ?>
-								<a class="social-link col-2 px-0 text-decoration-none mx-1" href="<?php the_sub_field('link'); ?>" target="_blank" rel="noopener noreferrer">
+								<a class="social-link col-2 px-0 text-decoration-none mx-1" aria-label="<?php the_sub_field('name'); ?>" href="<?php the_sub_field('link'); ?>" target="_blank" rel="noopener noreferrer">
 									<?php include('images/icons/icon-' . strtolower(get_sub_field('name')) . '.svg'); ?>
 								</a>
 							<?php endwhile; ?>
