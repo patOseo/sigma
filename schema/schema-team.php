@@ -8,6 +8,7 @@ global $schema;
 // Prepare the $schema variable as an array. We will store our schema values here and convert them to JSON later in a function.
 $schema = array();
 
+$email = get_field('email');
 $phone = get_field('phone_1', 'option');
 $city = 'London';
 $country = 'Canada';
@@ -28,6 +29,7 @@ $schema[] = array(
   'image'     => wp_get_attachment_image_url($member_img, 'full'),
   'jobTitle'  => $position,
   'name'      => get_the_title(),
+  'email'   => $email,
   'sameAs'    => $social,
   'telephone' => $phone,
   'url'       => get_permalink(),
