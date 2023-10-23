@@ -17192,6 +17192,7 @@ div:not(.acf-block-preview) .shadowbox-block:has(a):hover {
 }
 .multipart-block .table-of-contents .nav {
   overflow-y: scroll;
+  max-height: 420px;
 }
 .multipart-block .table-of-contents .nav::-webkit-scrollbar {
   width: 6px;

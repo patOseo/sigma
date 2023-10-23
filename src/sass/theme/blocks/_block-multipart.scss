@@ -13,6 +13,7 @@
 
         .nav {
             overflow-y: scroll;
+            max-height: 420px;
 
             &::-webkit-scrollbar {
                 width: 6px;

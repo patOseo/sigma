@@ -2912,6 +2912,9 @@
 	    offset: 200
 	  });
 
+	  // Show first tab in multiple sections block
+	  $('.tab-pane:first-child').addClass('show active');
+
 	  // toTopButton
 	  $(window).scroll(function () {
 	    if ($(this).scrollTop() > 300) {
