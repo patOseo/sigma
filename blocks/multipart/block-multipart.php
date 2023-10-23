@@ -50,3 +50,10 @@ if ( ! empty( $block['className'] ) ) {
 		</div>
 	</div>
 </div>
+
+<script>
+jQuery(function($) {
+	// Show first tab in multiple sections block
+    $('.tab-pane:first-child').addClass('show active');
+});
+</script>
