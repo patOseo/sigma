@@ -1,4 +1,4 @@
-<div class="search-overlay">
+<div class="search-overlay d-none d-xl-block">
     <div class="search-close position-absolute end-0 top-0 p-4">
         <button class="btn btn-link text-white" aria-label="Open Search bar">
             <?php include( get_stylesheet_directory() . '/images/icons/icon-x.svg' ); ?>
