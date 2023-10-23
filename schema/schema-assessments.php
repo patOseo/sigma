@@ -10,13 +10,12 @@ global $schema;
 // Prepare the $schema variable as an array. We will store our schema values here and convert them to JSON later in a function.
 $schema = array();
 
-
 // Insert the schema fields
 $schema[] = array(
   '@context'  	=> 'https://schema.org',
   '@type'     	=> 'Product',
   'name'		=> $abbr,
-  'image'		=> get_the_post_thumbnail_url(),
+  'image'		=> $assessment_img,
   'description' => get_the_excerpt(),
   'brand'		=> array(
   	'@type' => 'Brand',
