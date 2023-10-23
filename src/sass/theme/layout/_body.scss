@@ -11,6 +11,7 @@ body {
     .entry-content,
     .wp-block-post-content {
         p, ul, ol, table {
+            word-wrap: break-word;
             line-height: 2;
 
             strong {
