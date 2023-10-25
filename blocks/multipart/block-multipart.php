@@ -1,5 +1,3 @@
-
-
 <?php 
 global $post;
 $blocks = parse_blocks( $post->post_content );
@@ -9,11 +7,18 @@ if ( ! empty( $block['className'] ) ) {
 	$class_name .= ' ' . $block['className'];
 }
 
+$center_align = get_field('center_align');
+if($center_align) {
+	$center = 'align-items-center';
+} else {
+	$center = '';
+}
+
 ?>
 
 <div class="<?php echo esc_attr($class_name); ?>">
 	<div class="container position-relative">
-		<div class="row">
+		<div class="row <?php if(!is_admin()) { echo esc_attr($center); } ?>">
 			<div class="col-lg-3 mb-4">
 				<div id="tableContents" class="table-of-contents sticky-top shadowbox ff-montserrat bg-white rounded align-items-stretch mb-4 mb-md-0 p-3">
 	

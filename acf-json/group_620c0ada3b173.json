@@ -41,6 +41,26 @@
             "append": ""
         },
         {
+            "key": "field_6539153af7deb",
+            "label": "Center Align Columns",
+            "name": "center_align",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
             "key": "field_641df85b0cb84",
             "label": "",
             "name": "",
@@ -77,5 +97,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1696006316
+    "modified": 1698239842
 }
