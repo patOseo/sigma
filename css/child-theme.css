@@ -16697,6 +16697,10 @@ body .post-password-required {
   border: 3px solid #babf10;
 }
 
+.wpl-iframe-placeholder {
+  margin-top: -56%;
+}
+
 .swiper-button-next,
 .swiper-button-prev {
   transition: 0.2s;
