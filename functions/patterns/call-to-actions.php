@@ -234,7 +234,7 @@ function sigma_register_cta_patterns() {
             
             <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
             <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"sigmablue","textColor":"sigmadarkgreen","className":"is-style-outline"} -->
-            <div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-sigmadarkgreen-color has-sigmablue-background-color has-text-color has-background wp-element-button" href="' . $site_url . '/succession/succession-planning-launch-series/">Launch Series &amp; Succession Planning Workshops</a></div>
+            <div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-sigmadarkgreen-color has-sigmablue-background-color has-text-color has-background wp-element-button" href="' . $site_url . '/succession/succession-planning-launch-series/">Succession Planning Launch</a></div>
             <!-- /wp:button --></div>
             <!-- /wp:buttons --></div>
             <!-- /wp:column --></div>
