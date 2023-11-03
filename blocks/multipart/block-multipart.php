@@ -18,8 +18,8 @@ if($center_align) {
 
 <div class="<?php echo esc_attr($class_name); ?>">
 	<div class="container position-relative">
-		<div class="row <?php if(!is_admin()) { echo esc_attr($center); } ?>">
-			<div class="col-lg-3 mb-4">
+		<div class="row bg-primary p-4 rounded-3 <?php if(!is_admin()) { echo esc_attr($center); } ?>">
+			<div class="col-lg-3 mb-4 mb-lg-0">
 				<div id="tableContents" class="table-of-contents sticky-top shadowbox ff-montserrat bg-white rounded align-items-stretch mb-4 mb-md-0 p-3">
 	
 					<p class="d-block text-primary fs-5 fw-bold text-uppercase mb-0 pb-2 lh-sm table-header"><?php the_field('toc_title'); ?></p>

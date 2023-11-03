@@ -17189,6 +17189,11 @@ div:not(.acf-block-preview) .shadowbox-block:has(a):hover {
 .logged-in .multipart-block .table-of-contents {
   top: 60px;
 }
+@media (max-width: 539.98px) {
+  .logged-in .multipart-block .row.rounded-3 {
+    border-radius: 0 !important;
+  }
+}
 
 .multipart-block .table-of-contents {
   position: sticky;
@@ -17206,7 +17211,6 @@ div:not(.acf-block-preview) .shadowbox-block:has(a):hover {
   background: #cbcf4c;
 }
 .multipart-block .multipart-sections-container {
-  overflow: scroll;
   height: 100%;
   max-height: 80vh;
 }
@@ -17224,6 +17228,9 @@ div:not(.acf-block-preview) .shadowbox-block:has(a):hover {
 }
 .multipart-block .multipart-section .wp-block-columns:last-child {
   margin-bottom: 0;
+}
+.multipart-block .multipart-section .section-header {
+  border-width: 1rem !important;
 }
 
 @media (max-width: 767.98px) {
