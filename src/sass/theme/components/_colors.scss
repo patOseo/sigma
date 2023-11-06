@@ -22,7 +22,7 @@ $colors: (
 
 .has-sigmablue-background-color {
     &.has-white-color {
-        a:not(.button) {
+        a:not(.button, .wp-block-button__link) {
             color: $secondary !important;
 
             &:hover {

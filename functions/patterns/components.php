@@ -4,6 +4,38 @@
 function sigma_register_components_patterns() {
 	$site_url = get_site_url();
 	register_block_pattern(
+		'sigma/dl-succession-planning-guide',
+		array(
+	        'title'       => __( 'Download Succession Planning Guide', 'sigma' ),
+	        'categories'  => array('components', 'blue', 'sigma-all'),
+	        'content'     => '<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var:preset|spacing|60","right":"var:preset|spacing|60"},"margin":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"backgroundColor":"sigmablue","textColor":"white","className":"rounded-3","layout":{"type":"constrained"}} -->
+			<div class="wp-block-group rounded-3 has-white-color has-sigmablue-background-color has-text-color has-background" style="margin-top:var(--wp--preset--spacing--60);margin-bottom:var(--wp--preset--spacing--60);padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60)"><!-- wp:columns {"verticalAlignment":null,"className":"mb-0"} -->
+			<div class="wp-block-columns mb-0"><!-- wp:column {"verticalAlignment":"center","className":"mb-0"} -->
+			<div class="wp-block-column is-vertically-aligned-center mb-0"><!-- wp:heading {"textColor":"sigmagreen"} -->
+			<h2 class="wp-block-heading has-sigmagreen-color has-text-color">Succession Planning Guide</h2>
+			<!-- /wp:heading -->
+			
+			<!-- wp:paragraph -->
+			<p>SIGMA\'s Succession Planning Guide includes all of our templates in chronological order, as well as instructions and examples to guide you through SIGMA\'s six-step succession planning process.</p>
+			<!-- /wp:paragraph -->
+			
+			<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left"}} -->
+			<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"sigmagreen","className":"mt-3"} -->
+			<div class="wp-block-button mt-3"><a class="wp-block-button__link has-sigmagreen-background-color has-background wp-element-button" href="#downloadGuide">Download the Succession Planning Guide</a></div>
+			<!-- /wp:button --></div>
+			<!-- /wp:buttons --></div>
+			<!-- /wp:column -->
+			
+			<!-- wp:column {"className":"mb-0"} -->
+			<div class="wp-block-column mb-0"><!-- wp:image {"id":37476,"sizeSlug":"full","linkDestination":"none"} -->
+			<figure class="wp-block-image size-full"><img src="' . $site_url . '/wp-content/uploads/2023/11/image.png" alt="" class="wp-image-37476"/></figure>
+			<!-- /wp:image --></div>
+			<!-- /wp:column --></div>
+			<!-- /wp:columns --></div>
+			<!-- /wp:group -->',
+	    )
+	);
+	register_block_pattern(
 	    'sigma/templates-library',
 	    array(
 	        'title'       => __( 'Templates Library', 'sigma' ),

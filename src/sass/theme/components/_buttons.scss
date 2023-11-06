@@ -60,6 +60,15 @@
                 background-color: $secondary !important;
             }
         }
+
+        &.has-sigmagreen-background-color,
+        &.has-sigmadarkgreen-background-color {
+            color: $white !important;
+
+            &:hover {
+                background-color: shade-color($secondary, 20%) !important;
+            }
+        }
     }
 
     &.is-style-outline {

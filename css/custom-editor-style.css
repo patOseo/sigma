@@ -13586,10 +13586,10 @@ body .post-password-required {
   color: inherit !important;
 }
 
-.has-sigmablue-background-color.has-white-color a:not(.button) {
+.has-sigmablue-background-color.has-white-color a:not(.button, .wp-block-button__link) {
   color: #babf10 !important;
 }
-.has-sigmablue-background-color.has-white-color a:not(.button):hover {
+.has-sigmablue-background-color.has-white-color a:not(.button, .wp-block-button__link):hover {
   color: #babf10 !important;
 }
 
@@ -13635,6 +13635,12 @@ body .post-password-required {
 }
 .wp-block-button .wp-element-button.has-sigmablue-background-color:hover {
   background-color: #babf10 !important;
+}
+.wp-block-button .wp-element-button.has-sigmagreen-background-color, .wp-block-button .wp-element-button.has-sigmadarkgreen-background-color {
+  color: #fff !important;
+}
+.wp-block-button .wp-element-button.has-sigmagreen-background-color:hover, .wp-block-button .wp-element-button.has-sigmadarkgreen-background-color:hover {
+  background-color: #95990d !important;
 }
 .wp-block-button.is-style-outline .wp-element-button {
   border-width: 1px !important;
