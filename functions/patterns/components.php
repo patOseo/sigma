@@ -27,8 +27,8 @@ function sigma_register_components_patterns() {
 			<!-- /wp:column -->
 			
 			<!-- wp:column {"className":"mb-0"} -->
-			<div class="wp-block-column mb-0"><!-- wp:image {"id":37476,"sizeSlug":"full","linkDestination":"none","className":"shadow-lg-heavy"} -->
-			<figure class="wp-block-image size-full shadow-lg-heavy"><img src="' . $site_url . '/wp-content/uploads/2023/11/image.png" alt="" class="wp-image-37476"/></figure>
+			<div class="wp-block-column mb-0"><!-- wp:image {"id":17277,"sizeSlug":"full","linkDestination":"none","className":"shadow-lg-heavy"} -->
+			<figure class="wp-block-image size-full shadow-lg-heavy"><img src="' . $site_url . '/wp-content/uploads/2022/11/Succession-Planning-Guide-Cover-Page-1.png" alt="Succession Planning Template" class="wp-image-17277"/></figure>
 			<!-- /wp:image --></div>
 			<!-- /wp:column --></div>
 			<!-- /wp:columns --></div>
