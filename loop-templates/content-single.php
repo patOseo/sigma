@@ -31,11 +31,11 @@ if(get_field('image', $author_team_page)) {
 
 		<?php if($author_team_page && !$hide_author): ?>
 		<div class="row justify-content-center my-6">
-			<div class="col-xl-10">
+			<div class="col-xl-11">
 				<div class="author-block">
-					<h2 class="text-secondary fw-bold mb-5 text-center text-md-start">About the Author</h2>
+					<h2 class="text-secondary fw-bold mb-5 <?php /* text-center text-md-start */ ?>">About the Author</h2>
                 	<div class="team-member position-relative mb-4 mb-lg-6 row align-items-center">
-                	    <div class="col-12 col-md-4">
+                	    <?php /* <div class="col-12 col-md-4">
                 	        <div class="team-member-image text-center">
                 	            <?php
                 	            if(get_field('image', $author_team_page)) {
@@ -49,10 +49,10 @@ if(get_field('image', $author_team_page)) {
                 	            ?>
 								</a>
                 	        </div>
-                	    </div>
-                	    <div class="col-12 col-md-8">
+                	    </div> */ ?>
+                	    <div class="col-12 <?php /* col-md-8 */ ?>">
                 	        
-                	            <div class="position-relative pb-3 text-center text-md-start">
+                	            <div class="position-relative pb-3 <?php /* text-center text-md-start */ ?>">
                 	                <div class="d-inline-block bg-white">
                 	                    <p class="h5 mb-0 text-uppercase"><a class="text-decoration-none text-primary" href="<?php echo get_permalink($author_team_page); ?>"><?php echo get_the_title($author_team_page); ?></a></h2>
                 	                    <p class="h6 mb-0 text-uppercase text-grey"><?php echo get_field('position', $author_team_page); ?></h3>
