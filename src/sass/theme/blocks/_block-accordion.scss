@@ -31,3 +31,17 @@
         }
     }
 }
+
+.style-pill {
+    .accordion-item {
+        background: transparent !important;
+    }
+    
+    button {
+        border-radius: 4rem !important;
+    }
+
+    .accordion-body {
+        color: $white;
+    }
+}

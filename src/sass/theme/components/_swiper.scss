@@ -1,14 +1,23 @@
-.swiper-button-next,
-.swiper-button-prev {
-    transition: .2s;
-    &:after {
-        transition: color .2s;
-    }
-
-    &:hover {
-        transform: scale(1.05);
+.style-cards {
+    .swiper-button-next,
+    .swiper-button-prev {
+        transition: .2s;
         &:after {
-            color: $darkergreen;
+            transition: color .2s;
         }
+    
+        &:hover {
+            transform: scale(1.05);
+            &:after {
+                color: $darkergreen;
+            }
+        }
+    }
+}
+
+.style-single {
+    .swiper-button-next,
+    .swiper-button-prev {
+        position: relative;
     }
 }

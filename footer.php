@@ -16,6 +16,7 @@ $phone1 = get_field('phone_1', 'option');
 $phone2 = get_field('phone_2', 'option');
 ?>
 
+<?php if(get_field('hide_footer') != 1): ?>
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
 <button id="toTopButton" class="hidden d-md-none btn btn-secondary p-3 lh-1 rounded-2" aria-label="Scroll to Top" role="button" tabindex="0">
@@ -106,6 +107,7 @@ $phone2 = get_field('phone_2', 'option');
 	</div><!-- .container(-fluid) -->
 
 </div><!-- #wrapper-footer -->
+<?php endif; ?>
 
 <div class="py-4 footer-copyright text-primary">
 	<div class="text-center fw-light fs-sm">

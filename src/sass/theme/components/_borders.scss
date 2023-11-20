@@ -1,0 +1,8 @@
+.rounded-corner-te {
+    @at-root {
+      &,
+      & img {
+        border-top-right-radius: 8rem;
+      }
+    }
+  }

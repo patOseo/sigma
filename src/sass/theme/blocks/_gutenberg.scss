@@ -14,6 +14,11 @@
 }
 
 .wp-block-image {
+    &.w-100 {
+        img {
+            width: 100%;
+        }
+    }
     &.aligncenter {
         * {
             margin-left: auto;

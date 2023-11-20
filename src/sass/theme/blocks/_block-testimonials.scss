@@ -1,46 +1,49 @@
 .testimonials-block {
-    .testimonial {
-        box-shadow: 6px 4px 6px -2px #dedede;
-    }
-    .testimonial-icon {
-        box-shadow: 6px 4px 6px -2px #dedede;
-        svg {
-            width: 30px;
-            height: 30px;
-            path {
-                fill: $primary;
+    .style-cards {
+        .testimonial {
+            box-shadow: 6px 4px 6px -2px #dedede;
+        }
+        .testimonial-icon {
+            box-shadow: 6px 4px 6px -2px #dedede;
+            svg {
+                width: 30px;
+                height: 30px;
+                path {
+                    fill: $primary;
+                }
             }
         }
-    }
-    hr {
-        max-width: 40px;
-        border: 1px solid tint-color($lightgrey, 10%); 
-    }
-    .testimonial-content {
-        max-height: 140px;
-        overflow-y: scroll;
-
-        // scrollbar styling
-        &::-webkit-scrollbar {
-            width: 4px;
+        hr {
+            max-width: 40px;
+            border: 1px solid tint-color($lightgrey, 10%); 
         }
-        &::-webkit-scrollbar-track {
-            background: transparent;
+        .testimonial-content {
+            max-height: 140px;
+            overflow-y: scroll;
+    
+            // scrollbar styling
+            &::-webkit-scrollbar {
+                width: 4px;
+            }
+            &::-webkit-scrollbar-track {
+                background: transparent;
+            }
+            &::-webkit-scrollbar-thumb {
+                background: $secondary;
+                border-radius: 8px;
+            }
+    
+            // p:after {
+            //     content: "";
+            //     height: 35px;
+            //     width: 100%;
+            //     position: fixed;
+            //     display: block;
+            //     background: rgb(255,255,255);
+            //     background: linear-gradient(180deg, rgba($lightestgrey,0) 0%, rgba($lightestgrey,1) 100%);
+            //     bottom: 0;
+            // }
         }
-        &::-webkit-scrollbar-thumb {
-            background: $secondary;
-            border-radius: 8px;
-        }
-
-        // p:after {
-        //     content: "";
-        //     height: 35px;
-        //     width: 100%;
-        //     position: fixed;
-        //     display: block;
-        //     background: rgb(255,255,255);
-        //     background: linear-gradient(180deg, rgba($lightestgrey,0) 0%, rgba($lightestgrey,1) 100%);
-        //     bottom: 0;
-        // }
     }
+    
 }

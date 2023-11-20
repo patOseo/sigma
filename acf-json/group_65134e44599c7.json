@@ -21,6 +21,59 @@
             "esc_html": 0
         },
         {
+            "key": "field_6557d4effb853",
+            "label": "Style",
+            "name": "style",
+            "aria-label": "",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "cards": "Cards",
+                "single": "Single"
+            },
+            "default_value": "cards",
+            "return_format": "value",
+            "allow_null": 0,
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_6516d91816be6",
+            "label": "Testimonials per Slide",
+            "name": "per_slide",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "Select how many testimonials to show at once. Defaults to 3.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6557d4effb853",
+                        "operator": "==",
+                        "value": "cards"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 3,
+            "min": "",
+            "max": "",
+            "placeholder": "",
+            "step": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_65134e44c90d3",
             "label": "Select Testimonial Categories",
             "name": "select_category",
@@ -30,7 +83,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "25",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -44,28 +97,6 @@
             "bidirectional": 0,
             "multiple": 0,
             "bidirectional_target": []
-        },
-        {
-            "key": "field_6516d91816be6",
-            "label": "Testimonials per Slide",
-            "name": "per_slide",
-            "aria-label": "",
-            "type": "number",
-            "instructions": "Select how many testimonials to show at once. Defaults to 3.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "25",
-                "class": "",
-                "id": ""
-            },
-            "default_value": 3,
-            "min": "",
-            "max": "",
-            "placeholder": "",
-            "step": "",
-            "prepend": "",
-            "append": ""
         }
     ],
     "location": [
@@ -86,5 +117,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1695997549
+    "modified": 1700255085
 }
