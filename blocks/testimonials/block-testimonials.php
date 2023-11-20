@@ -6,6 +6,10 @@ if ( ! empty( $block['className'] ) ) {
 
 $style = get_field('style');
 
+if(!$style) {
+    $style = 'cards';
+}
+
 $uid = uniqid();
 $sliderclass = 'swiper-' . $uid;
 $nextclass = 'swiper-button-next-' . $uid;
