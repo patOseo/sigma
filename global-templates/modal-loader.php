@@ -6,7 +6,7 @@ if(have_rows('load_modals')):
         $modal = get_post($selectmodal);
         ?>
 
-        <?php if($modal): $modalcontent = $modal->post_content; ?>
+        <?php if($selectmodal): $modalcontent = $modal->post_content; ?>
         <div class="modal fade" id="<?php echo esc_attr($modaltrigger); ?>" tabindex="-1" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
             <div class="modal-content">
