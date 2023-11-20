@@ -6,6 +6,7 @@ if ( ! empty( $block['className'] ) ) {
 
 $show_all = get_field('show_all');
 $show_bio = get_field('show_bio');
+$new_tab = get_field('new_tab');
 $select_members = get_field('select_members');
 
 if($show_all) {
@@ -56,7 +57,7 @@ if($num >= 3) {
                         </div>
                     </div>
                     <div class="col-12 <?php if($num == 1) { echo 'col-lg-8'; } ?>">
-                        <a href="<?php echo get_permalink(); ?>" class="stretched-link">
+                        <a href="<?php echo get_permalink(); ?>" class="stretched-link"<?php if($new_tab) { echo ' target="_blank" rel="noopener,noreferrer"'; } ?>>
                             <div class="position-relative py-3 <?php if($num == 1) { echo 'text-start'; } else { echo 'text-center'; } ?>">
                                 <div class="d-inline-block p-3 bg-white">
                                     <h2 class="h5 mb-0 text-uppercase"><?php echo get_the_title(); ?></h2>
