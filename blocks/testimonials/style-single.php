@@ -1,7 +1,7 @@
 <div class="swiper-wrapper">
     <!-- Slides -->
     <?php while($testimonials->have_posts()): $testimonials->the_post(); ?>        
-        <div class="swiper-slide text-center h-100">
+        <div class="swiper-slide text-center">
             <div class="testimonial d-flex text-start shadow-none">
                 <div class="mt-3">
                     <div class="testimonial-content position-relative text-primary mb-3 fs-2 ff-montserrat">
