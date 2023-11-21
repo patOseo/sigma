@@ -27,6 +27,16 @@
     }
 }
 
+.wp-block-cover {
+    &.bg-hide-mobile {
+        img.wp-block-cover__image-background {
+            @include media-breakpoint-down(xl) {
+                display: none;
+            }
+        }
+    }
+}
+
 .wp-block-footnotes {
     margin: 0 auto;
     padding: 4rem 0;

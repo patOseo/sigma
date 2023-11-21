@@ -14008,6 +14008,12 @@ body .post-password-required {
   margin-right: auto;
 }
 
+@media (max-width: 1199.98px) {
+  .wp-block-cover.bg-hide-mobile img.wp-block-cover__image-background {
+    display: none;
+  }
+}
+
 .wp-block-footnotes {
   margin: 0 auto;
   padding: 4rem 0;
@@ -14117,6 +14123,8 @@ body .post-password-required {
 }
 .style-pill .accordion-body {
   color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 
 /* The actual timeline (the vertical ruler) */
