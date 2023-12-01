@@ -19,7 +19,6 @@ if(get_field('image')) {
 } else {
     $member_img = 10611;
 }
-
 $author_id = get_field('associated_user');
 ?>
 
