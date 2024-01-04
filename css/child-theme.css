@@ -16729,6 +16729,10 @@ body .post-password-required {
   margin-top: -56%;
 }
 
+.tribe-events-content .wpl-iframe-placeholder {
+  margin-top: 0;
+}
+
 .style-cards .swiper-button-next,
 .style-cards .swiper-button-prev {
   transition: 0.2s;
