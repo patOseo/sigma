@@ -36,12 +36,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-MPJPNRV');</script>
 <!-- End Google Tag Manager -->
 
-<!-- OneTrust Cookies Consent Notice start -->
-<script src=https://cdn.cookielaw.org/scripttemplates/otSDKStub.js  type="text/javascript" charset="UTF-8" data-domain-script="XXXXXX" ></script>
+<!-- OneTrust Cookies Consent Notice start for sigmaassessmentsystems.com -->
+<script src=https://cdn.cookielaw.org/scripttemplates/otSDKStub.js  type="text/javascript" charset="UTF-8" data-domain-script="9762b4c9-3485-468e-a09f-32f10ca39e2b" ></script>
 <script type="text/javascript">
 function OptanonWrapper() { }
 </script>
-<!-- OneTrust Cookies Consent Notice end -->
+<!-- OneTrust Cookies Consent Notice end for sigmaassessmentsystems.com -->
 
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
