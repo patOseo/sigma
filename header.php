@@ -16,6 +16,18 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+<script> 
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('consent', 'default', {
+	ad_storage: "denied",
+    analytics_storage: "denied",
+    functionality_storage: "denied",
+    personalization_storage: "denied",
+    security_storage: "denied",
+	'wait_for_update': 500
+});
+</script>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -23,6 +35,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-MPJPNRV');</script>
 <!-- End Google Tag Manager -->
+
+<!-- OneTrust Cookies Consent Notice start for sigmaassessmentsystems.com -->
+<script src=https://cdn.cookielaw.org/scripttemplates/otSDKStub.js  type="text/javascript" charset="UTF-8" data-domain-script="9762b4c9-3485-468e-a09f-32f10ca39e2b" ></script>
+<script type="text/javascript">
+function OptanonWrapper() { }
+</script>
+<!-- OneTrust Cookies Consent Notice end for sigmaassessmentsystems.com -->
+
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
