@@ -40,7 +40,7 @@ $advmode = get_field('advanced_mode');
                         <?php echo $htmltagclose; ?>
                         <div id="collapse<?php echo $uniqid . get_row_index(); ?>" class="accordion-collapse collapse <?php if(is_admin()) { echo 'show'; } else { echo 'collapsed'; } ?>" aria-labelledby="heading-<?= $uniqid; ?>-<?php echo get_row_index(); ?>" <?php if($oneitem): ?>data-bs-parent="#accordion-<?= $uniqid; ?>"<?php endif; ?>>
                             <div class="accordion-body">
-                                <?php the_sub_field('content'); ?>
+                                <?php echo get_sub_field('content'); ?>
                             </div>
                         </div>
                     </div>
