@@ -24,7 +24,7 @@ $stages = array(
         'img' => 8450,
         'img_active' => 8456,
         'stage' => 'n',
-        'link' => '/succession-planning-nominating-successors/'
+        'link' => '/succession-nomination-survey-template/'
     ),
     array(
         'img' => 8445,
