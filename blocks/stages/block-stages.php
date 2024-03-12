@@ -30,7 +30,7 @@ $stages = array(
         'img' => 8445,
         'img_active' => 8451,
         'stage' => 'a',
-        'link' => '/assessing-succession-needs/'
+        'link' => '/candidate-succession-profile-template/'
     ),
     array(
         'img' => 8447,
