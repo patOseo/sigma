@@ -42,7 +42,7 @@ $stages = array(
         'img' => 8449,
         'img_active' => 8455,
         'stage' => 'm',
-        'link' => '/measuring-success/'
+        'link' => '/talent-progress-scorecard-template/'
     ),
 );
 
