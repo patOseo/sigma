@@ -40,13 +40,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<?php if(have_rows('social_media_links', 'option')): ?>
 				<div class="social-links d-inline me-3 px-2 border-end">
 					<?php while(have_rows('social_media_links', 'option')): the_row(); ?>
-						<a class="social-link text-decoration-none mx-1" href="<?php the_sub_field('link'); ?>" target="_blank" rel="noopener noreferrer">
-							<?php include(get_stylesheet_directory() . '/images/icons/icon-' . strtolower(get_sub_field('name')) . '.svg'); ?>
-						</a>
+						<div class="d-inline-block">
+							<a class="social-link text-decoration-none mx-1" href="<?php the_sub_field('link'); ?>" target="_blank" rel="noopener noreferrer">
+								<?php include(get_stylesheet_directory() . '/images/icons/icon-' . strtolower(get_sub_field('name')) . '.svg'); ?>
+							</a>
+						</div>
 					<?php endwhile; ?>
 				</div>
 			<?php endif; ?>
-			<div class="search-button d-inline"><?php include(get_stylesheet_directory() . '/images/icons/icon-search.svg'); ?></div>
+			<div class="search-button d-inline-block"><?php include(get_stylesheet_directory() . '/images/icons/icon-search.svg'); ?></div>
 			</div>
 			<div class="offcanvas offcanvas-end bg-primary" tabindex="-1" id="navbarNavOffcanvas">
 				<div class="offcanvas-header justify-content-end">
