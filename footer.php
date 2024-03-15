@@ -80,12 +80,12 @@ $phone2 = get_field('phone_2', 'option');
 				<div class="col-6 col-lg-2">
 					<h3 class="h5 mb-3 text-uppercase fw-bold text-white">Contact Us</h3>
 					<p class="fs-sm">
-						<strong class="fw-boldest">London, ON</strong><br>
+						<strong class="fw-boldest">Canada</strong><br>
 						<a class="text-white" href="tel:<?= $phone1; ?>"><?= $phone1; ?></a>
 					</p>
 
 					<p class="fs-sm">
-						<strong class="fw-boldest">Port Huron, MI</strong><br>
+						<strong class="fw-boldest">USA</strong><br>
 						<a class="text-white" href="tel:<?= $phone2; ?>"><?= $phone2; ?></a>
 					</p>
 
