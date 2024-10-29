@@ -76,5 +76,5 @@ $upcoming_webinar = new WP_Query($args);
         <?php endwhile; wp_reset_postdata(); ?>
     </div>
     <?php else: ?>
-        <p class="h4 lh-sm text-grey fw-light">There are currently no upcoming webinars, but feel free to browse our collection of on-demand videos below to watch our past webinars.</p>
+        <p class="h4 lh-sm text-grey fw-light">There are currently no upcoming webinars, but feel free to browse our collection of on-demand webinars below.</p>
     <?php endif;
