@@ -94,13 +94,15 @@ function understrap_child_customize_controls_js() {
 add_action( 'customize_controls_enqueue_scripts', 'understrap_child_customize_controls_js' );
 
 // Custom functions
-@require_once('functions/enqueue.php');
-@require_once('functions/admin-testimonials.php');
-@require_once('functions/admin-all-posts.php');
-@require_once('functions/image-sizes.php');
-@require_once('functions/blocks.php');
-@require_once('functions/breadcrumbs.php');
-@require_once('functions/default-block-templates.php');
-@require_once('functions/block-patterns.php');
-@require_once('functions/ajax-filtering-blogs.php');
-@require_once('functions/quiz.php');
+require_once('functions/enqueue.php');
+require_once('functions/admin-testimonials.php');
+require_once('functions/admin-all-posts.php');
+require_once('functions/image-sizes.php');
+require_once('functions/blocks.php');
+require_once('functions/breadcrumbs.php');
+require_once('functions/default-block-templates.php');
+require_once('functions/block-patterns.php');
+require_once('functions/ajax-filtering-blogs.php');
+require_once('functions/ajax-filtering-webinars.php');
+require_once('functions/quiz.php');
+require_once('functions/webinars.php');

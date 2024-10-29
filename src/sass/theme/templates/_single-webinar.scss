@@ -1,0 +1,52 @@
+.single-webinar {
+    .embed-container { 
+        position: relative; 
+        padding-bottom: 56.25%;
+        overflow: hidden;
+        max-width: 100%;
+        height: auto;
+    } 
+
+    .embed-container iframe,
+    .embed-container object,
+    .embed-container embed { 
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .video-transcript {
+        max-height: 400px;
+        overflow: hidden;
+
+        &:after {
+            content: "";
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            display: block;
+            background: rgb(255, 255, 255);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 90%);
+            bottom: 0;
+        }
+
+        &.expanded {
+            max-height: none;
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    .transcript-btn {
+        border-width: 2px !important;
+        box-shadow: none !important;
+
+        &:hover {
+            color: $white !important;
+        }
+    }
+}

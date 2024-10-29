@@ -1,0 +1,16 @@
+.webinar-card-container {
+    .webinar-title {
+        min-height: 160px;
+    }
+    
+    button {
+        border-width: 2px;
+    }
+
+    &:hover {
+        button {
+            background-color: $secondary !important;
+            color: $white;
+        }
+    }
+}

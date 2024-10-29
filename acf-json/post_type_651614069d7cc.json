@@ -56,8 +56,11 @@
     "rest_base": "",
     "rest_namespace": "wp\/v2",
     "rest_controller_class": "WP_REST_Posts_Controller",
-    "menu_position": "",
-    "menu_icon": "dashicons-groups",
+    "menu_position": 40,
+    "menu_icon": {
+        "type": "dashicons",
+        "value": "dashicons-groups"
+    },
     "rename_capabilities": false,
     "singular_capability_name": "post",
     "plural_capability_name": "posts",
@@ -79,5 +82,5 @@
     "delete_with_user": false,
     "register_meta_box_cb": "",
     "enter_title_here": "",
-    "modified": 1695946439
+    "modified": 1730146733
 }

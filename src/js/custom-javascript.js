@@ -71,6 +71,27 @@ jQuery(function($) {
         });
     }
 
+    // Webinars paginate
+    function filterWebinars() {
+        $.ajax({
+            url: '/wp-admin/admin-ajax.php',
+            type: 'POST',
+            data: {
+                action: 'filter_webinars',
+                page: currentPage
+            },
+            beforeSend: function() {
+                $('#webinarsFeed').removeClass('fade-in');
+                $('#webinarsFeed').html('<div class="my-6 py-6 text-center"><div class="my-lg-6 spinner-grow text-primary text-center mx-auto" role="status"><span class="visually-hidden">Loading...</span></div></div>');
+            },
+
+            success: function(response) {
+                $('#webinarsFeed').html(response);
+                $('#webinarsFeed').addClass('fade-in');
+            }
+        });
+    }
+
     $('.category-link').click(function(e){
         e.preventDefault();
         currentPage = 1;
@@ -91,9 +112,30 @@ jQuery(function($) {
         filterBlogs();
     });
 
+    // AJAX Webinars Pagination handling
+    $(document).on('click', '.webinars-block .pagination a', function(e) {
+        e.preventDefault();
+        var href = $(this).attr('href');
+        currentPage = $(this).attr('data-page'); // Update the page number from pagination links
+        // Scroll to top of Blog list
+        $('html, body').animate({
+            scrollTop: $('.webinars-block').offset().top - 200
+        }, 200);
+        filterWebinars();
+    });
+
     // If .modal is present, move the div to the start of the .site div
     if ($('.modal').length) {
         $('.modal').prependTo('.site');
     }
 
+    // When clicking on .transcript-btn, toggle the .expanded class on .video-transcript and change the .transcript-btn text to 'Hide Transcript'
+    $('.transcript-btn').click(function() {
+        $('.video-transcript').toggleClass('expanded');
+        if ($('.video-transcript').hasClass('expanded')) {
+            $('.transcript-btn').text('Hide the full transcript');
+        } else {
+            $('.transcript-btn').text('Show the full transcript');
+        }
+    });
 });

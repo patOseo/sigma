@@ -1,0 +1,12 @@
+{
+    "name": "acf/webinars",
+    "title": "Webinars Feed",
+    "description": "A custom block to display a webinars feed.",
+    "category": "sigma-blocks",
+    "icon": "format-video",
+    "keywords": ["webinars", "video"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "block-webinars.php"
+    }
+}

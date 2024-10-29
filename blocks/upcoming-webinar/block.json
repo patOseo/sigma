@@ -1,0 +1,12 @@
+{
+    "name": "acf/upcoming-webinar",
+    "title": "Upcoming Webinar",
+    "description": "A custom block to display the upcoming webinar.",
+    "category": "sigma-blocks",
+    "icon": "format-video",
+    "keywords": ["webinar", "upcoming"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "block-upcoming-webinar.php"
+    }
+}
