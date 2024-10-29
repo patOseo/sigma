@@ -17416,10 +17416,15 @@ div:not(.acf-block-preview) .shadowbox-block:has(a):hover {
 
 .upcoming-webinar-block .upcoming-webinar-img img {
   height: 100%;
-  width: auto;
+  width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
   transition: transform 0.65s ease-in-out;
+}
+@media (max-width: 539.98px) {
+  .upcoming-webinar-block .upcoming-webinar-img img {
+    max-height: 150px;
+  }
 }
 .upcoming-webinar-block:hover .upcoming-webinar-img img {
   transform: scale(1.1);

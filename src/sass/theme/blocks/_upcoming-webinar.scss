@@ -2,9 +2,13 @@
     .upcoming-webinar-img {
         img {
             height: 100%;
-            width: auto;
+            width: 100%;
             object-fit: cover;
             transition: transform .65s ease-in-out;
+
+            @include media-breakpoint-down(sm) {
+                max-height: 150px;
+            }
         }
     }
 
