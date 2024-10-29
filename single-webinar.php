@@ -49,7 +49,7 @@ $webinars = new WP_Query($args);
 
             <h2 class="py-5">Watch the Webinar</h2>
 
-            <div class="embed-container rounded-4 mb-4 overflow-hidden"><?php echo get_field('video_url'); ?></div>
+            <div class="embed-container rounded-4 mb-4 overflow-hidden shadow"><?php echo get_field('video_url'); ?></div>
 
 			<?php if(get_field('transcript')): ?>
 			<div class="transcript-section mb-5 py-5">
