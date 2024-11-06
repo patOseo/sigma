@@ -63,14 +63,16 @@ $webinars = new WP_Query($args);
 
 			<?php if($webinars->have_posts()): ?>
 
-			<h2 class="py-5">More SIGMA Webinars</h2>
-			<div class="more-webinars mb-6">
-				<div class="row gx-5 gy-5">
-					<?php while($webinars->have_posts()): $webinars->the_post(); ?>
-					<div class="col-12 col-md-6 col-xl-4 mb-4">
-						<?php get_template_part( 'loop-templates/content', 'webinars' ); ?>
+			<div class="py-6">
+				<h2 class="py-5">More SIGMA Webinars</h2>
+				<div class="more-webinars mb-6">
+					<div class="row gx-5 gy-5 mb-6">
+						<?php while($webinars->have_posts()): $webinars->the_post(); ?>
+						<div class="col-12 col-md-6 col-xl-4 mb-4">
+							<?php get_template_part( 'loop-templates/content', 'webinars' ); ?>
+						</div>
+						<?php endwhile; wp_reset_postdata(); ?>
 					</div>
-					<?php endwhile; wp_reset_postdata(); ?>
 				</div>
 			</div>
 			<?php endif; ?>
