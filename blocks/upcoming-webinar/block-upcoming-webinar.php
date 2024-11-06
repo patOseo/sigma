@@ -47,6 +47,7 @@ $upcoming_webinar = new WP_Query($args);
                             <div class="event-info text-secondary h4 py-4 py-lg-5">
                                 <?php echo $event_date_formatted . " &nbsp; | &nbsp; " . get_the_title($venue_id); ?>
                             </div>
+                            <?php if($presenter): ?>
                             <div class="row gx-3 align-items-center">
                                 <div class="col mb-0">
                                     <div class="presenter-image text-center">
@@ -65,6 +66,7 @@ $upcoming_webinar = new WP_Query($args);
                                     <div class="presenter-position fw-normal fs-5 lh-sm text-grey"><?php echo get_field('position', $presenter); ?></div>
                                 </div>
                             </div>
+                            <?php endif; ?>
                             <div class="d-block upcoming-webinar-excerpt mt-5">
                                 <p class="fs-5 mb-0 lh-1"><?php the_excerpt(); ?></p>
                             </div>
