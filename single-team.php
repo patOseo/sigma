@@ -118,7 +118,7 @@ $author_id = get_field('associated_user');
 
 <?php
 // Include the schema generator for assessment pages
-@include_once('schema/schema-team.php'); 
+include_once('schema/schema-team.php'); 
 
 
 get_footer();

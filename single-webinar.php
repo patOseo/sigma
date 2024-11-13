@@ -84,4 +84,7 @@ $webinars = new WP_Query($args);
 </div><!-- #single-wrapper -->
 
 <?php
+// Include the schema generator for webinar pages
+@include_once('schema/schema-webinar.php'); 
+
 get_footer();

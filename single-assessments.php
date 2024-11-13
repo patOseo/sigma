@@ -166,7 +166,7 @@ get_template_part( 'global-templates/modal-loader' );
 
 // Include the schema generator for Parent assessment pages
 if($is_parent) {
-	@include_once('schema/schema-assessments.php'); 
+	include_once('schema/schema-assessments.php'); 
 }
 
 get_footer();
