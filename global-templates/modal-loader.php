@@ -10,7 +10,7 @@ if(have_rows('load_modals')):
         <div class="modal fade" id="<?php echo esc_attr($modaltrigger); ?>" tabindex="-1" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
             <div class="modal-content shadow">
-              <div class="modal-body <?= $padding; ?>">
+              <div class="modal-body <?php if($padding) { echo $padding; } ?>">
               <button type="button" class="btn-close position-absolute top-0 end-0 p-3" data-bs-dismiss="modal" aria-label="Close"></button>
                 <?php echo do_shortcode($modalcontent); ?>
               </div>
