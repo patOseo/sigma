@@ -6,14 +6,12 @@ if(have_rows('load_modals')):
         $modal = get_post($selectmodal);
         ?>
 
-        <?php if($selectmodal): $modalcontent = $modal->post_content; ?>
+        <?php if($selectmodal): $modalcontent = $modal->post_content; $padding = $modal->padding; ?>
         <div class="modal fade" id="<?php echo esc_attr($modaltrigger); ?>" tabindex="-1" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
+            <div class="modal-content shadow">
+              <div class="modal-body <?= $padding; ?>">
+              <button type="button" class="btn-close position-absolute top-0 end-0 p-3" data-bs-dismiss="modal" aria-label="Close"></button>
                 <?php echo do_shortcode($modalcontent); ?>
               </div>
             </div>

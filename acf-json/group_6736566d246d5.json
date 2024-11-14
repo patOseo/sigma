@@ -1,0 +1,56 @@
+{
+    "key": "group_6736566d246d5",
+    "title": "Modals",
+    "fields": [
+        {
+            "key": "field_67365a7aa87ce",
+            "label": "Padding",
+            "name": "padding",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "p-0": "p-0",
+                "p-1": "p-1",
+                "p-2": "p-2",
+                "p-3": "p-3",
+                "p-4": "p-4",
+                "p-5": "p-5"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "modal"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1731615383
+}

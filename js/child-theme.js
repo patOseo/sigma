@@ -2895,7 +2895,6 @@
 	})();
 
 	// Custom js goes here.
-
 	jQuery(function ($) {
 	  // Check if the HubSpot form script is loaded
 	  var hubspotFormScript = document.querySelector('script[src="//js.hsforms.net/forms/embed/v2.js"]');
@@ -3037,6 +3036,16 @@
 	    } else {
 	      $('.transcript-btn').text('Show the full transcript');
 	    }
+	  });
+
+	  // When wppopups.showPopup is triggered, add .fade-in to .spu-box
+	  $(document).on('wppopups.popup_opened', function () {
+	    $('.spu-box').addClass('fade-in');
+	  });
+
+	  // When clicking on .spu-close, remove .spu-box from the dom
+	  $('.spu-close').click(function () {
+	    $('.spu-box').removeClass('fade-in');
 	  });
 	});
 

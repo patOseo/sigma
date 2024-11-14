@@ -1,0 +1,9 @@
+.spu-box {
+    display: block !important;
+    opacity: 0;
+    transition: opacity .3s;
+
+    &.fade-in {
+        opacity: 1;
+    }
+}

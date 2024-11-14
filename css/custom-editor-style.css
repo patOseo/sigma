@@ -14007,6 +14007,39 @@ body .entry-content.content-narrow .is-layout-constrained > :where(:not(.alignle
   color: #fff;
 }
 
+.spu-box {
+  display: block !important;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.spu-box.fade-in {
+  opacity: 1;
+}
+
+.modal .btn-close {
+  box-shadow: none;
+  outline: none;
+  z-index: 99;
+}
+.modal .wp-block-button .has-sigmagreen-background-color {
+  border: 3px solid #babf10 !important;
+  transition: 0.2s;
+}
+.modal .wp-block-button .has-sigmagreen-background-color:hover {
+  border: 3px solid #95990d !important;
+}
+.modal .btn-outline {
+  color: #fff !important;
+}
+.modal .btn-outline a {
+  border: 3px solid #babf10 !important;
+  box-sizing: border-box;
+  background-color: transparent !important;
+}
+.modal .btn-outline:hover a {
+  color: #babf10 !important;
+}
+
 .assessment-header {
   min-height: 240px;
   background-position: center center;
