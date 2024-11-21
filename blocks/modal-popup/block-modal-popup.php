@@ -21,14 +21,12 @@ $modal = get_post($selectmodal);
 $uniqid = 'modal' . uniqid();
 ?>
 
-<?php if($modal): $modalcontent = $modal->post_content; ?>
+<?php if($modal): $modalcontent = $modal->post_content; $padding = $modal->padding; ?>
 <div class="modal fade" id="<?php echo esc_attr($uniqid); ?>" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
     <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
+      <div class="modal-body <?php if($padding) { echo $padding; } ?>">
+        <button type="button" class="btn-close position-absolute top-0 end-0 p-3" data-bs-dismiss="modal" aria-label="Close"></button>
         <?php echo do_shortcode($modalcontent); ?>
       </div>
     </div>
@@ -38,6 +36,6 @@ $uniqid = 'modal' . uniqid();
 
 <div class="<?php echo esc_attr($class_name); ?>">
 <!-- wp:button -->
-<div class="wp-block-button<?php if($color == 'outline') { echo ' is-style-outline'; } if (!empty($block['align'])) { echo ' align' . $block['align'];} ?>"><a <?php if($color == 'outline') { echo 'style="background:transparent"'; } ?> class="wp-block-button__link <?php echo esc_attr($btn_class); ?> wp-element-button" role="button" data-bs-toggle="modal" href="#<?= $uniqid; ?>"><?= $txt; ?></a></div>
+<div class="wp-block-button<?php if($color == 'outline') { echo ' is-style-outline'; } if (!empty($block['align'])) { echo ' align' . $block['align'];} ?>"><a <?php if($color == 'outline') { echo 'style="background:transpa nt"'; } ?> class="wp-block-button__link <?php echo esc_attr($btn_class); ?> wp-element-button" role="button" data-bs-toggle="modal" href="#<?= $uniqid; ?>"><?= $txt; ?></a></div>
 <!-- /wp:button -->
 </div>
