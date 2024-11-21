@@ -27,7 +27,7 @@
             "label": "Section Link",
             "name": "section_link",
             "aria-label": "",
-            "type": "url",
+            "type": "link",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -36,8 +36,8 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": ""
+            "return_format": "url",
+            "allow_in_bindings": 1
         },
         {
             "key": "field_641dedc367bdd",
@@ -76,5 +76,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1696014261
+    "modified": 1732213617
 }
