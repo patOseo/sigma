@@ -44,7 +44,12 @@ $schema = array();
 $video_url = get_field('video_url', false, false);
 $video_thumb = getYouTubeThumbnail($video_url);
 $transcript = get_field('transcript', false, false);
+$date = get_field('webinar_info')['date'];
 
+// If date is empty, use the post date
+if (empty($date)) {
+  $date = get_the_date('Y-m-d');
+}
 
 // Insert the schema fields
 $schema[] = array(
@@ -52,6 +57,8 @@ $schema[] = array(
   '@type'     	=> 'Event',
   'name'		=> get_the_title(),
   'eventAttendanceMode' => 'https://schema.org/OnlineEventAttendanceMode',
+  'startDate'	=> $date,
+  'endDate'		=> $date,
   "location" => array(
     "@type" => "VirtualLocation",
     "url" => get_the_permalink()
@@ -61,6 +68,7 @@ $schema[] = array(
     'name' => get_the_title(),
     'thumbnailUrl' => $video_thumb,
     'contentUrl' => $video_url,
+    'uploadDate' => $date,
     'transcript' => $transcript
   )
 );

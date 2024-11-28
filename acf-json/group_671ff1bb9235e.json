@@ -46,6 +46,25 @@
                     "bidirectional": 0,
                     "ui": 1,
                     "bidirectional_target": []
+                },
+                {
+                    "key": "field_674885d6a0766",
+                    "label": "Date",
+                    "name": "date",
+                    "aria-label": "",
+                    "type": "date_picker",
+                    "instructions": "For this field, it is recommended to use the YouTube video upload date.",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "display_format": "F j, Y",
+                    "return_format": "Y-m-d",
+                    "first_day": 1,
+                    "allow_in_bindings": 0
                 }
             ]
         },
@@ -107,5 +126,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1730227422
+    "modified": 1732807168
 }
