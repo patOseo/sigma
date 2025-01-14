@@ -12,6 +12,11 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 $webinars_page = get_page_by_path('webinars', OBJECT, 'page');
 $bg = get_the_post_thumbnail_url($webinars_page->ID, 'full');
+$heading = get_field('heading');
+
+if(!$heading) {
+	$heading = 'Watch the Seminar';
+}
 
 $args = array(
 	'post_type' => 'webinar',
@@ -47,7 +52,7 @@ $webinars = new WP_Query($args);
 
 		<main class="site-main" id="main">
 
-            <h2 class="py-5">Watch the Webinar</h2>
+            <h2 class="py-5"><?= $heading; ?></h2>
 
             <div class="embed-container rounded-4 mb-4 overflow-hidden shadow"><?php echo get_field('video_url'); ?></div>
 

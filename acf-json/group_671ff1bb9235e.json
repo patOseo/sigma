@@ -3,6 +3,27 @@
     "title": "Webinar Fields",
     "fields": [
         {
+            "key": "field_67867ec300ff0",
+            "label": "Heading",
+            "name": "heading",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Watch the Webinar",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_6721246f9f452",
             "label": "Webinar Info",
             "name": "webinar_info",
@@ -126,5 +147,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1732808759
+    "modified": 1736867544
 }
