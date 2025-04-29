@@ -17,8 +17,8 @@ $prevclass = 'swiper-button-prev-' . $uid;
     <div class="swiper px-2 py-3 <?php echo esc_attr($sliderclass); ?>">
         <div class="swiper-wrapper">
             <?php while(have_rows('carousel')): the_row(); ?>
-                <div class="swiper-slide d-flex align-items-center text-center">
-                    <div class="shadowbox-block">
+                <div class="swiper-slide d-flex align-items-center text-center h-100">
+                    <div class="shadowbox-block w-100 h-100">
                         <div class="slider-image d-flex flex-column align-self-center text-center w-100">
                             <?php $image = get_sub_field('icon'); ?>
                             <?php echo wp_get_attachment_image($image, array(60, 60), '', array('class' => 'mx-auto mb-4')); ?>
@@ -43,13 +43,13 @@ jQuery(function($){
         loop: true,
         infinite: true,
         speed: 500,
-        slidesPerView: 3, 
+        slidesPerView: 1, 
 
         breakpoints: {
             992: {
-              slidesPerView: <?= $num_rows; ?>,
+              slidesPerView: <?php echo $num_rows; ?>,
               spaceBetween: 20
-            }
+            },
         },
       
         // Navigation arrows
