@@ -1,0 +1,12 @@
+{
+    "name": "acf/shadowbox-carousel",
+    "title": "Shadowbox Carousel",
+    "description": "A custom block to display a shadowbox carousel.",
+    "category": "sigma-blocks",
+    "icon": "slides",
+    "keywords": ["carousel", "slider", "shadowbox"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "block-shadowbox-carousel.php"
+    }
+}

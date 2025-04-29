@@ -26,6 +26,7 @@ function register_acf_blocks() {
     register_block_type( __DIR__ . '/../blocks/timeline' );
     register_block_type( __DIR__ . '/../blocks/stages' );
     register_block_type( __DIR__ . '/../blocks/shadowbox' );
+    register_block_type( __DIR__ . '/../blocks/shadowbox-carousel' );
     register_block_type( __DIR__ . '/../blocks/testimonials' );
     register_block_type( __DIR__ . '/../blocks/image-grid-slider' );
     register_block_type( __DIR__ . '/../blocks/team-members' );
