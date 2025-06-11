@@ -51,6 +51,14 @@ if (empty($date)) {
   $date = get_the_date('Y-m-d');
 }
 
+// Get the yoast meta description if available, otherwise use the excerpt
+$yoast_description = get_post_meta(get_the_ID(), '_yoast_wpseo_metadesc', true);
+if (!empty($yoast_description)) {
+  $description = $yoast_description;
+} else {
+  $description = get_the_excerpt();
+}
+
 $presenter = get_field('webinar_info')['presenter'];
 
 // Insert the schema fields
@@ -58,7 +66,7 @@ $schema[] = array(
   '@context'  	=> 'https://schema.org',
   '@type'     	=> 'Event',
   'name'		=> get_the_title(),
-  'description' => get_the_excerpt(),
+  'description' => $description,
   'eventAttendanceMode' => 'https://schema.org/OnlineEventAttendanceMode',
   'startDate'	=> $date,
   'endDate'		=> $date,
