@@ -59,7 +59,7 @@ if (!empty($yoast_description)) {
   $description = get_the_excerpt();
 }
 
-$presenter = get_field('webinar_info')['presenter'];
+$presenter = get_the_title(get_field('webinar_info')['presenter']);
 
 // Insert the schema fields
 $schema[] = array(
