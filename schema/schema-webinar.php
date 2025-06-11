@@ -51,18 +51,25 @@ if (empty($date)) {
   $date = get_the_date('Y-m-d');
 }
 
+$presenter = get_field('webinar_info')['presenter'];
+
 // Insert the schema fields
 $schema[] = array(
   '@context'  	=> 'https://schema.org',
   '@type'     	=> 'Event',
   'name'		=> get_the_title(),
+  'description' => get_the_excerpt(),
   'eventAttendanceMode' => 'https://schema.org/OnlineEventAttendanceMode',
   'startDate'	=> $date,
   'endDate'		=> $date,
-  "location" => array(
-    "@type" => "VirtualLocation",
-    "url" => get_the_permalink()
+  'eventStatus' => 'https://schema.org/EventScheduled',
+  'location' => array(
+    '@type' => 'VirtualLocation',
+    'url' => get_the_permalink()
   ),
+  'organizer' => 'SIGMA Assessment Systems',
+  'performer' => $presenter,
+  'image' => $video_thumb,
   'subjectOf' => array(
     '@type' => 'VideoObject',
     'name' => get_the_title(),
