@@ -13,6 +13,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 $webinars_page = get_page_by_path('webinars', OBJECT, 'page');
 $bg = get_the_post_thumbnail_url($webinars_page->ID, 'full');
 $heading = get_field('heading');
+$webinar_info = get_field('webinar_info');
 
 if(!$heading) {
 	$heading = 'Watch the Seminar';
@@ -56,6 +57,13 @@ $webinars = new WP_Query($args);
 
             <div class="embed-container rounded-4 mb-4 overflow-hidden shadow"><?php echo get_field('video_url'); ?></div>
 
+			<?php if($webinar_info['description']): ?>
+			<div class="webinar-desc mb-5 py-5">
+				<h2>About the Webinar</h2>
+				<div class="fs-5"><?php echo $webinar_info['description']; ?></div>
+			</div>
+			<?php endif; ?> 
+		
 			<?php if(get_field('transcript')): ?>
 			<div class="transcript-section mb-5 py-5">
 				<h2 class="py-5">Video Transcript</h2>

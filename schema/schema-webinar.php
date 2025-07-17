@@ -51,9 +51,12 @@ if (empty($date)) {
   $date = get_the_date('Y-m-d');
 }
 
-// Get the yoast meta description if available, otherwise use the excerpt
+// Get the custom description if available, then the yoast meta description if available, otherwise use default fallback.
+$desc = get_field('webinar_info')['description'];
 $yoast_description = get_post_meta(get_the_ID(), '_yoast_wpseo_metadesc', true);
-if (!empty($yoast_description) && function_exists('yoast_replace_vars')) {
+if($desc) {
+    $description = $desc;
+} elseif (!empty($yoast_description) && function_exists('yoast_replace_vars')) {
     $yoast_desc = yoast_replace_vars($yoast_description, get_post());
     $description = $yoast_desc;
 } else {
