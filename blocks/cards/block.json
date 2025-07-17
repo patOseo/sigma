@@ -1,0 +1,12 @@
+{
+    "name": "acf/cards",
+    "title": "Cards",
+    "description": "A custom block to display rows of cards with clickable buttons.",
+    "category": "sigma-blocks",
+    "icon": "slides",
+    "keywords": ["cards"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "block-cards.php"
+    }
+}

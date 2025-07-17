@@ -1,0 +1,34 @@
+.block-cards-container {
+    .scale-up {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    &:hover {
+        .scale-up {
+            transform: scale(1.05);
+        }
+    }
+    .card-title {
+        min-height: 160px;
+    }
+    
+    button, a.btn {
+        border-width: 2px;
+    }
+
+    &:hover {
+        button {
+            background-color: $secondary !important;
+            color: $white;
+        }
+    }
+
+    .card-buttons {
+        a.btn {
+            &:hover {
+                background-color: $secondary !important;
+                color: $white;
+            }
+        }
+    }
+}

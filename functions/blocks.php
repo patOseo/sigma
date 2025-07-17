@@ -35,4 +35,5 @@ function register_acf_blocks() {
     register_block_type( __DIR__ . '/../blocks/modal-popup' );
     register_block_type( __DIR__ . '/../blocks/webinars' );
     register_block_type( __DIR__ . '/../blocks/upcoming-webinar' );
+    register_block_type( __DIR__ . '/../blocks/cards' );
 }

@@ -16928,6 +16928,10 @@ body .entry-content.content-narrow .is-layout-constrained > :where(:not(.alignle
   color: #babf10 !important;
 }
 
+.z-1 {
+  z-index: 1;
+}
+
 .assessment-header {
   min-height: 240px;
   background-position: center center;
@@ -17496,6 +17500,27 @@ div:not(.acf-block-preview) .shadowbox-block:has(a):hover {
   .upcoming-webinar-block .upcoming-webinar-btn {
     left: 75% !important;
   }
+}
+
+.block-cards-container .scale-up {
+  transition: transform 0.3s ease-in-out;
+}
+.block-cards-container:hover .scale-up {
+  transform: scale(1.05);
+}
+.block-cards-container .card-title {
+  min-height: 160px;
+}
+.block-cards-container button, .block-cards-container a.btn {
+  border-width: 2px;
+}
+.block-cards-container:hover button {
+  background-color: #babf10 !important;
+  color: #fff;
+}
+.block-cards-container .card-buttons a.btn:hover {
+  background-color: #babf10 !important;
+  color: #fff;
 }
 
 .blue-section-with-heading {
