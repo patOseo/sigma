@@ -53,8 +53,9 @@ if (empty($date)) {
 
 // Get the yoast meta description if available, otherwise use the excerpt
 $yoast_description = get_post_meta(get_the_ID(), '_yoast_wpseo_metadesc', true);
-if (!empty($yoast_description)) {
-  $description = $yoast_description;
+if (!empty($yoast_description) && function_exists('yoast_replace_vars')) {
+    $yoast_desc = yoast_replace_vars($yoast_description, get_post());
+    $description = $yoast_desc;
 } else {
   $description = get_the_excerpt();
 }
