@@ -57,7 +57,7 @@ if (!empty($yoast_description) && function_exists('yoast_replace_vars')) {
     $yoast_desc = yoast_replace_vars($yoast_description, get_post());
     $description = $yoast_desc;
 } else {
-  $description = get_the_excerpt();
+  $description = "Watch the on-demand webinar with SIGMA's experts: " . get_the_title();
 }
 
 $presenter = get_the_title(get_field('webinar_info')['presenter']);
