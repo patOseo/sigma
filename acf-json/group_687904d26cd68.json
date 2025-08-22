@@ -21,6 +21,27 @@
             "esc_html": 0
         },
         {
+            "key": "field_68793c8976916",
+            "label": "Enable Tagging",
+            "name": "enable_tagging",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Check this to enable tagging and filtering of the cards.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
             "key": "field_687904d288c0c",
             "label": "Cards",
             "name": "cards",
@@ -119,7 +140,67 @@
                             "allow_in_bindings": 0,
                             "rows": 2,
                             "placeholder": "",
-                            "new_lines": ""
+                            "new_lines": "br"
+                        },
+                        {
+                            "key": "field_68793cea76918",
+                            "label": "Tags",
+                            "name": "tags",
+                            "aria-label": "",
+                            "type": "taxonomy",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_68793c8976916",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "taxonomy": "post_tag",
+                            "add_term": 1,
+                            "save_terms": 0,
+                            "load_terms": 0,
+                            "return_format": "id",
+                            "field_type": "multi_select",
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "bidirectional": 0,
+                            "multiple": 0,
+                            "bidirectional_target": []
+                        },
+                        {
+                            "key": "field_68793d1b76919",
+                            "label": "Image",
+                            "name": "image",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "allow_in_bindings": 0,
+                            "preview_size": "thumbnail"
                         }
                     ],
                     "parent_repeater": "field_687904d288c0c"
@@ -315,5 +396,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1752766021
+    "modified": 1752781122
 }

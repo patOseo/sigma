@@ -14638,6 +14638,9 @@ div:not(.acf-block-preview) .shadowbox-block:has(a):hover {
 .block-cards-container button, .block-cards-container a.btn {
   border-width: 2px;
 }
+.block-cards-container .card-desc b, .block-cards-container .card-desc strong {
+  font-weight: bold;
+}
 .block-cards-container:hover button {
   background-color: #babf10 !important;
   color: #fff;

@@ -16,6 +16,12 @@
         border-width: 2px;
     }
 
+    .card-desc {
+        b,strong {
+            font-weight: bold;
+        }
+    }
+
     &:hover {
         button {
             background-color: $secondary !important;
