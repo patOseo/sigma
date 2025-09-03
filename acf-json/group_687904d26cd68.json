@@ -21,6 +21,27 @@
             "esc_html": 0
         },
         {
+            "key": "field_68b84bb02a07c",
+            "label": "Enable Scrolling",
+            "name": "see_more",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "Enable scrolling to limit vertical space",
+            "default_value": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
             "key": "field_68793c8976916",
             "label": "Enable Tagging",
             "name": "enable_tagging",
@@ -30,7 +51,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -396,5 +417,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1752781122
+    "modified": 1756910282
 }

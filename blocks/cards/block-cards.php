@@ -8,7 +8,14 @@ if ( ! empty( $block['className'] ) ) {
     $class_name .= ' ' . $block['className'];
 }
 
+$expand = get_field('see_more');
 $tagging = get_field('enable_tagging');
+
+if($expand) {
+    $container_class_name = ' expand pe-3';
+} else {
+    $container_class_name = '';
+}
 
 if ($tagging && have_rows('cards')) {
     // Collect unique tags before rendering
@@ -55,10 +62,12 @@ if ($tagging && have_rows('cards')) {
 
 <?php if(have_rows('cards')): ?>
 <div class="<?php echo esc_attr($class_name); ?>">
-    <div class="row gx-5 gy-5 mb-6">
-        <?php while(have_rows('cards')): the_row(); ?>
-            <?php include __DIR__ . '/single-card.php'; ?>
-        <?php endwhile; ?>
-    </div>
+    <div class="cards-container<?php echo esc_attr($container_class_name); ?>">
+		<div class="row gx-5 gy-5 mb-6">
+			<?php while(have_rows('cards')): the_row(); ?>
+				<?php include __DIR__ . '/single-card.php'; ?>
+			<?php endwhile; ?>
+		</div>
+	</div>
 </div>
 <?php endif; ?>

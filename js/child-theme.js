@@ -2894,7 +2894,10 @@
 	  }
 	})();
 
+	// Ensure the DOM is fully loaded before attaching event listeners
+
 	// Custom js goes here.
+
 	jQuery(function ($) {
 	  // Check if the HubSpot form script is loaded
 	  var hubspotFormScript = document.querySelector('script[src="//js.hsforms.net/forms/embed/v2.js"]');
