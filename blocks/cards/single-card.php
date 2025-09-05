@@ -24,7 +24,7 @@
     $method = $linking['linking_method'];
 ?>
 
-<div class="col-12 col-md-6 col-xl-4 mb-4 card-col" <?php if($tagging) { ?>data-card-tag="<?php echo esc_attr($tag_classes); ?>"<?php } ?>>
+<div class="mb-4 card-col" <?php if($tagging) { ?>data-card-tag="<?php echo esc_attr($tag_classes); ?>"<?php } ?>>
     <div class="block-cards-container position-relative mb-4 h-100">
         <div class="block-card rounded-4 overflow-hidden shadow h-100 <?php if($method != 'buttons') { echo 'scale-up'; } ?>">
             <div class="block-card-title d-flex flex-column justify-content-start align-items-center bg-primary p-5">

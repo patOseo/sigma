@@ -10,6 +10,13 @@ if ( ! empty( $block['className'] ) ) {
 
 $expand = get_field('see_more');
 $tagging = get_field('enable_tagging');
+$columns = get_field('columns');
+
+if($columns) {
+	$cols = $columns;
+} else {
+	$cols = 3;
+}
 
 if($expand) {
     $container_class_name = ' expand pe-3';
@@ -63,7 +70,7 @@ if ($tagging && have_rows('cards')) {
 <?php if(have_rows('cards')): ?>
 <div class="<?php echo esc_attr($class_name); ?>">
     <div class="cards-container<?php echo esc_attr($container_class_name); ?>">
-		<div class="row gx-5 gy-5 mb-6">
+		<div class="row row-cols-1 row-cols-md-2 row-cols-xl-<?php echo esc_attr($cols); ?> gx-5 gy-5 mb-6">
 			<?php while(have_rows('cards')): the_row(); ?>
 				<?php include __DIR__ . '/single-card.php'; ?>
 			<?php endwhile; ?>
