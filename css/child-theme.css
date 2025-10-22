@@ -16602,6 +16602,10 @@ body .entry-content.content-narrow .is-layout-constrained > :where(:not(.alignle
   color: #fff !important;
   background: #babf10 !important;
 }
+.wp-block-button.is-style-outline .wp-element-button.has-sigmablue-color:hover {
+  color: #fff !important;
+  background: #12355a !important;
+}
 .wp-block-button.is-style-outline .has-sigmablue-background-color:hover {
   background: #EFEFEF !important;
 }

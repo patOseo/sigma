@@ -67,12 +67,14 @@
             "choices": {
                 "blue": "Blue",
                 "green": "Green",
-                "outline": "Green Outline"
+                "outline": "Green Outline",
+                "blue_outline": "Blue Outline"
             },
             "default_value": "blue",
             "return_format": "value",
             "multiple": 0,
             "allow_null": 0,
+            "allow_in_bindings": 1,
             "ui": 0,
             "ajax": 0,
             "placeholder": ""
@@ -96,5 +98,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1696555117
+    "modified": 1761153749
 }

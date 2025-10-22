@@ -82,6 +82,13 @@
                     background: $secondary !important;
                 }
             }
+
+            &.has-sigmablue-color {
+                &:hover {
+                    color: $white !important;
+                    background: $primary !important;
+                }
+            }
         }
         
 
