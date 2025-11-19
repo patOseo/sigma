@@ -6422,12 +6422,32 @@ textarea.form-control-lg {
   --bs-aspect-ratio: 100%;
 }
 
+.ratio-2x1 {
+  --bs-aspect-ratio: 50%;
+}
+
+.ratio-3x2 {
+  --bs-aspect-ratio: 66.6666666667%;
+}
+
+.ratio-2x3 {
+  --bs-aspect-ratio: 150%;
+}
+
 .ratio-4x3 {
   --bs-aspect-ratio: 75%;
 }
 
+.ratio-3x4 {
+  --bs-aspect-ratio: 133.3333333333%;
+}
+
 .ratio-16x9 {
   --bs-aspect-ratio: 56.25%;
+}
+
+.ratio-9x16 {
+  --bs-aspect-ratio: 177.7777777778%;
 }
 
 .ratio-21x9 {
@@ -13755,6 +13775,11 @@ body .entry-content.content-narrow .is-layout-constrained > :where(:not(.alignle
 
 .shadow-lg-heavy {
   box-shadow: 8px 7px 17px 4px rgba(0, 0, 0, 0.6);
+}
+
+.object-fit-cover {
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .gform_required_legend {
