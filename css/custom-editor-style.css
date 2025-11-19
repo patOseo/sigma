@@ -14510,7 +14510,6 @@ div:not(.acf-block-preview) .shadowbox-block:has(a):hover {
 }
 
 .shadowbox-block {
-  padding: 2rem;
   box-shadow: 1px 5px 20px -6px rgba(97, 96, 96, 0.25);
   transition: 0.2s;
 }

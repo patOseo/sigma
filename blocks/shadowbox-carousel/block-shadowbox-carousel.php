@@ -19,7 +19,7 @@ $modals = array();
         <div class="swiper-wrapper">
             <?php while(have_rows('carousel')): the_row(); ?>
                 <div class="swiper-slide d-flex align-items-center text-center h-100">
-                    <div class="shadowbox-block w-100 h-100">
+                    <div class="shadowbox-block p-3 w-100 h-100">
                         <div class="slider-image d-flex flex-column align-self-center text-center w-100">
                             <?php 
                             $image = get_sub_field('icon');
@@ -31,7 +31,7 @@ $modals = array();
                                 $image_size = array(60, 60);
                             }
                             if(get_sub_field('aspect_ratio') != 'original') {
-                                $ratio = 'mb-4 rounded-4 overflow-hidden shadow ratio ratio-' . get_sub_field('aspect_ratio');
+                                $ratio = 'mb-5 rounded-4 overflow-hidden shadow ratio ratio-' . get_sub_field('aspect_ratio');
                             } else {
                                 $ratio = 'rounded-4 original';
                             }
