@@ -70,7 +70,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							'menu_class'      => 'navbar-nav justify-content-end flex-grow-1 text-start',
 							'fallback_cb'     => '',
 							'menu_id'         => 'main-menu',
-							'depth'           => 3,
+							'depth'           => 4,
 							'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
 						)
 					);
