@@ -106,3 +106,4 @@ require_once('functions/ajax-filtering-blogs.php');
 require_once('functions/ajax-filtering-webinars.php');
 require_once('functions/quiz.php');
 require_once('functions/webinars.php');
+require_once('functions/events-deindex.php');
