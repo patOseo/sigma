@@ -42,8 +42,8 @@ $template = array(
 ?>
 
 <div class="<?php echo esc_attr($className); ?>">
-    <div class="page-header-bg position-relative" style="background-image: url('<?= $bg; ?>');">
-        <div class="position-absolute top-50 start-50 translate-middle w-100">
+    <div class="page-header-bg position-relative d-flex justify-content-center align-items-center" style="background-image: url('<?= $bg; ?>');">
+        <div class="w-100">
             <div class="container">
                 <InnerBlocks template="<?php echo esc_attr(wp_json_encode($template)); ?>" />
             </div>
