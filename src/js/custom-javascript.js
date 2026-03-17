@@ -5,7 +5,7 @@
 jQuery(function ($) {
 	// Check if the HubSpot form script is loaded
 	var hubspotFormScript = document.querySelector(
-		'script[src="//js.hsforms.net/forms/embed/v2.js"]'
+		'script[src="//js.hsforms.net/forms/embed/v2.js"]',
 	);
 	if (hubspotFormScript) {
 		// Increase the height of .hs-form-iframe to add 100px to its initial height after 2 seconds
@@ -55,8 +55,14 @@ jQuery(function ($) {
 
 	// Blog Filtering
 	var currentPage = 1;
+	var blogExcerptConfig = {
+		showExcerpt: $("#blogFeed").attr("data-show-excerpt"),
+		excerptFrom: $("#blogFeed").attr("data-excerpt-from"),
+	};
 	function filterBlogs() {
 		var cat = $(".category-link.current-cat").data("cat");
+		var showExcerpt = blogExcerptConfig.showExcerpt;
+		var excerptFrom = blogExcerptConfig.excerptFrom;
 		$.ajax({
 			url: "/wp-admin/admin-ajax.php",
 			type: "POST",
@@ -64,11 +70,13 @@ jQuery(function ($) {
 				action: "filter_blogs",
 				page: currentPage,
 				category: cat,
+				show_excerpt: showExcerpt,
+				excerpt_from: excerptFrom,
 			},
 			beforeSend: function () {
 				$("#blogFeed").removeClass("fade-in");
 				$("#blogFeed").html(
-					'<div class="my-6 py-6 text-center"><div class="my-lg-6 spinner-grow text-primary text-center mx-auto" role="status"><span class="visually-hidden">Loading...</span></div></div>'
+					'<div class="my-6 py-6 text-center"><div class="my-lg-6 spinner-grow text-primary text-center mx-auto" role="status"><span class="visually-hidden">Loading...</span></div></div>',
 				);
 			},
 
@@ -91,7 +99,7 @@ jQuery(function ($) {
 			beforeSend: function () {
 				$("#webinarsFeed").removeClass("fade-in");
 				$("#webinarsFeed").html(
-					'<div class="my-6 py-6 text-center"><div class="my-lg-6 spinner-grow text-primary text-center mx-auto" role="status"><span class="visually-hidden">Loading...</span></div></div>'
+					'<div class="my-6 py-6 text-center"><div class="my-lg-6 spinner-grow text-primary text-center mx-auto" role="status"><span class="visually-hidden">Loading...</span></div></div>',
 				);
 			},
 
@@ -137,7 +145,7 @@ jQuery(function ($) {
 			{
 				scrollTop: $(".blog-feed-block").offset().top - 200,
 			},
-			200
+			200,
 		);
 		filterBlogs();
 	});
@@ -152,7 +160,7 @@ jQuery(function ($) {
 			{
 				scrollTop: $(".webinars-block").offset().top - 200,
 			},
-			200
+			200,
 		);
 		filterWebinars();
 	});

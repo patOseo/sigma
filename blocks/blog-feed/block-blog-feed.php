@@ -80,7 +80,7 @@ $query = new WP_Query($args);
             <?php endforeach; ?>
         </div>
     <?php endif; ?>
-    <div id="blogFeed">
+    <div id="blogFeed" data-show-excerpt="<?php echo esc_attr($show_excerpt ? '1' : '0'); ?>" data-excerpt-from="<?php echo esc_attr(isset($excerpt_from) ? $excerpt_from : ''); ?>">
         <?php include(get_stylesheet_directory() . '/loop-templates/list-blogs.php'); ?>
     </div>
 </div>

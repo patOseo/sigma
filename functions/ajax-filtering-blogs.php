@@ -1,17 +1,34 @@
 <?php 
 function sigma_ajax_filter_blogs() {
-    if(isset($_POST['page'])) {
-        $page = $_POST['page'];
-    }
+    $blog_cat = 'all';
+    $show_excerpt = false;
+    $excerpt_from = '';
 
     if(isset($_POST['category'])) {
-        $blog_cat = $_POST['category'];
+        $blog_cat = sanitize_text_field(wp_unslash($_POST['category']));
+    }
+
+    if(isset($_POST['show_excerpt'])) {
+        $show_excerpt_value = sanitize_text_field(wp_unslash($_POST['show_excerpt']));
+        $show_excerpt = in_array($show_excerpt_value, array('1', 'true', 'yes'), true);
+    }
+
+    if(isset($_POST['excerpt_from'])) {
+        $excerpt_from = sanitize_key(wp_unslash($_POST['excerpt_from']));
+    }
+
+    if(!in_array($excerpt_from, array('meta_desc', 'excerpt'), true)) {
+        $excerpt_from = 'excerpt';
     }
 
     if(isset($_POST['page'])) {
-        $paged = $_POST['page'];
+        $paged = absint($_POST['page']);
     } else {
         $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+    }
+
+    if($paged < 1) {
+        $paged = 1;
     }
     // Load values into the query args
     $args = array(

@@ -1,6 +1,6 @@
 /*!
   * Understrap v1.2.0 (https://understrap.com)
-  * Copyright 2013-2025 The Understrap Authors (https://github.com/understrap/understrap/graphs/contributors)
+  * Copyright 2013-2026 The Understrap Authors (https://github.com/understrap/understrap/graphs/contributors)
   * Licensed under GPL-3.0 (undefined)
   */
 (function (global, factory) {
@@ -2954,15 +2954,23 @@
 
 	  // Blog Filtering
 	  var currentPage = 1;
+	  var blogExcerptConfig = {
+	    showExcerpt: $("#blogFeed").attr("data-show-excerpt"),
+	    excerptFrom: $("#blogFeed").attr("data-excerpt-from")
+	  };
 	  function filterBlogs() {
 	    var cat = $(".category-link.current-cat").data("cat");
+	    var showExcerpt = blogExcerptConfig.showExcerpt;
+	    var excerptFrom = blogExcerptConfig.excerptFrom;
 	    $.ajax({
 	      url: "/wp-admin/admin-ajax.php",
 	      type: "POST",
 	      data: {
 	        action: "filter_blogs",
 	        page: currentPage,
-	        category: cat
+	        category: cat,
+	        show_excerpt: showExcerpt,
+	        excerpt_from: excerptFrom
 	      },
 	      beforeSend: function () {
 	        $("#blogFeed").removeClass("fade-in");

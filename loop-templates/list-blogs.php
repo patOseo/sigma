@@ -11,13 +11,13 @@
                         <p class="fs-sm"><?php the_date('F Y'); ?></p>
                         <?php if(isset($show_excerpt) && $show_excerpt): ?>
                             <?php 
-                            if($excerpt_from == 'meta_desc') {
-                                $excerpt = '';
+                            $excerpt_mode = isset($excerpt_from) ? sanitize_key($excerpt_from) : 'excerpt';
+                            if($excerpt_mode === 'meta_desc') {
                                 $excerpt = get_post_meta(get_the_ID(), '_yoast_wpseo_metadesc', true);
                                 if(empty($excerpt)) {
                                     $excerpt = get_the_excerpt();
                                 }
-                            } elseif($excerpt_from == 'excerpt') {
+                            } else {
                                 $excerpt = get_the_excerpt(); 
                             }    
                             ?>
