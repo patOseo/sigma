@@ -9,6 +9,20 @@
                     <div class="blog-feed-item-content">
                         <a class="stretched-link text-decoration-none" href="<?php the_permalink(); ?>"><h2 class="h4 fw-bold"><?php the_title(); ?></h2></a>
                         <p class="fs-sm"><?php the_date('F Y'); ?></p>
+                        <?php if(isset($show_excerpt) && $show_excerpt): ?>
+                            <?php 
+                            if($excerpt_from == 'meta_desc') {
+                                $excerpt = '';
+                                $excerpt = get_post_meta(get_the_ID(), '_yoast_wpseo_metadesc', true);
+                                if(empty($excerpt)) {
+                                    $excerpt = get_the_excerpt();
+                                }
+                            } elseif($excerpt_from == 'excerpt') {
+                                $excerpt = get_the_excerpt(); 
+                            }    
+                            ?>
+                            <p class="fs-sm"><?php echo $excerpt; ?></p>
+                        <?php endif; ?>
                         <button class="btn btn-outline-secondary btn-lg px-4 py-3 fs-sm fw-normal rounded-pill">Read More</button>
                     </div>
                 </div>

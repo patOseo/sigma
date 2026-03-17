@@ -1,6 +1,10 @@
 <?php 
 
 $show_all = get_field('show_all_blogs');
+$show_excerpt = get_field('show_excerpt');
+if($show_excerpt) {
+    $excerpt_from = get_field('fetch_excerpt_from'); 
+}
 $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 
 if($show_all): 
