@@ -23,7 +23,7 @@ $prevclass = 'swiper-button-prev-' . $uid;
           <div class="swiper-wrapper">
             <!-- Slides -->
             <?php foreach($images as $image): ?>
-                <div class="swiper-slide d-flex align-items-center text-center">
+                <div class="swiper-slide d-flex align-self-center text-center">
                     <div class="slider-image d-flex flex-column align-self-center text-center w-100">
                         <?php echo wp_get_attachment_image($image, 'full', '', array('class' => 'mx-auto')); ?>
                     </div>
