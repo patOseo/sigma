@@ -13457,7 +13457,7 @@ body .entry-content.content-narrow .is-layout-constrained > :where(:not(.alignle
   padding-bottom: 0.5rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   color: #fff;
-  font-weight: 300;
+  font-weight: 350;
 }
 #main-nav #main-menu .dropdown-item:hover {
   color: #12355a;
