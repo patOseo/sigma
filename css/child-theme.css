@@ -62,7 +62,7 @@ $h6-font-size:                $font-size-base !default;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
   --bs-body-font-size: 1rem;
-  --bs-body-font-weight: 300;
+  --bs-body-font-weight: 350;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
   --bs-body-bg: #fff;
@@ -76,7 +76,7 @@ $h6-font-size:                $font-size-base !default;
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #babf10;
+  --bs-link-color: #9da013;
   --bs-link-hover-color: #12355a;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
@@ -2104,7 +2104,7 @@ progress {
   width: 100%;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 350;
   line-height: 1.5;
   color: #212529;
   background-color: #fff;
@@ -2256,7 +2256,7 @@ textarea.form-control-lg {
   padding: 0.375rem 2.25rem 0.375rem 0.75rem;
   -moz-padding-start: calc(0.75rem - 3px);
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 350;
   line-height: 1.5;
   color: #212529;
   background-color: #fff;
@@ -2636,7 +2636,7 @@ textarea.form-control-lg {
   align-items: center;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 350;
   line-height: 1.5;
   color: #212529;
   text-align: center;
@@ -12195,7 +12195,7 @@ body {
   padding: 0.375rem 2.25rem 0.375rem 0.75rem;
   -moz-padding-start: calc(0.75rem - 3px);
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 350;
   line-height: 1.5;
   color: #212529;
   background-color: #fff;
@@ -16291,11 +16291,11 @@ body .entry-content.content-narrow .is-layout-constrained > :where(:not(.alignle
 }
 
 ::-moz-selection {
-  background: #c8cc40;
+  background: #d6d970;
 }
 
 ::selection {
-  background: #c8cc40;
+  background: #d6d970;
 }
 
 @media (max-width: 1440.98px) {
@@ -16314,7 +16314,7 @@ body .entry-content.content-narrow .is-layout-constrained > :where(:not(.alignle
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 #main-nav #main-menu .active .nav-link {
-  color: #babf10;
+  color: #9da013;
 }
 #main-nav #main-menu .dropdown-menu {
   border: 0;
@@ -16370,7 +16370,7 @@ body .entry-content.content-narrow .is-layout-constrained > :where(:not(.alignle
     color: #353535;
   }
   #main-nav #main-menu .menu-item .dropdown-menu .dropdown-item:hover {
-    color: #babf10;
+    color: #9da013;
     background-color: initial;
   }
   #main-nav #main-menu .nav-link {
@@ -16380,7 +16380,7 @@ body .entry-content.content-narrow .is-layout-constrained > :where(:not(.alignle
     text-transform: none;
   }
   #main-nav #main-menu .nav-link:hover {
-    color: #babf10;
+    color: #9da013;
   }
 }
 #main-nav svg {
@@ -16388,7 +16388,7 @@ body .entry-content.content-narrow .is-layout-constrained > :where(:not(.alignle
   transition: fill 0.2s;
 }
 #main-nav svg:hover {
-  fill: #babf10;
+  fill: #9da013;
 }
 #main-nav .icons svg {
   max-height: 16px;

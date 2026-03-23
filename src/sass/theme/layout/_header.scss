@@ -17,7 +17,7 @@
 
         .active {
             .nav-link {
-                color: $secondary;
+                color: $darkergreen;
             }
         }
 
@@ -92,7 +92,7 @@
                         color: $type;
                     
                         &:hover {
-                            color: $secondary;
+                            color: $darkergreen;
                             background-color: initial;
                         }
                     }
@@ -106,7 +106,7 @@
                 text-transform: none;
         
                 &:hover {
-                    color: $secondary;
+                    color: $darkergreen;
                 }
             }
         }
@@ -118,7 +118,7 @@
         transition: fill .2s;
 
         &:hover {
-            fill: $secondary;
+            fill: $darkergreen;
         }
     }
 
