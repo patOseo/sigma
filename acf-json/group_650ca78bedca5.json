@@ -37,6 +37,27 @@
                 "operator": "==",
                 "value": "page"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "assessments"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "team"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "webinar"
+            }
         ]
     ],
     "menu_order": 0,
@@ -48,5 +69,6 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1695328179
+    "display_title": "",
+    "modified": 1774360492
 }
