@@ -51,4 +51,5 @@ body {
 
 ::selection {
     background: tint-color($secondary, 40%);
+    color: $dark;
 }

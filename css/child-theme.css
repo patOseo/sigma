@@ -16397,10 +16397,12 @@ body .entry-content.content-narrow .is-layout-constrained > :where(:not(.alignle
 
 ::-moz-selection {
   background: #d6d970;
+  color: #212529;
 }
 
 ::selection {
   background: #d6d970;
+  color: #212529;
 }
 
 @media (max-width: 1440.98px) {
