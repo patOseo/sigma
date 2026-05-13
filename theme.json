@@ -17,6 +17,16 @@
 					"fontFamily": "Open Sans, sans-serif",
 					"slug": "opensans",
 					"name": "Open Sans"
+				},
+                {
+					"fontFamily": "DM Sans, sans-serif",
+					"slug": "dmsans",
+					"name": "DM Sans"
+				},
+                {
+					"fontFamily": "Cormorant, serif",
+					"slug": "cormorant",
+					"name": "Cormorant"
 				}
 			],
             "fontWeight": true,
@@ -48,6 +58,16 @@
                     "slug": "sigmablue",
                     "color": "#12355a",
                     "name": "SIGMA Blue"
+                },
+                {
+                    "slug": "sigmateal",
+                    "color": "#00b4a0",
+                    "name": "SIGMA Teal"
+                },
+                {
+                    "slug": "sigmared",
+                    "color": "#c0392b",
+                    "name": "SIGMA Red"
                 },
                 {
                     "slug": "darkgrey",
