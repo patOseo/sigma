@@ -76,6 +76,11 @@
                     "name": "SIGMA Cream"
                 },
                 {
+                    "slug": "sigmanavy",
+                    "color": "#0D1B2A",
+                    "name": "SIGMA Navy"
+                },
+                {
                     "slug": "sigmared",
                     "color": "#c0392b",
                     "name": "SIGMA Red"
