@@ -231,7 +231,7 @@ small, .small {
 }
 
 mark, .mark {
-  padding: 0.1875em;
+  padding: 0;
   background-color: var(--bs-highlight-bg);
 }
 
@@ -13766,6 +13766,15 @@ body .entry-content.content-narrow .is-layout-constrained > :where(:not(.alignle
 
 .bg-lightestgrey {
   background-color: #EFEFEF;
+}
+
+.grid-bg:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
 }
 
 .text-darkgrey {
