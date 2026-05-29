@@ -1,5 +1,29 @@
-.accordion-item {
+.accordion-block {
+    &.accordion-style-inherit {
+        .accordion {
+            color: inherit !important;
+        }
+        .accordion-item {
+            background-color: inherit !important;
+            color: inherit !important;
+            .accordion-button {
+                border: inherit !important;
+                background-color: inherit !important;
+                color: inherit !important;
+                box-shadow: none !important;
 
+                &:hover, &:not(.collapsed) {
+                    background-color: inherit !important;
+                }
+            }
+            .accordion-body {
+                color: inherit !important;
+            }
+        }
+    }
+}
+
+.accordion-item {
     .accordion-button {
         font-size: 1.25rem;
         background-color: tint-color($lightestgrey, 30%);

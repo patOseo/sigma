@@ -75,7 +75,9 @@
             "allow_null": 0,
             "ui": 0,
             "ajax": 0,
-            "placeholder": ""
+            "placeholder": "",
+            "create_options": 0,
+            "save_options": 0
         },
         {
             "key": "field_6510c3bdb9257",
@@ -132,6 +134,30 @@
             "ui": 0,
             "ui_on_text": "",
             "ui_off_text": ""
+        },
+        {
+            "key": "field_6a19d2786f830",
+            "label": "Styling",
+            "name": "styling",
+            "aria-label": "",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "sigma": "SIGMA Theme",
+                "inherit": "Inherit from Container"
+            },
+            "default_value": "sigma",
+            "return_format": "value",
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "layout": "horizontal"
         },
         {
             "key": "field_65171a64c3ce4",
@@ -342,5 +368,8 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1696292549
+    "display_title": "",
+    "allow_ai_access": false,
+    "ai_description": "",
+    "modified": 1780077224
 }

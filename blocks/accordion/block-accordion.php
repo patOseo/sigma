@@ -5,6 +5,10 @@ if ( ! empty( $block['className'] ) ) {
     $class_name .= ' ' . $block['className'];
 }
 
+if (get_field('styling') && (get_field('styling') == 'inherit')) {
+    $class_name .= ' accordion-style-inherit';
+}
+
 $htmltag = get_field('html_tag'); 
 $uniqid = wp_rand();
 $oneitem = get_field('one_item');

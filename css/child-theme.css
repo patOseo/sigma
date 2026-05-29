@@ -17289,6 +17289,26 @@ body .entry-content.content-narrow .is-layout-constrained > :where(:not(.alignle
   color: #fff;
 }
 
+.accordion-block.accordion-style-inherit .accordion {
+  color: inherit !important;
+}
+.accordion-block.accordion-style-inherit .accordion-item {
+  background-color: inherit !important;
+  color: inherit !important;
+}
+.accordion-block.accordion-style-inherit .accordion-item .accordion-button {
+  border: inherit !important;
+  background-color: inherit !important;
+  color: inherit !important;
+  box-shadow: none !important;
+}
+.accordion-block.accordion-style-inherit .accordion-item .accordion-button:hover, .accordion-block.accordion-style-inherit .accordion-item .accordion-button:not(.collapsed) {
+  background-color: inherit !important;
+}
+.accordion-block.accordion-style-inherit .accordion-item .accordion-body {
+  color: inherit !important;
+}
+
 .accordion-item .accordion-button {
   font-size: 1.25rem;
   background-color: #f4f4f4;
