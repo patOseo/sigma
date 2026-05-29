@@ -12,5 +12,5 @@
         "mode": "edit",
         "renderTemplate": "block-accordion-item.php"
     },
-    "parent": ["accordion"]
+    "parent": ["acf/accordion"]
 }
