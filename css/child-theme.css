@@ -16567,6 +16567,10 @@ body .entry-content.content-narrow .is-layout-constrained > :where(:not(.alignle
   color: #fff;
 }
 
+.container-wide {
+  max-width: 1600px !important;
+}
+
 .ff-opensans {
   font-family: "Open Sans", sans-serif;
 }

@@ -9,7 +9,6 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-$container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <nav id="main-nav" class="navbar navbar-expand-xl navbar-light" aria-labelledby="main-nav-label">
@@ -19,7 +18,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	</p>
 
 
-	<div class="container">
+	<div class="container container-wide">
 
 		<div class="col-9 col-xl-3 d-flex">
 			<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop="url"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/sigma-logo.png" alt="SIGMA Assessment Systems Logo" width="320" height="66"></a>
